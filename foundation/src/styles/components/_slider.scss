@@ -1,0 +1,71 @@
+.main-slide {
+  .figures {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    .fig-cover {
+      position: relative;
+      width: inherit;
+      min-height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .fig-middle {
+        background: rgba(118, 118, 118, 0.31);
+        backdrop-filter: blur(33px);
+        button {
+          &:hover {
+            background: #50ebb2;
+            color: white !important;
+          }
+        }
+      }
+      .fig-fixed {
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        .slide--counter {
+          width: 50px;
+          height: 5px;
+          background: white;
+          border-radius: 10px;
+        }
+        .slide--active {
+          background: #50ebb2;
+        }
+      }
+    }
+    .g-1 {
+      background: rgba(158, 64, 35, 0.22);
+    }
+    .g-2 {
+      background: linear-gradient(
+        90deg,
+        rgba(158, 64, 35, 0.78) -26.19%,
+        rgba(158, 64, 35, 0) 100%
+      );
+    }
+    .g-3 {
+      background: linear-gradient(
+        86.26deg,
+        #2100a6 -33.89%,
+        rgba(0, 75, 129, 0) 61.23%,
+        rgba(0, 75, 129, 0.02) 96.46%
+      );
+    }
+    .g-4 {
+      background: linear-gradient(
+        86.64deg,
+        #000000 -2.86%,
+        rgba(0, 0, 0, 0) 88.53%
+      );
+    }
+  }
+}
