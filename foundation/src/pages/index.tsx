@@ -3,9 +3,13 @@ import Donate from "../components/icon/Donate";
 import Gift from "../components/icon/Gift";
 import Save from "../components/icon/Save";
 import Slider from "../components/Slider";
+import Slide from "../components/slide/Slide";
 import FrontLayout from "../layout/FrontLayout";
 
 const index = (): JSX.Element => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <FrontLayout>
       <main className="home">
@@ -138,6 +142,141 @@ const index = (): JSX.Element => {
             </div>
           </div>
         </section>
+        <section className="home-4 pt-5">
+          <div className="container">
+            <h1 className="text-center mb-3">Our Partners</h1>
+            <p className="text-muted text-center mb-3">
+              We cant do it alone – from crisis to sustainably. There is no
+              limit to what you can do, from a bake sale to a 10k run your
+              efforts will help give a local person in crisis much more than
+              food, but hope for the future.
+            </p>
+          </div>
+          <div className="partners d-flex flex-column flex-md-row ">
+            <div className="part bg-light py-5">
+              <img src="./images/heirs.png" alt="" />
+              <span className="text-muted fw-bold">Joint Heirs</span>
+            </div>
+            <div className="part py-5">
+              <img src="./images/winners.png" alt="" />
+              <span className="text-muted fw-bold">Winners Chapel</span>
+            </div>
+            <div className="part bg-light py-5">
+              <img src="./images/heirs.png" alt="" />
+              <span className="text-muted fw-bold">The Carpenters Church</span>
+            </div>
+            <div className="part bg-light py-5">
+              <img src="./images/heirs.png" alt="" />
+              <span className="text-muted fw-bold">The Carpenters Church</span>
+            </div>
+          </div>
+        </section>
+        <section className="slide text-light">
+          <Slide />
+        </section>
+        <section className="home-5 py-5">
+          <div className="container">
+            <h1 className="mb-3 text-secondary text-center">
+              Our Amaizing Team
+            </h1>
+            <p className="text-muted text-center mb-4">
+              We cant do it alone – from crisis to sustainably. There is no
+              limit to what you can do, from a bake sale to a 10k run your
+              efforts will help give a local person in crisis much more than
+              food, but hope for the future.
+            </p>
+            <div className="row mb-5 row-cols-1 row-cols-sm-2 row-cols-md-3 team g-4">
+              {team.map((team) => (
+                <div className="col team-" key={team.id}>
+                  <div
+                    className="card h-100 team--  border-0"
+                    style={{
+                      background: `url(./images/team-${team.id}.png) no-repeat`,
+                    }}
+                  >
+                    <div className="team--layer d-flex align-items-center text-light justify-content-center p-0 m-0 ">
+                      <i className="fab fa-2x fa-facebook"></i>
+                      <i className="fab fa-2x fa-twitter"></i>
+                      <i className="fab fa-2x fa-instagram"></i>
+                    </div>
+                    <div className="py-3 card team--bottom bg-secondary text-light px-0">
+                      <h4 className="text-center mb-3">Save Homeless people</h4>
+                      <p className="fw-lighter text-center">Secretary</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button className="btn mx-auto d-block fw-bold border-primary text-primary px-4 py-2">
+              See More
+            </button>
+          </div>
+        </section>
+        <section className="home-6 py-5">
+          <div className="container">
+            <h1 className="text-center text-secondary mb-3">Contact Us</h1>
+            <p className="text-muted text-center mb-5">
+              We cant do it alone – from crisis to sustainably. There is no
+              limit to what you can do, from a bake sale to a 10k run your help
+              give food, but hope for the future.
+            </p>
+            <div className="contact-icon d-flex mb-5 flex-column flex-sm-row justify-content-around">
+              <div className="mail d-flex flex-column align-items-center">
+                <i className="fas fa-2x fa-map-marker-alt px-4 py-3 text-light mb-3 bg-primary rounded"></i>
+                <span className="text-center">jointheirs5@gmail.com</span>
+              </div>
+              <div className="address d-flex flex-column align-items-center">
+                <i className="fas fa-2x fa-envelope px-4 py-3 text-light mb-3 bg-primary rounded"></i>
+                <span className="text-center">
+                  No 6 Green Tower, Street Rumuodara
+                </span>
+              </div>
+              <div className="tel d-flex flex-column align-items-center">
+                <i className="fas fa-2x fa-tty px-4 py-3 text-light mb-3 bg-primary rounded"></i>
+                <span className="text-center">+234 9012624162</span>
+              </div>
+            </div>
+            <form onSubmit={handleSubmit}>
+              <div
+                className="d-flex mb-4 flex-column flex-md-row"
+                style={{ gap: "2rem" }}
+              >
+                <input
+                  type="text"
+                  className="form-control py-3"
+                  required
+                  placeholder="Charles Cliff"
+                  spellCheck={true}
+                />
+                <input
+                  type="email"
+                  multiple
+                  className="form-control py-3"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                className=" form-control py-3 mb-4"
+                placeholder="Subject"
+                spellCheck
+              />
+
+              <textarea
+                className="form-control form-control-lg mb-4"
+                id=""
+                cols={30}
+                rows={10}
+                spellCheck
+                placeholder="Type your Message"
+              ></textarea>
+              <button className="btn border-primary text-primary fw-bold px-4 py-2">
+                Send
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
     </FrontLayout>
   );
@@ -195,3 +334,5 @@ const raiseFund = [
     type: "Love Revival",
   },
 ];
+
+const team = [{ id: 1 }, { id: 2 }, { id: 3 }];
