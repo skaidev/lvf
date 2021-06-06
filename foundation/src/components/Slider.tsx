@@ -37,7 +37,6 @@ const Slider = (): JSX.Element => {
               ))}
             </div>
           </figcaption>
-          <figcaption className="fig-fixed"></figcaption>
         </div>
       </figure>
     </div>
