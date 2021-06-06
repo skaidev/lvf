@@ -163,4 +163,16 @@
       }
     }
   }
+  &-7 {
+    .left {
+      flex: 1;
+      background: url("./img/Rectangle 52.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      object-fit: cover;
+    }
+    .right {
+      flex: 1;
+    }
+  }
 }

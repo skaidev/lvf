@@ -277,6 +277,32 @@ const index = (): JSX.Element => {
             </form>
           </div>
         </section>
+        <section className="map ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.444085232075!2d7.032735314762972!3d4.86501199646747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d27198c56a95%3A0x4bf2d3ebd3c1a2dd!2sJoint%20Heirs%20Assembly%20Int&#39;l%20Inc.!5e0!3m2!1sen!2sng!4v1621608305779!5m2!1sen!2sng"
+            height="450"
+            allowFullScreen={false}
+            loading="lazy"
+            style={{ width: "100%", border: 0, margin: 0, padding: 0 }}
+          ></iframe>
+        </section>
+        <section className="home-7 flex-column d-flex flex-md-row">
+          <div className="left"></div>
+          <div className="right bg-light py-5">
+            <div className="container">
+              <h1 className="fw-bolder mb-3">Subscribe To our News letter</h1>
+              <p className="text-muted mb-5">
+                For updates and promotional events
+              </p>
+              <form className="d-flex flex-column flex-md-row">
+                <input type="text" className="form-control rounded-0" />
+                <button className="btn btn-primary text-light px-4 px-md-5 rounded-0 py-2">
+                  subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
     </FrontLayout>
   );

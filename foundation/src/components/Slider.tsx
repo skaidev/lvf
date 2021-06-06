@@ -37,11 +37,7 @@ const Slider = (): JSX.Element => {
               ))}
             </div>
           </figcaption>
-          <figcaption className="fig-fixed">
-            {/* {slideCounter.map((e) => (
-              <div className="slide--counter" key={e}></div>
-            ))} */}
-          </figcaption>
+          <figcaption className="fig-fixed"></figcaption>
         </div>
       </figure>
     </div>
@@ -68,5 +64,3 @@ const slideData = [
     btn: [],
   },
 ];
-
-const slideCounter = [1, 2, 3, 4];
