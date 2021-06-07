@@ -1,0 +1,74 @@
+main {
+  .first {
+    min-height: 90vh;
+    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png")
+      no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    &-cover {
+      min-height: inherit;
+      background: rgba(158, 64, 35, 0.63);
+      mix-blend-mode: normal;
+    }
+  }
+  .second {
+    &-cover {
+      gap: 3rem;
+      .left {
+        flex: 1;
+        &-btn-holder {
+          gap: 2rem;
+        }
+      }
+      .right {
+        flex: 1;
+        .img-ring {
+          flex: 0.6;
+          img {
+            transform: translate(-40px, -40px);
+
+            background: linear-gradient(
+              90deg,
+              rgba(158, 64, 35, 0.78) -26.19%,
+              rgba(158, 64, 35, 0) 100%
+            );
+          }
+        }
+      }
+    }
+  }
+  .third {
+    background: rgba(80, 235, 178, 0.08);
+  }
+  .fourth {
+    .what {
+      &-col {
+        &-card {
+          border-radius: 10px;
+          overflow: hidden;
+          .rotate {
+            border: 4px dashed #ffffff;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  .fifth {
+    background: url("./img/bill-wegener-8ldqRkOk5oo-unsplash 1.png") no-repeat;
+    background-size: cover;
+    &-wrap {
+      .left {
+        flex: 0.7;
+      }
+      .right {
+        flex: 0.3;
+        &-circle {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
