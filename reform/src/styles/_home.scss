@@ -67,6 +67,110 @@ main {
         &-circle {
           width: 80px;
           height: 80px;
+          i {
+            transform: translate(-10px, -10px);
+          }
+        }
+      }
+    }
+  }
+  .sixth {
+    &-card {
+      height: 306px;
+
+      .polygon {
+        clip-path: polygon(0 0, 51% 0, 100% 100%, 0% 100%);
+        backdrop-filter: blur(33px);
+        min-height: 101px;
+        width: 100%;
+      }
+    }
+    .write-up {
+      gap: 3rem;
+      .left {
+        flex: 1;
+      }
+      .right {
+        flex: 1;
+      }
+    }
+  }
+  .seventh {
+    background: rgba(158, 64, 35, 0.09);
+    min-height: 100vh;
+    overflow: hidden;
+    form {
+      @media screen and(max-width:768px) {
+        width: 100% !important;
+      }
+      .form {
+        position: relative;
+        img {
+          position: absolute !important;
+          z-index: -1;
+          animation: topb 10s linear alternate infinite;
+          @keyframes topb {
+            0% {
+              transform: translate(0, 0)
+                matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -100, 0, 1.1)
+                rotateY(60deg);
+            }
+            50% {
+              transform: translate(-10px, -30px)
+                matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.9)
+                rotateY(-60deg);
+            }
+            70% {
+              transform: translate(10px, 30px);
+            }
+            100% {
+              transform: skewX(20deg)
+                matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 100, 0, 1.1)
+                rotateY(60deg);
+            }
+          }
+          @media screen and (max-width: 768px) {
+            transform: scale(0.8, 0.8);
+          }
+        }
+        img[src="one.png"] {
+          bottom: -20%;
+          left: 20%;
+          animation-delay: 0.5s;
+          animation-direction: alternate-reverse;
+        }
+        img[src="two.png"] {
+          left: 105%;
+          top: 25%;
+          animation-delay: 1s;
+        }
+        img[src="three.png"] {
+          left: -25%;
+          top: 20%;
+          animation-delay: 1.5s;
+          animation-direction: alternate-reverse;
+        }
+        img[src="four.png"] {
+          right: -25%;
+          top: -14%;
+          animation-delay: 2s;
+          animation-direction: alternate-reverse;
+        }
+        img[src="five.png"] {
+          top: -14%;
+          left: -15%;
+          animation-delay: 2.5s;
+        }
+        img[src="six.png"] {
+          right: -10%;
+          bottom: -23%;
+          animation-delay: 3s;
+        }
+        .f-row {
+          gap: 3rem;
+          @media screen and (max-width: 768px) {
+            gap: 1rem;
+          }
         }
       }
     }

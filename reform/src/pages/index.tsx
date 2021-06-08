@@ -11,6 +11,7 @@ const index = (): JSX.Element => {
   return (
     <FrontLayout>
       <main>
+        <base href="./images/" />
         <section className="first">
           <div className="first-cover d-flex p-0 m-0   align-items-center position-relative">
             <div className="container text-light">
@@ -81,7 +82,7 @@ const index = (): JSX.Element => {
             <div className="right d-flex justify-content-end">
               <div className="img-ring rounded border border-primary p-3">
                 <img
-                  src="./images/pexels-william-fortunato-6393179 1.png"
+                  src="pexels-william-fortunato-6393179 1.png"
                   alt=""
                   className="rounded w-100"
                 />
@@ -149,10 +150,16 @@ const index = (): JSX.Element => {
         <section className="py-5 fifth">
           <div className="container align-items-md-center d-flex flex-column flex-md-row fifth-wrap">
             <div className="left">
-              <p className="text-light fa-2x fw-bold">
+              <p className="text-light fa-2x fw-bold position-relative">
                 Is Working Towards Helping the <br /> Lesspriviledged/
                 Underpriviledge <br />
                 people
+                <span
+                  className="position-absolute fw-lighter cursive text-primary top-0 fa-4x"
+                  style={{ transform: "translateY(-30%)" }}
+                >
+                  love homes
+                </span>
               </p>
             </div>
             <div className="right">
@@ -160,6 +167,117 @@ const index = (): JSX.Element => {
                 <i className="fas fa-5x fa-play-circle text-primary"></i>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="py-5 sixth">
+          <div className="container">
+            <h2 className="text-warning mb-4">Our Volunteers</h2>
+            <div
+              className="write-up mb-4 d-flex align-items-md-center flex-column flex-md-row"
+              // style={{ gap: "3rem" }}
+            >
+              <div className="left">
+                <h1 className=" fw-bold">
+                  <span className="bg-warning m-0 p-0 text-light">
+                    Volunteers
+                  </span>
+                  &nbsp;Who <br />
+                  Always Support Us
+                </h1>
+              </div>
+              <div className="right">
+                <p className="p-0 m-0">
+                  We are a non-profit organisation in USA that works towards
+                  supporting underprivileged children reach their full potential
+                  - physical, mental as well as emotional.
+                </p>
+              </div>
+            </div>
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+              {sixthCard.map((card) => (
+                <div className="col sixth-card" key={card.id}>
+                  <div className="card sixth-card-main h-100 position-relative">
+                    <img
+                      src={`Rectangle ${card.img}.png`}
+                      alt=""
+                      className="position-absolute w-100 h-100"
+                    />
+                    <div
+                      className="cover h-100 d-flex align-items-end"
+                      style={{ background: `${card.bg}` }}
+                    >
+                      <div
+                        className="text-light polygon d-flex align-items-center border-start border-5 border-primary border-end-0 border-top-0 border-bottom-0 px-2 fw-bold"
+                        style={{ background: `${card.polygon}` }}
+                      >
+                        <span> {card.name}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="seventh py-5">
+          <div className="container">
+            <h1 className="text-center mb-3 fw-bold">Become a Volunteer</h1>
+            <p className="text-center mb-5">
+              We are a non-profit organisation in USA that works towards
+              supporting <br /> underprivileged children reach their full
+              potential - physical, mental as well as <br /> emotional.
+            </p>
+            <form className=" py-5 w-75 d-block mx-auto px-md-5">
+              <div className="container-md form px-md-4 py-4 rounded bg-white">
+                <img loading="lazy" src="one.png" alt="" />
+                <img loading="lazy" src="two.png" alt="" />
+                <img loading="lazy" src="three.png" alt="" />
+                <img loading="lazy" src="four.png" alt="" />
+                <img loading="lazy" src="five.png" alt="" />
+                <img loading="lazy" src="six.png" alt="" />
+                <div className="f-row py-2 d-flex mb-md-3 flex-column flex-md-row">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="form-control py-3"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Gender"
+                    list="gender"
+                    className="form-control py-3"
+                  />
+                  <datalist id="gender" className="bg-dark text-secondary">
+                    <option value="Male" className="bg-dark text-secondary" />
+                    <option value="Female" className="bg-dark text-secondary" />
+                  </datalist>
+                </div>
+                <div className="f-row py-2 mb-4  d-flex flex-column flex-md-row">
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    className="form-control py-3"
+                  />
+                  <input
+                    type="text"
+                    placeholder="How you  heard about us"
+                    className="form-control py-3"
+                  />
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  cols={30}
+                  rows={10}
+                  className="form-control mb-4"
+                  placeholder="Briefly Explain what you want to do for this organization and how..."
+                ></textarea>
+
+                <button className="btn border-2 px-5 py-2 fw-bold border-primary text-primary">
+                  Send
+                </button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
@@ -216,5 +334,36 @@ const whatYouCanDo = [
     rotate: "rotate(-15.17deg)",
     nrotate: "rotate(15.17deg)",
     bgc: " #9E4023",
+  },
+];
+
+const sixthCard = [
+  {
+    id: 1,
+    name: "Maria Anahonda",
+    bg: "rgba(158, 64, 35, 0.38)",
+    img: 78,
+    polygon: "rgba(158, 64, 35, 0.38)",
+  },
+  {
+    id: 2,
+    name: "Maria Anahonda",
+    bg: "rgba(158, 64, 35, 0.38)",
+    img: 79,
+    polygon: "rgba(37, 40, 58, 0.38)",
+  },
+  {
+    id: 3,
+    name: "Maria Anahonda",
+    bg: "rgba(158, 64, 35, 0.38)",
+    img: 80,
+    polygon: "rgba(117, 0, 0, 0.38)",
+  },
+  {
+    id: 4,
+    name: "Maria Anahonda",
+    bg: "rgba(158, 64, 35, 0.38)",
+    img: 81,
+    polygon: "rgba(255, 255, 255, 0.39)",
   },
 ];
