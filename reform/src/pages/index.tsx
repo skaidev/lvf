@@ -490,6 +490,7 @@ const index = (): JSX.Element => {
             style={{ width: "100%", border: 0, margin: 0, padding: 0 }}
           ></iframe>
         </section>
+      
       </main>
     </FrontLayout>
   );

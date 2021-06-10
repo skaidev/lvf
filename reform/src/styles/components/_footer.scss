@@ -1,0 +1,45 @@
+footer {
+  background: url("../img/slide1.png");
+  background-size: cover;
+  min-height: 100px;
+  .f-cover {
+    min-height: inherit;
+    background: rgba(37, 40, 58, 0.89);
+    .top-sec {
+      gap: 1rem;
+      .one {
+        flex: 1.4;
+      }
+      .two {
+        flex: 7;
+      }
+      .three {
+        flex: 1.6;
+      }
+    }
+    .socials {
+      span {
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        transition: all 0.5s linear;
+        &:hover {
+          background: white;
+          transform: rotateX(360deg);
+          i {
+            color: #50ebb2;
+          }
+        }
+      }
+    }
+    .layer {
+      background: rgba(118, 118, 118, 0.31);
+      backdrop-filter: blur(33px);
+    }
+  }
+}
