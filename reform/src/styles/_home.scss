@@ -1,17 +1,137 @@
 main {
-  min-height: 100vh;
-  .first {
-    min-height: calc(100vh - 100px);
-    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png")
-        no-repeat,
-      linear-gradient(180deg, #25283a -24.35%, rgba(37, 40, 58, 0) 95.57%);
-    background-size: cover;
-    &-cover {
-      min-height: inherit;
-      background: rgba(117, 0, 0, 0.63);
-      .first-content {
-        min-height: inherit;
-      }
+    min-height: 100vh;
+    .first {
+        min-height: calc(100vh - 100px);
+        background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png") no-repeat, linear-gradient(180deg, #25283a -24.35%, rgba(37, 40, 58, 0) 95.57%);
+        background-size: cover;
+        &-cover {
+            min-height: inherit;
+            background: rgba(117, 0, 0, 0.63);
+            .first-content {
+                min-height: inherit;
+            }
+        }
     }
-  }
+    .second {
+        .blur {
+            background: #ffffff;
+            box-shadow: 0px 6px 14px 2px rgba(196, 196, 196, 0.47);
+            border-radius: 10px;
+        }
+    }
+    .third {
+        min-height: 100px;
+        background: url("./img/bill-wegener-8ldqRkOk5oo-unsplash 1.png") no-repeat;
+        background-size: cover;
+        &-wrap {
+            .left {
+                flex: 0.7;
+            }
+            .right {
+                flex: 0.3;
+                &-circle {
+                    width: 80px;
+                    height: 80px;
+                    i {
+                        transform: translate(-10px, -10px);
+                    }
+                }
+            }
+        }
+    }
+    .fourth {
+        background: #25283a;
+        position: relative;
+        overflow: hidden;
+        &::after {
+            content: "";
+            background: rgba(124, 162, 181, 0.09);
+            mix-blend-mode: normal;
+            position: absolute;
+            width: 70%;
+            height: 60%;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            right: 0;
+            bottom: 0;
+        }
+        &-wrap {
+            @media screen and (max-width: 768px) {
+                gap: 0.8rem;
+            }
+            .left {
+                flex: 1;
+                gap: 1rem;
+                @media screen and (max-width: 768px) {
+                    border-right: 0 !important;
+                }
+            }
+            .right {
+                flex: 1;
+                flex: 1;
+                gap: 1rem;
+                border-left: 0 !important;
+            }
+        }
+    }
+    .fifth {
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "";
+            background: #25283a;
+            mix-blend-mode: normal;
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            clip-path: polygon(0 64%, 100% 0, 100% 100%, 0% 100%);
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .sixth {
+        .fundbox {
+            background: #ffffff;
+            box-shadow: 0px 4px 8px rgba(130, 130, 130, 0.17);
+            border-radius: 10px;
+            .side {
+                transform: rotate(-42.79deg) translate(27%, -20%);
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+    .seventh {
+        min-height: 100vh;
+        background: url("./img/annie-spratt-yrzBgqapG1I-unsplash 1.png") no-repeat, linear-gradient(180deg, #25283a -24.35%, rgba(37, 40, 58, 0) 95.57%);
+        background-size: cover;
+        &-cover {
+            min-height: inherit;
+            background: rgba(117, 0, 0, 0.63);
+        }
+    }
+    .eight {
+        .tri {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            border-radius: 100%;
+            background: blue;
+            &::before {
+                content: ".";
+                position: absolute;
+                background-color: red;
+                width: 50%;
+                height: 50%;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                border-radius: 100%;
+                // top: -100%;
+                transform-origin: 0 0;
+                // animation: rotate 1s linear infinite;
+                transform: rotate(60deg);
+            }
+            @keyframes rotate {
+                0% {}
+            }
+        }
+    }
 }
