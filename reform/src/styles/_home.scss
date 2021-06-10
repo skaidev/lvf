@@ -1,0 +1,12 @@
+main {
+  min-height: 100vh;
+  .first {
+    min-height: calc(100vh - 100px);
+    background: url("./img/slide1.png") no-repeat,
+      linear-gradient(180deg, #25283a -24.35%, rgba(37, 40, 58, 0) 95.57%);
+    &-cover {
+      min-height: inherit;
+      background: rgba(117, 0, 0, 0.63);
+    }
+  }
+}
