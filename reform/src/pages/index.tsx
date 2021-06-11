@@ -7,6 +7,7 @@ import Join from "../components/icon/Join";
 import Lvolunteer from "../components/icon/Lvolunteer";
 import Members from "../components/icon/Members";
 import Volunteers from "../components/icon/Volunteers";
+import Slide from "../components/slider/Slide";
 import FrontLayout from "../layout/FrontLayout";
 
 const index = (): JSX.Element => {
@@ -218,8 +219,53 @@ const index = (): JSX.Element => {
             </div>
           </div>
         </section>
-        <section className="eight d-flex align-items-center justify-content-center py-5">
-          <div className="tri"></div>
+        <section className="eight  py-5">
+          <div className="container">
+            <h3 className="text-center text-warning mb-3">Testimonials</h3>
+            <h1 className="text-center fw-bold mb-4">Why people love us</h1>
+            <Slide />
+          </div>
+        </section>
+        <section className="nine py-5">
+          <div className="container nine-wrap">
+            <h3 className="text-center text-warning mb-3 p-0">
+              Team behind Love Reform
+            </h3>
+            <h1 className="fw-bold text-center m-0 p-0 mb-3">
+              Our Amazing Team
+            </h1>
+            <h5 className="p-0 mb-4 text-center fw-lighter ">
+              Our work would not be possible without the work of our dedicated
+              volunteers.
+            </h5>
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              {teamCard.map((card) => (
+                <div className="col team-card" key={card}>
+                  <div className="card position-relative team-card-wrap border-0 h-100">
+                    <img
+                      className="card-img team-card-img"
+                      src="./images/founder.png"
+                    />
+                    <div className="card-body team-card-body bg-white">
+                      <h2 className="text-warning text-center mb-2 fw-lighter ">
+                        Maria Anahonda
+                      </h2>
+                      <p className="text-muted text-center p-0 mb-3">Founder</p>
+                      <div
+                        className="d-flex team-socials text-muted align-items-center justify-content-center"
+                        style={{ gap: "1rem" }}
+                      >
+                        <i className="fab fa-facebook-f"></i>|
+                        <i className="fab fa-instagram"></i>|
+                        <i className="fab fa-twitter"></i>|
+                        <i className="fab fa-linkedin-in"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
     </FrontLayout>
@@ -256,3 +302,4 @@ const help = [
 ];
 
 const card = [1, 2, 3, 4, 5, 6];
+const teamCard = [1, 2, 3];
