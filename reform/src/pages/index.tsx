@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import Awarding from "../components/icon/Awarding";
 import Cases from "../components/icon/Cases";
 import Donate from "../components/icon/Donate";
@@ -266,6 +267,139 @@ const index = (): JSX.Element => {
               ))}
             </div>
           </div>
+        </section>
+        <section className="ten py-5">
+          <div className="container">
+            <h3 className="text-center m-0 p-0 mb-3 fw-lighter text-warning">
+              Our Successful Cases
+            </h3>
+            <h1 className="fw-bold text-center m-0 p-0 mb-4">Gallery</h1>
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              {teamCard.map((card) => (
+                <div className="col bg-transparent" key={card}>
+                  <div className="card h-100 gallery-card position-relative rounded rounded-3 border-0">
+                    <img src="./images/fund.png" alt="" className="card-img" />
+                    <div className="card-body">
+                      <p className="card-title fw-bold ">Lady Evans</p>
+                      <p className="mb-3">Financial Empowerment</p>
+                      <p className="text-muted m-0 p-0">
+                        Now a Certified Hacker
+                      </p>
+                      <p
+                        className="d-flex text-muted align-items-center"
+                        style={{ gap: "1rem" }}
+                      >
+                        <i className="fas fa-calendar-alt"> </i>
+                        <span>5th june 2020</span>
+                      </p>
+                      <div className="gallery-card-right bg-primary text-white px-5  fw-bold">
+                        Success
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="eleven py-5 position-relative">
+          <div className=" container-fluid ">
+            <span className="abs position-absolute fw-bolder p-0 m-0">
+              Sponsors
+            </span>
+            <Marquee
+              pauseOnHover={true}
+              speed={50}
+              delay={3}
+              className="d-flex align-items-center"
+            >
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+            </Marquee>
+          </div>
+        </section>
+        <section className="bg-white py-5">
+          <div className="container">
+            <h1 className="text-center fw-bold mb-3">Contact Us</h1>
+            <p
+              className="text-muted text-center mb-5"
+              style={{ fontSize: "1.3rem" }}
+            >
+              We cant do it alone – from crisis to sustainably. There is no
+              limit to what you can do, from a bake sale to a 10k run your help
+              give food, but hope for the future.
+            </p>
+            <div className="contact-icon d-flex mb-5 flex-column flex-sm-row justify-content-around">
+              <div className="mail d-flex flex-column align-items-center">
+                <i className="fas fa-2x fa-map-marker-alt px-4 py-3 text-light mb-3 bg-primary rounded"></i>
+                <span className="text-center">jointheirs5@gmail.com</span>
+              </div>
+              <div className="address d-flex flex-column align-items-center">
+                <i className="fas fa-2x fa-envelope px-4 py-3 text-light mb-3 bg-primary rounded"></i>
+                <span className="text-center">
+                  No 6 Green Tower, Street Rumuodara
+                </span>
+              </div>
+              <div className="tel d-flex flex-column align-items-center">
+                <i className="fas fa-2x fa-tty px-4 py-3 text-light mb-3 bg-primary rounded"></i>
+                <span className="text-center">+234 9012624162</span>
+              </div>
+            </div>
+            <form>
+              <div
+                className="d-flex mb-4 flex-column flex-md-row"
+                style={{ gap: "2rem" }}
+              >
+                <input
+                  type="text"
+                  className="form-control py-3"
+                  required
+                  placeholder="Charles Cliff"
+                  spellCheck={true}
+                />
+                <input
+                  type="email"
+                  multiple
+                  className="form-control py-3"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                className=" form-control py-3 mb-4"
+                placeholder="Subject"
+                spellCheck
+              />
+
+              <textarea
+                className="form-control form-control-lg mb-4"
+                id=""
+                cols={30}
+                rows={10}
+                spellCheck
+                placeholder="Type your Message"
+              ></textarea>
+              <button className="btn btn-outline-primary bg-primary text-white fw-bold px-4 py-2">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+        <section className="map ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.444085232075!2d7.032735314762972!3d4.86501199646747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d27198c56a95%3A0x4bf2d3ebd3c1a2dd!2sJoint%20Heirs%20Assembly%20Int&#39;l%20Inc.!5e0!3m2!1sen!2sng!4v1621608305779!5m2!1sen!2sng"
+            height="450"
+            allowFullScreen={false}
+            loading="lazy"
+            style={{ width: "100%", border: 0, margin: 0, padding: 0 }}
+          ></iframe>
         </section>
       </main>
     </FrontLayout>

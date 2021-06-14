@@ -198,4 +198,35 @@ main {
       }
     }
   }
+  .ten {
+    background: rgba(80, 235, 178, 0.08);
+    .gallery-card {
+      overflow: hidden;
+      &-right {
+        position: absolute;
+        text-align: right;
+        right: -3rem;
+        transform: rotateZ(-45deg);
+        transform-origin: 0 0;
+        bottom: -2rem;
+      }
+    }
+  }
+  .eleven {
+    background: #c4c4c4;
+    .overlay {
+      display: none;
+    }
+    img {
+      display: block;
+      padding: 0 3rem;
+    }
+    .abs {
+      letter-spacing: 0.3rem;
+      color: rgba(255, 255, 255, 0.22);
+      font-size: 3rem;
+      left: 0;
+      bottom: 0;
+    }
+  }
 }

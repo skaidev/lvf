@@ -3,6 +3,7 @@ import { AppProps } from "next/app";
 import "../styles/index.scss";
 import "animate.css";
 import "@fortawesome/fontawesome-free/css/all.css";
+import "../styles/_style.scss";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
