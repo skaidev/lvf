@@ -16,56 +16,69 @@ const index = (): JSX.Element => {
 				<Slider />
 				<section className="home-1 py-5">
 					<div className="container">
-						<h1 className="text-center text-secondary mb-4">
-							About Love Vision <br /> Foundation
-						</h1>
-						<div className="home-1-first mb-5 d-flex flex-column align-items-md-center flex-md-row">
-							<div className="left">
-								<h2 className="mb-3">
-									Progressively maintain centered information whereas
-									information.
-								</h2>
-								<p className="text-muted mb-4">
-									See how we view God, Jesus, the Bible, man, and many
-									significant aspects of our faith.Progressively maintain
-									client-centered information whereas reliable information.
-									Efficiently restore wireless intermandated mindshare cross
-									-platform partnerships. <br /> Assertively improvements.
-									Energistically myocardinate plagiarize market-driven ovements.
-									Energistically.
-								</p>
-								<button className="btn border-primary text-primary px-5 py-3">
-									Learn More
-								</button>
-							</div>
-							<div className="right">
-								<div className="right-content py-5">
-									<img
-										src="./images/pexels-keira-burton-6624356 1.png"
-										alt=""
-									/>
+						<div className="home-1_about">
+							<div className="d-md-flex align-items-center inner">
+								<div className="left">
+									<h1 className="fw-bold">About Love Vision Foundation</h1>
+									<p>
+										See how we view God, Jesus, the Bible, man, and many
+										significant aspects of our faith.Progressively maintain
+										client-centered information whereas reliable information.
+										Efficiently restore wireless intermandated mindshare cross
+										-platform partnerships.
+									</p>
+									<p>
+										Assertively improvements. Energistically myocardinate
+										plagiarize market-driven ovements. Energistically.
+									</p>
+									<button className="btn btn-outline-primary px-4">
+										Learn More
+									</button>
 								</div>
-							</div>
-						</div>
-						<h2 className=" text-center mb-2"> How you can help</h2>
-						<p className="text-center text-muted mb-3">
-							Want to help the local community? There are different ways to get
-							involved.
-						</p>
-						<div className="home-1-second row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-							{helpCard.map((e) => (
-								<div className="col home-1-second-card" key={e.id}>
-									<div className="card _home-1-second-card border-0">
-										<div className="card-img _home-1-second-card-img bg-light py-5 d-flex flex-column justify-content-center align-items-center">
-											<i className="mb-4">{e.icon}</i>
-											<h3 className="fw-bold">{e.title}</h3>
+								<div className="right d-none d-md-block">
+									<div className="right-top">
+										<div className="img-1">
+											<img src="/images/about-1.png" alt="" />
 										</div>
-										<div className="card-body py-5">
-											<p className="text-center text-muted">{e.body}</p>
+										<div className="img-2">
+											<img src="/images/about-2.png" alt="" />
+										</div>
+									</div>
+									<div className="right-bottom">
+										<div className="img-3">
+											<img src="/images/about-3.png" alt="" />
+										</div>
+										<div className="img-4">
+											<img src="/images/about-4.png" alt="" />
 										</div>
 									</div>
 								</div>
-							))}
+							</div>
+						</div>
+						<div className="can-help">
+							<h2 className=" text-center mb-2 mt-4 fw-bold ">
+								{" "}
+								How you can help
+							</h2>
+							<p className="text-center text-muted mb-3">
+								Want to help the local community? There are different ways to
+								get involved.
+							</p>
+							<div className="home-1-second row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+								{helpCard.map((e) => (
+									<div className="col home-1-second-card" key={e.id}>
+										<div className="card _home-1-second-card border-0">
+											<div className="card-img _home-1-second-card-img bg-light py-5 d-flex flex-column justify-content-center align-items-center">
+												<i className="mb-4">{e.icon}</i>
+												<h3 className="fw-bold">{e.title}</h3>
+											</div>
+											<div className="card-body py-5">
+												<p className="text-center text-muted">{e.body}</p>
+											</div>
+										</div>
+									</div>
+								))}
+							</div>
 						</div>
 					</div>
 				</section>
@@ -94,8 +107,8 @@ const index = (): JSX.Element => {
 				</section>
 				<section className="home-3 py-5">
 					<div className="container">
-						<h1 className="text-center mb-4">Fund Raisers</h1>
-						<p className="text-center text-muted mb-4">
+						<h2 className="text-center mb-4 fw-bold">Fund Raisers</h2>
+						<p className="text-center text-muted mb-4 w-75 mx-auto">
 							Help us transform lives – from crisis to sustainably. There is no
 							limit to what you can do, from a bake sale to a 10k run your
 							efforts will help give a local person in crisis much more than
@@ -111,27 +124,12 @@ const index = (): JSX.Element => {
 											className="card-img"
 										/>
 										<div className="card-body">
-											<button
-												className={`btn ${one.btncolor} mb-3 text-light px-5 py-3`}
-												style={{ background: `${one.btncolor}` }}
-											>
+											<button className="btn btn-danger px-4">
 												{one.btnTxt}
 											</button>
-											<h5 className="fw-bold mb-3">{one.title}</h5>
+											<h5 className="fw-bold my-3">{one.title}</h5>
 											<p className="text-muted mb-4">{one.body}</p>
-											<div className="progress rounded-pill mb-4">
-												<div
-													className={`progress-bar ${one.btncolor} rounded-pill`}
-													role="progressbar "
-													style={{
-														width: `${one.barWidth}%`,
-														background: `${one.btncolor}`,
-													}}
-													aria-valuenow={50}
-													aria-valuemin={0}
-													aria-valuemax={100}
-												></div>
-											</div>
+
 											<button className="btn border-light text-muted px-5 py-3">
 												{one.type}
 											</button>
@@ -214,7 +212,9 @@ const index = (): JSX.Element => {
 				</section>
 				<section className="home-6 py-5">
 					<div className="container">
-						<h1 className="text-center text-secondary mb-3">Contact Us</h1>
+						<h1 className="text-center mb-3 text-secondary fw-700" id="contact">
+							Contact Us
+						</h1>
 						<p className="text-muted text-center mb-5">
 							We cant do it alone – from crisis to sustainably. There is no
 							limit to what you can do, from a bake sale to a 10k run your help
@@ -287,19 +287,22 @@ const index = (): JSX.Element => {
 					></iframe>
 				</section>
 				<section className="home-7 flex-column d-flex flex-md-row">
-					<div className="left"></div>
-					<div className="right bg-light py-5">
-						<div className="container">
-							<h1 className="fw-bolder mb-3">Subscribe To our News letter</h1>
-							<p className="text-muted mb-5">
-								For updates and promotional events
-							</p>
-							<form className="d-flex flex-column flex-md-row">
-								<input type="text" className="form-control rounded-0" />
-								<button className="btn btn-primary text-light px-4 px-md-5 rounded-0 py-2">
-									subscribe
-								</button>
-							</form>
+					<div className="right bg-light py-5 ">
+						<div className="container ">
+							<div className="w-75 mx-auto">
+								<h1 className="fw-bolder mb-3 text-center">
+									Subscribe To our News letter
+								</h1>
+								<p className="text-muted mb-5 text-center">
+									For updates and promotional events
+								</p>
+								<form className="d-flex flex-column flex-md-row w-75 mx-auto">
+									<input type="text" className="form-control rounded-0" />
+									<button className="btn btn-primary text-light px-4 px-md-5 rounded-0 py-2">
+										subscribe
+									</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -343,7 +346,7 @@ const raiseFund = [
 	},
 	{
 		id: 2,
-		btncolor: "bg-secondary",
+		btncolor: "#9e4023",
 		title: "Save Homeless people",
 		body: "Caompletely deliver resource-leveling oppor tunities before interop erable Help us transform lives – from crisis to sustainably.",
 		barWidth: 50,
