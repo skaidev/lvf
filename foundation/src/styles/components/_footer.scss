@@ -25,6 +25,12 @@
         }
       }
     }
+    .list {
+      span {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
     .layer {
       background: rgba(118, 118, 118, 0.31);
       backdrop-filter: blur(33px);

@@ -34,13 +34,14 @@ const Scroll = ({ showBelow }: Props): JSX.Element => {
           style={{
             width: "50px",
             height: "50px",
+            borderRadius: "5px",
             position: "fixed",
             right: "10px",
-            bottom: "30px",
+            bottom: "136px",
             zIndex: 1000,
           }}
         >
-          <i className="fas fa-2x fa-arrow-up"></i>
+          <i className="fas fa-2x fa-chevron-up"></i>
         </div>
       )}
     </div>

@@ -19,10 +19,8 @@ export default class SimpleSlider extends Component {
           {slides.map((single) => (
             <div key={single.id}>
               <div className="container">
-                <p className="text-center text-light fw-normal mb-4">
-                  {single.body}
-                </p>
-                <p className="text-center fw-light">{single.author}</p>
+                {single.body}
+                {single.author}
               </div>
             </div>
           ))}
@@ -35,22 +33,58 @@ export default class SimpleSlider extends Component {
 const slides = [
   {
     id: 1,
-    body: " “I’m so very grateful to the Love Vision Foundation charity –and for the great and important work that they do for otherpeople.”",
-    author: " Alena  mother of two",
+    body: (
+      <h4 className="text-center text-light fw-600  mb-4">
+        “I’m so very grateful to the Love Vision Foundation <br /> charity – and
+        for the great and important work that <br /> they do for otherpeople.”
+      </h4>
+    ),
+    author: (
+      <h4 className="text-center fw-300">
+        Alena <br /> mother of two
+      </h4>
+    ),
   },
   {
     id: 2,
-    body: " “I’m so very grateful to the Love Vision Foundation charity –and for the great and important work that they do for otherpeople.”",
-    author: " Alena  mother of two",
+    body: (
+      <h4 className="text-center text-light fw-600 mb-4">
+        “I’m so very grateful to the Love Vision Foundation <br /> charity – and
+        for the great and important work that <br /> they do for otherpeople.”
+      </h4>
+    ),
+    author: (
+      <h4 className="text-center fw-300">
+        Alena <br /> mother of two
+      </h4>
+    ),
   },
   {
     id: 3,
-    body: " “I’m so very grateful to the Love Vision Foundation charity –and for the great and important work that they do for otherpeople.”",
-    author: " Alena  mother of two",
+    body: (
+      <h4 className="text-center text-light fw-600  mb-4">
+        “I’m so very grateful to the Love Vision Foundation <br /> charity – and
+        for the great and important work that <br /> they do for otherpeople.”
+      </h4>
+    ),
+    author: (
+      <h4 className="text-center fw-300 ">
+        Alena <br /> mother of two
+      </h4>
+    ),
   },
   {
     id: 4,
-    body: " “I’m so very grateful to the Love Vision Foundation charity –and for the great and important work that they do for otherpeople.”",
-    author: " Alena  mother of two",
+    body: (
+      <h4 className="text-center text-light fw-600  mb-4">
+        “I’m so very grateful to the Love Vision Foundation <br /> charity – and
+        for the great and important work that <br /> they do for otherpeople.”
+      </h4>
+    ),
+    author: (
+      <h4 className="text-center fw-300">
+        Alena <br /> mother of two
+      </h4>
+    ),
   },
 ];
