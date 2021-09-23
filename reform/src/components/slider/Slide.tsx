@@ -45,7 +45,7 @@ export default class Responsive extends Component {
         <Slider {...settings}>
           {cards.map((card) => (
             <div className="col py-2  bg-transparent" key={card.id}>
-              <div className="card testimonial-card border-0 mx-2 h-100 bg-white pt-1 px-2">
+              <div className="card me-auto ms-auto testimonial-card border-0 mx-2 h-100 bg-white pt-1 px-2">
                 <div className="card-img-top d-flex align-items-center justify-content-center py-2">
                   <div className="testimonial-card-img-wrap p-3  rounded-circle d-inline">
                     <div className="testimonial-card-img">
