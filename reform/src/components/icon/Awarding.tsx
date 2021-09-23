@@ -13,8 +13,8 @@ function SvgComponent(): JSX.Element {
   }, []);
   return (
     <svg
-      width={168}
-      height={168}
+      width={83.74}
+      height={104.49}
       viewBox="0 0 168 168"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

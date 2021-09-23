@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WorkWithUs from "./icon/WorkWithUs";
+import Link from "next/link";
 
 const Header = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
@@ -10,23 +11,30 @@ const Header = (): JSX.Element => {
   return (
     <header>
       <nav className="main-top">
-        <div className="container align-items-center d-flex text-light py-1">
-          <div className="left">
-            <span>
-              <i className="fas fa-phone-volume"></i>&nbsp;+234 9012624162&nbsp;
-            </span>
+        <div className="container align-items-center d-flex flex-md-column flex-lg-row text-light py-1">
+          <div className="left d-md-flex">
+            <div>
+              <i
+                className="fas fa-phone-volume"
+                style={{ transform: "rotate(310deg)" }}
+              ></i>
+              &nbsp;+234 9012624162&nbsp;
+            </div>
             |
-            <span>
+            <div>
               &nbsp;<i className="fas fa-envelope"></i>
               &nbsp;info@yourcompany.com&nbsp;
-            </span>
+            </div>
             |
-            <span>
+            <div className="social-top d-flex flex-row">
               &nbsp;
-              <i className="fab fa-facebook"></i>
-              &nbsp; <i className="fab fa-instagram"></i>&nbsp; &nbsp;
-              <i className="fab fa-twitter"></i> &nbsp;
-            </span>
+              <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-danger justify-content-center align-items-center"></i>
+              &nbsp;{" "}
+              <i className="soc fab fa-xs fa-instagram text-danger bg-light d-flex justify-content-center align-items-center"></i>
+              &nbsp; &nbsp;
+              <i className="soc fab fa-xs fa-twitter d-flex text-danger bg-light justify-content-center align-items-center"></i>{" "}
+              &nbsp;
+            </div>
           </div>
           <div className="right d-none d-md-flex justify-content-end ">
             <WorkWithUs />
@@ -40,9 +48,9 @@ const Header = (): JSX.Element => {
         </div>
       </nav>
       <nav className="main-bottom py-2">
-        <div className="container justify-content-between  justify-content-md-start align-items-center d-flex ">
+        <div className="container justify-content-between align-items-center d-flex ">
           <div className="logo-sec d-flex align-items-center">
-            <img src="./images/logo.png" alt="" />
+            <img src="./images/logo.png" alt="" className="navbar-brand" />
             <div className="logo-txt d-flex flex-column">
               <span className="fw-bold" style={{ color: "#7ca2b5" }}>
                 <span className="" style={{ color: "#af3d6e" }}>
@@ -58,25 +66,47 @@ const Header = (): JSX.Element => {
               </kbd>
             </div>
           </div>
-          <ul className="items-sec jc p-0 m-0 fw-bold d-none d-md-flex">
-            <li>
-              <a className="active">Home</a>
+          <ul className="nav fw-bold d-none d-lg-flex">
+            <li className="nav-item active">
+              <Link href="/">
+                <a className="nav-link">Home</a>
+              </Link>
             </li>
-            <li>About</li>
-            <li>Team</li>
-            <li>Gallery</li>
-            <li>Contact us</li>
-            <li className="text-primary">Join us</li>
+            <li className="nav-item">
+              <Link href="/">
+                <a className="nav-link">About</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/">
+                <a className="nav-link">Team</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/">
+                <a className="nav-link">Gallery</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/">
+                <a className="nav-link">Contact us</a>
+              </Link>
+            </li>
+            <li className="text-primary">
+              <Link href="/">
+                <a className="nav-link">Join Us</a>
+              </Link>
+            </li>
           </ul>
           <i
-            className="fas fa-2x fa-bars d-md-none"
+            className="fas fa-2x fa-bars d-lg-none"
             role="button"
             onClick={() => setMenu(true)}
           ></i>
         </div>
       </nav>
       {menu && (
-        <div className="min-menu d-md-none">
+        <div className="min-menu d-lg-none">
           {sec && (
             <div className={`min-menu-cover`}>
               <div className=" p-2 d-flex justify-content-end">
