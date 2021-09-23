@@ -255,7 +255,7 @@ const index = (): JSX.Element => {
             <div className="row row-cols-1 row-cols-md-3 g-3">
               {teamCard.map((card) => (
                 <div className="col team-card mb-5" key={card.id}>
-                  <div className="card me-auto ms-auto position-relative team-card-wrap border-0 h-100">
+                  <div className="card border-primary me-auto ms-auto position-relative team-card-wrap border-0 h-100">
                     <img
                       className="card-img team-card-img"
                       src={`./images/founder_${card.id}.png`}
@@ -351,11 +351,11 @@ const index = (): JSX.Element => {
             </Marquee>
           </div>
         </section>
-        <section className="bg-white py-5">
+        <section className="twelve bg-white py-5">
           <div className="container">
-            <h1 className="text-center fw-bold mb-3">Contact Us</h1>
+            <h1 className="text-center font-48 fw-bold mb-3">Contact Us</h1>
             <p
-              className="text-muted text-center mb-5"
+              className="text-muted font-500 text-center mb-5"
               style={{ fontSize: "1.3rem" }}
             >
               We cant do it alone – from crisis to sustainably. There is no
@@ -364,18 +364,22 @@ const index = (): JSX.Element => {
             </p>
             <div className="contact-icon d-flex mb-5 flex-column flex-sm-row justify-content-around">
               <div className="mail d-flex flex-column align-items-center">
-                <i className="fas fa-2x fa-map-marker-alt px-4 py-3 text-light mb-3 bg-primary rounded"></i>
-                <span className="text-center">jointheirs5@gmail.com</span>
+                <i className="fas fa-2x fa-map-marker-alt px-4 py-3 text-light mb-3 bg-secondary rounded"></i>
+                <span className="text-center poppins fw-600">
+                  jointheirs5@gmail.com
+                </span>
               </div>
               <div className="address d-flex flex-column align-items-center">
-                <i className="fas fa-2x fa-envelope px-4 py-3 text-light mb-3 bg-primary rounded"></i>
-                <span className="text-center">
+                <i className="fas fa-2x fa-envelope px-4 py-3 text-light mb-3 bg-secondary rounded"></i>
+                <span className="text-center poppins fw-600">
                   No 6 Green Tower, Street Rumuodara
                 </span>
               </div>
               <div className="tel d-flex flex-column align-items-center">
-                <i className="fas fa-2x fa-tty px-4 py-3 text-light mb-3 bg-primary rounded"></i>
-                <span className="text-center">+234 9012624162</span>
+                <i className="fas fa-2x fa-tty px-4 py-3 text-light mb-3 bg-secondary rounded"></i>
+                <span className="text-center poppins fw-600">
+                  +234 9012624162
+                </span>
               </div>
             </div>
             <form>
@@ -387,14 +391,14 @@ const index = (): JSX.Element => {
                   type="text"
                   className="form-control py-3"
                   required
-                  placeholder="Charles Cliff"
+                  placeholder="Cliff"
                   spellCheck={true}
                 />
                 <input
                   type="email"
                   multiple
                   className="form-control py-3"
-                  placeholder="example@gmail.com"
+                  placeholder="Email"
                   required
                 />
               </div>
@@ -413,7 +417,7 @@ const index = (): JSX.Element => {
                 spellCheck
                 placeholder="Type your Message"
               ></textarea>
-              <button className="btn btn-outline-primary bg-primary text-white fw-bold px-4 py-2">
+              <button className="btn btn-outline-secondary bg-secondary text-white fw-bold px-4 py-2">
                 Send Message
               </button>
             </form>

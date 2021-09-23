@@ -152,7 +152,6 @@
     .team {
       &- {
         height: 621px;
-        max-width: 420px;
 
         &- {
           background-position: center !important;
@@ -222,21 +221,32 @@
     }
   }
   &-7 {
-    .left {
-      flex: 1;
-      background: url("./img/Rectangle 52.png") no-repeat;
-      background-size: cover;
-      background-position: center;
-      object-fit: cover;
-    }
-    .right {
-      flex: 1;
-      form {
-        .form-control:focus {
-          border: 2px solid $primary;
-          box-shadow: none;
-          outline: none !important;
-          -webkit-box-shadow: none;
+    min-height: 345px;
+    .content {
+      min-height: inherit;
+      .left {
+        flex: 1;
+        background: url("./img/Rectangle 52.png") no-repeat;
+        background-size: cover;
+        min-height: 345px;
+      }
+      .right {
+        flex: 1;
+        background-color: #e5e5e5;
+        form {
+          max-width: 493px;
+          input {
+            max-width: 323px;
+          }
+          button {
+            max-width: 170px;
+          }
+          .form-control:focus {
+            border: 2px solid $primary;
+            box-shadow: none;
+            outline: none !important;
+            -webkit-box-shadow: none;
+          }
         }
       }
     }

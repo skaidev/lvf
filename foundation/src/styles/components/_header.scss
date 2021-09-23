@@ -1,9 +1,15 @@
+@import "../variables";
+
 .top-header {
   background: rgba(118, 118, 118, 0.33);
   backdrop-filter: blur(33px);
   ._top-header {
+    nav {
+      background-image: $light;
+      backdrop-filter: blur(10px);
+    }
     .nav {
-      gap: 3rem;
+      gap: 2rem;
       align-items: center;
       li {
         color: white;

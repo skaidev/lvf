@@ -198,11 +198,11 @@ const index = (): JSX.Element => {
               efforts will help give a local person in crisis much more than
               food, but hope for the future.
             </p>
-            <div className="row mb-5 row-cols-1 row-cols-sm-2 row-cols-md-3 team g-4">
+            <div className="row mb-5 row-cols-1 row-cols-lg-3 team g-4">
               {team.map((team) => (
                 <div className="col team- " key={team.id}>
                   <div
-                    className="card h-100 team--  border-0"
+                    className="card h-100 w-100 team--  border-0"
                     style={{
                       background: `url(./images/team-${team.id}.png) no-repeat`,
                     }}
@@ -301,22 +301,23 @@ const index = (): JSX.Element => {
             style={{ width: "100%", border: 0, margin: 0, padding: 0 }}
           ></iframe>
         </section>
-        <section className="home-7 flex-column d-flex flex-md-row">
-          <div className="right bg-light py-5 ">
-            <div className="container ">
-              <div className="w-75 mx-auto">
-                <h1 className="fw-bolder mb-3 text-center">
-                  Subscribe To our News letter
-                </h1>
-                <p className="text-muted mb-5 text-center">
-                  For updates and promotional events
-                </p>
-                <form className="d-flex flex-column flex-md-row w-75 mx-auto">
-                  <input type="text" className="form-control rounded-0" />
-                  <button className="btn btn-primary text-light px-4 px-md-5 rounded-0 py-2">
-                    subscribe
-                  </button>
-                </form>
+        <section className="home-7">
+          <div className="content d-flex flex-column flex-md-row">
+            <div className="left"></div>
+            <div className="right py-5 ">
+              <div className="container ">
+                <div className="ms-3">
+                  <h3 className="fw-700 mb-3">Subscribe To our News letter</h3>
+                  <p className="text-muted fw-500 mb-5">
+                    For updates and promotional events
+                  </p>
+                  <form className="d-flex  flex-row">
+                    <input type="text" className="form-control rounded-0" />
+                    <button className="btn btn-primary  text-light  rounded-0 py-2">
+                      subscribe
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

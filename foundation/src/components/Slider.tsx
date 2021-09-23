@@ -30,7 +30,7 @@ const Slider = (): JSX.Element => {
                   <p className="text-center mb-4">
                     {single.paragraph[slidestate]}
                   </p>
-                  <button className="btn border-primary mx-auto d-block px-4 py-2 text-primary">
+                  <button className="btn border-primary bg-primary mx-auto d-block px-4 py-2 text-white">
                     Join Us
                   </button>
                 </div>

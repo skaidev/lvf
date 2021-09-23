@@ -273,4 +273,26 @@ main {
       bottom: 0;
     }
   }
+  .twelve {
+    form {
+      input {
+        border-radius: 5px;
+        border: 2px solid $secondary !important;
+      }
+      textarea {
+        border-radius: 5px;
+        border: 2px solid $secondary !important;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+        border: 3px solid $secondary !important;
+      }
+      .form-control::placeholder {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
 }
