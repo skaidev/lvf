@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WorkWithUs from "./icon/WorkWithUs";
+import Link from "next/link";
 
 const Header = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
@@ -60,13 +61,31 @@ const Header = (): JSX.Element => {
           </div>
           <ul className="items-sec jc p-0 m-0 fw-bold d-none d-md-flex">
             <li>
-              <a className="active">Home</a>
+              <Link href="/">
+                <a className="active">Home</a>
+              </Link>
             </li>
-            <li>About</li>
-            <li>Team</li>
-            <li>Gallery</li>
-            <li>Contact us</li>
-            <li className="text-primary">Join us</li>
+            <li>
+              <Link href="/#about">
+                <a>About</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#team">
+                <a>Team</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#gallery">
+                <a>Gallery</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#contact">
+                <a>Contact us</a>
+              </Link>
+            </li>
+            <li className="text-primary fw-600 font-18">Join us</li>
           </ul>
           <i
             className="fas fa-2x fa-bars d-md-none"

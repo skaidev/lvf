@@ -32,15 +32,15 @@ const Scroll = ({ showBelow }: Props): JSX.Element => {
           role="button"
           className="px-4 d-flex justify-content-center align-items-center py-4 rounded  bg-primary text-light"
           style={{
-            width: "50px",
-            height: "50px",
+            width: "2.8rem",
+            height: "2.8rem",
             position: "fixed",
             right: "10px",
             bottom: "30px",
             zIndex: 1000,
           }}
         >
-          <i className="fas fa-2x fa-arrow-up"></i>
+          <i className="fas fa-2x fa-chevron-up"></i>
         </div>
       )}
     </div>
