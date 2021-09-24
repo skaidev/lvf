@@ -48,60 +48,73 @@
         }
       }
     }
-    &-first {
-      gap: 3rem;
-      .left {
-        flex: 1;
-      }
-      .right {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
+    .can-help {
+      min-height: 513px;
+      background: rgba(118, 118, 118, 0.31);
+      backdrop-filter: blur(33px);
+      .donate-box {
+        min-height: inherit;
+        .main {
+          min-height: inherit;
+          .donate-time {
+            .time {
+              width: 180px;
+              height: 180px;
+              border: 4px dashed $danger;
+              border-radius: 10px;
 
-        &-content {
-          width: 35%;
-          background: #750000;
-          border-radius: 10px;
-          position: relative;
-          min-height: 400px;
-          img {
-            width: 100%;
-            left: 0;
-            bottom: 10px;
-            transform: translate(-80%, 50%) scale(2, 1.7);
-            border-radius: 10px;
+              // padding: 30px 44px;
+            }
           }
-        }
-      }
-    }
-    &-second {
-      &-card {
-        ._home-1-second-card {
-          background: #ffffff;
-          box-shadow: 0px 4px 8px rgba(130, 130, 130, 0.17);
-          border-radius: 10px;
-          &-img {
-            background: rgba(185, 185, 185, 0.09);
-            box-shadow: inset 0px 9px 0px #2100a6;
-            border-radius: 10px 10px 0px 0px;
+          .give-gifts {
+            .gifts {
+              width: 180px;
+              height: 180px;
+              border: 4px dashed $danger;
+              border-radius: 10px;
+              //padding: 30px 44px;
+            }
+          }
+          .donate-money {
+            .money {
+              width: 180px;
+              height: 180px;
+              border: 4px dashed $danger;
+              border-radius: 10px;
+              //padding: 30px 44px;
+            }
           }
         }
       }
     }
   }
+
   &-2 {
-    height: 616px;
-    figure {
-      height: inherit;
-      video {
-        height: inherit;
-        &[poster] {
-          object-fit: cover;
+    min-height: 623px;
+    width: 100%;
+    background: url("./img/foundation_2.png") no-repeat;
+    background-size: 100% 100%;
+
+    .second-cover {
+      min-height: inherit;
+      position: relative;
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .second-middle {
+        min-height: 382px;
+        background: rgba(118, 118, 118, 0.31);
+        backdrop-filter: blur(15px);
+        .play {
+          i {
+            width: 101px;
+            height: 101px;
+            border: 2px solid $light;
+            border-radius: 50%;
+          }
         }
-      }
-      figcaption {
-        bottom: 50%;
-        width: 100%;
       }
     }
   }

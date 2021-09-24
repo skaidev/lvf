@@ -14,8 +14,8 @@ const index = (): JSX.Element => {
     <FrontLayout>
       <main className="home">
         <Slider />
-        <section className="home-1 py-5">
-          <div className="container">
+        <section className="home-1">
+          <div className="container mb-5">
             <div className="home-1_about">
               <div className="d-md-flex align-items-center inner">
                 <div className="left">
@@ -54,49 +54,61 @@ const index = (): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div className="can-help">
-              <h2 className=" text-center mb-2 mt-4 fw-bold ">
-                {" "}
-                How you can help
-              </h2>
-              <p className="text-center text-muted mb-3">
-                Want to help the local community? There are different ways to
-                get involved.
-              </p>
-              <div className="home-1-second row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                {helpCard.map((e) => (
-                  <div className="col home-1-second-card" key={e.id}>
-                    <div className="card _home-1-second-card border-0">
-                      <div className="card-img _home-1-second-card-img bg-light py-5 d-flex flex-column justify-content-center align-items-center">
-                        <i className="mb-4">{e.icon}</i>
-                        <h3 className="fw-bold">{e.title}</h3>
-                      </div>
-                      <div className="card-body py-5">
-                        <p className="text-center text-muted">{e.body}</p>
-                      </div>
-                    </div>
+          </div>
+          <div className="can-help">
+            <h2 className=" text-center pt-5 fw-bold "> How you can help</h2>
+            <div className="donate-box">
+              <div className="container main d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div className="donate-time">
+                  <div className="time d-flex justify-content-center align-items-center">
+                    <Donate />
                   </div>
-                ))}
+                  <div>
+                    <p className="text-dark text-center font-24 fw-700">
+                      Donate Time
+                    </p>
+                  </div>
+                </div>
+                <div className="give-gifts">
+                  <div className="gifts d-flex justify-content-center align-items-center">
+                    <Gift />
+                  </div>
+                  <div>
+                    <p className="text-dark text-center font-24 fw-700">
+                      Give Gifts
+                    </p>
+                  </div>
+                </div>
+                <div className="donate-money">
+                  <div className="money d-flex justify-content-center align-items-center">
+                    <Save />
+                  </div>
+                  <div>
+                    <p className="text-dark text-center font-24 fw-700">
+                      Donate Money
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section className="home-2">
-          <figure className="p-0 m-0 position-relative">
-            <video
-              controls={false}
-              autoPlay
-              className="w-100 m-0 p-0"
-              poster="./images/poster.png"
-            >
-              <source src="" />
-            </video>
-            <figcaption className="position-absolute py-3 text-light">
-              <div className="d-flex justify-content-center">
-                <i className="fas fa-play  fa-3x text-primary "></i>
+          <div className="second-cover">
+            <div className="second-middle d-flex flex-column justify-content-center py-3 text-center">
+              <p className="text-light h1 fw-600 font-30 ">
+                LOVE VISION FOUNDATION
+              </p>
+              <p className="text-light fw-400 font-18">
+                See how we view God, Jesus, the Bible, man, and many significant
+                aspects of our faith. Firmly rooted in <br /> Scripture, the
+                beliefs of Joint Heirs Assembly guide our decisions as a church.
+              </p>
+              <div className="play d-flex justify-content-center align-items-center">
+                <i className="fas fa-2x fa-play text-primary d-flex justify-content-center align-items-center"></i>
               </div>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
         </section>
         <section className="home-3 py-5">
           <div className="container">
@@ -329,26 +341,26 @@ const index = (): JSX.Element => {
 
 export default index;
 
-const helpCard = [
-  {
-    id: 1,
-    title: "Donate Money",
-    icon: <Save />,
-    body: "We know that not everyone has the time to volunteer with us or organise a food collection. You can help us support people in crisis by donating money today.",
-  },
-  {
-    id: 2,
-    title: "Donate Time",
-    icon: <Donate />,
-    body: "We are often looking for new warehouse volunteers and drivers to help pack and deliver our emergency food parcels.We also look office volunteers to help with a variety of needs.<br />If you would like to support our work in this way, please fill out this form and we will get in touch with you as soon as possible to discuss!",
-  },
-  {
-    id: 3,
-    title: "Give Gifts",
-    icon: <Gift />,
-    body: "We always need donations of non-perishable foods and toiletries. From a few cans to an office food collection, we appreciate every donation and it goes a long way to make a difference.",
-  },
-];
+// const helpCard = [
+//   {
+//     id: 1,
+//     title: "Donate Money",
+//     icon: <Save />,
+//     body: "We know that not everyone has the time to volunteer with us or organise a food collection. You can help us support people in crisis by donating money today.",
+//   },
+//   {
+//     id: 2,
+//     title: "Donate Time",
+//     icon: <Donate />,
+//     body: "We are often looking for new warehouse volunteers and drivers to help pack and deliver our emergency food parcels.We also look office volunteers to help with a variety of needs.<br />If you would like to support our work in this way, please fill out this form and we will get in touch with you as soon as possible to discuss!",
+//   },
+//   {
+//     id: 3,
+//     title: "Give Gifts",
+//     icon: <Gift />,
+//     body: "We always need donations of non-perishable foods and toiletries. From a few cans to an office food collection, we appreciate every donation and it goes a long way to make a difference.",
+//   },
+// ];
 
 const raiseFund = [
   {
