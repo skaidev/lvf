@@ -6,7 +6,7 @@ const Footer = (): JSX.Element => {
       <div className="f-cover">
         <div className="container py-2 text-white">
           <div className="top-sec align-items-md-center d-flex flex-column flex-md-row">
-            <div className="d-flex one align-items-center">
+            <div className="d-flex one justify-content-center align-items-center">
               <img src="./images/logo.png" alt="" />
               <div className="logo-txt d-flex mt-2 align-items-center flex-column">
                 <span
