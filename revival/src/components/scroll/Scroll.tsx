@@ -40,7 +40,7 @@ const Scroll = ({ showBelow }: Props): JSX.Element => {
             zIndex: 1000,
           }}
         >
-          <i className="fas fa-2x fa-arrow-up"></i>
+          <i className="fas fa-2x fa-chevron-up"></i>
         </div>
       )}
     </div>
