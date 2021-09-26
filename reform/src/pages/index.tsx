@@ -63,19 +63,19 @@ const index = (): JSX.Element => {
                   >
                     {item.icon}
                     <div className="txt">
-                      <h2 className="fw-bold p-0 m-0 mb-1">{item.num}</h2>
-                      <h6>{item.txt}</h6>
+                      <p className="h2 fw-bold p-0 m-0 mb-1">{item.num}</p>
+                      <p className="h6">{item.txt}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-            <h3 className="text-center text-danger fw-500 font-24 p-0 m-0 mb-3">
+            <p className="h3 text-center text-danger fw-500 font-24 p-0 m-0 mb-3">
               About Us
-            </h3>
-            <h1 className="text-center fw-700 font-48 p-0 m-0 mb-3">
+            </p>
+            <p className="h1 text-center fw-700 font-48 p-0 m-0 mb-3">
               Be Part of a Change
-            </h1>
+            </p>
             <p className="text-center fw-400 text-muted p-0">
               How all this mistaken idea of denouncing pleasure and praising
               pain was born and I will give you a complete account of the system
@@ -113,11 +113,11 @@ const index = (): JSX.Element => {
         </section>
         <section className="fourth py-5">
           <div className="container d-flex fourth-wrap flex-column flex-md-row">
-            <div className="left d-md-flex text-center text-md-start align-items-center border-end border-secondary border-0 border-1 px-md-4">
+            <div className="left d-md-flex flex-md-column flex-lg-row text-center text-md-start align-items-center border-end border-secondary border-0 border-1 px-md-4">
               <div className="icon ">
                 <Empowering />
               </div>
-              <div className="txt text-white">
+              <div className="txt text-center text-lg-start text-white">
                 <p className="p-0 fw-600 font-16 mb-2 ">
                   Empowering Startups,
                   <br /> Youth and Women
@@ -130,11 +130,11 @@ const index = (): JSX.Element => {
                 </span>
               </div>
             </div>
-            <div className="right d-md-flex text-center text-md-start align-items-center border-start border-0  border-secondary border-1 px-md-4">
+            <div className="right d-md-flex flex-md-column flex-lg-row text-center text-md-start align-items-center border-start border-0  border-secondary border-1 px-md-4">
               <div className="icon">
                 <Awarding />
               </div>
-              <div className="txt text-white">
+              <div className="txt text-center text-lg-start text-white">
                 <p className="p-0 fw-600 mb-2 ">
                   Awarding Scholarships to <br /> Deserivng Youths
                 </p>
@@ -149,12 +149,12 @@ const index = (): JSX.Element => {
         </section>
         <section className="fifth py-5">
           <div className="container">
-            <h4 className="text-center text-warning p-0 m-0 mb-3">
+            <p className="h4 text-center text-warning p-0 m-0 mb-3">
               How You Can Help
-            </h4>
-            <h1 className="text-center mb-4 fw-700 font-48">
+            </p>
+            <p className=" h1 text-center mb-4 fw-700 font-48">
               Join the Love <br /> Reformation Family
-            </h1>
+            </p>
             <div className="row row-cols-1 row-cols-md-3 g-3">
               {help.map((card) => (
                 <div className="col mb-5" key={card.id}>
@@ -219,9 +219,9 @@ const index = (): JSX.Element => {
         <section className="seventh ">
           <div className="seventh-cover py-5 d-flex align-items-center">
             <div className="container text-white">
-              <h1 className="text-center fw-bold m-0 mb-2 p-0">
+              <p className="h1 text-center fw-bold m-0 mb-2 p-0">
                 How do you end global poverty? <br /> You start with Empowerment
-              </h1>
+              </p>
               <p className="text-center mb-4 ">
                 4 proven areas of focus help needy children escape
                 poverty.proven areas of focus help needy <br /> children escape
@@ -235,23 +235,23 @@ const index = (): JSX.Element => {
         </section>
         <section className="eight  py-5">
           <div className="container mb-5">
-            <h2 className="text-center text-warning mb-3">Testimonials</h2>
-            <h1 className="text-center fw-bold mb-5">Why people love us</h1>
+            <p className="h2 text-center text-warning mb-3">Testimonials</p>
+            <p className="h1 text-center fw-bold mb-5">Why people love us</p>
             <Slide />
           </div>
         </section>
         <section className="nine py-5">
           <div className="container nine-wrap">
-            <h2 className="text-center text-warning mb-3 p-0">
+            <p className="h2 text-center text-warning mb-3 p-0">
               Team behind Love Reform
-            </h2>
-            <h1 className="fw-700 font-48 text-center m-0 p-0 mb-5">
+            </p>
+            <p className="h1 fw-700 font-48 text-center m-0 p-0 mb-5">
               Our Amazing Team
-            </h1>
-            <h5 className="p-0 mb-5 text-center fw-400 ">
+            </p>
+            <p className="h5 p-0 mb-5 text-center fw-400 ">
               Our work would not be possible without the work of our dedicated
               volunteers.
-            </h5>
+            </p>
             <div className="row row-cols-1 row-cols-md-3 g-3">
               {teamCard.map((card) => (
                 <div className="col team-card mb-5" key={card.id}>
@@ -261,9 +261,9 @@ const index = (): JSX.Element => {
                       src={`./images/founder_${card.id}.png`}
                     />
                     <div className="card-body team-card-body bg-white">
-                      <h3 className="text-warning text-center mb-2 fw-500 ">
+                      <p className="h3 text-warning text-center mb-2 fw-500 ">
                         Maria Anahonda
-                      </h3>
+                      </p>
                       <p className="text-muted fw-500 text-center p-0 mb-5 mb-md-4">
                         Founder
                       </p>
@@ -291,10 +291,12 @@ const index = (): JSX.Element => {
         </section>
         <section className="ten py-5">
           <div className="container">
-            <h2 className="text-center m-0 p-0 mb-3 fw-500 text-warning">
+            <p className="h2 text-center m-0 p-0 mb-3 fw-500 text-warning">
               Our Successful Cases
-            </h2>
-            <h1 className="fw-700 font-48 text-center m-0 p-0 mb-4">Gallery</h1>
+            </p>
+            <p className="h1 fw-700 font-48 text-center m-0 p-0 mb-4">
+              Gallery
+            </p>
             <div className="row row-cols-1 row-cols-md-3 g-3">
               {teamCard.map((card) => (
                 <div className="col mb-3 bg-transparent" key={card.id}>
@@ -353,7 +355,7 @@ const index = (): JSX.Element => {
         </section>
         <section className="twelve bg-white py-5">
           <div className="container">
-            <h1 className="text-center font-48 fw-bold mb-3">Contact Us</h1>
+            <p className="h1 text-center font-48 fw-bold mb-3">Contact Us</p>
             <p
               className="text-muted font-500 text-center mb-5"
               style={{ fontSize: "1.3rem" }}
@@ -417,7 +419,7 @@ const index = (): JSX.Element => {
                 spellCheck
                 placeholder="Type your Message"
               ></textarea>
-              <button className="btn btn-outline-secondary bg-secondary text-white fw-bold px-4 py-2">
+              <button className="btn btn-outline-primary bg-primary text-white fw-bold px-4 py-2">
                 Send Message
               </button>
             </form>

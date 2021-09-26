@@ -15,20 +15,22 @@ main {
   .second {
     &-cover {
       gap: 2rem;
-      .left {
+      .left-box {
         flex: 1;
         &-btn-holder {
           gap: 2rem;
         }
       }
-      .right {
+      .right-box {
         flex: 1;
+
         .img-ring {
           //flex: 0.6;
           height: 666px;
           width: 554px;
           position: relative;
           border-radius: 10px;
+          overflow-x: hidden;
           img {
             width: inherit;
             height: inherit;
@@ -199,6 +201,24 @@ main {
             gap: 1rem;
           }
         }
+        input {
+          border-radius: 5px;
+          border: 2px solid $dark;
+        }
+        textarea {
+          border-radius: 5px;
+          border: 2px solid $dark !important;
+        }
+        .form-control:focus {
+          box-shadow: none;
+          outline: none !important;
+          -webkit-box-shadow: none;
+          border: 3px solid $dark !important;
+        }
+        .form-control::placeholder {
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
       }
     }
   }
@@ -330,10 +350,15 @@ main {
         border-radius: 5px;
         border: 2px solid $dark;
       }
+      textarea {
+        border-radius: 5px;
+        border: 2px solid $dark !important;
+      }
       .form-control:focus {
         box-shadow: none;
         outline: none !important;
         -webkit-box-shadow: none;
+        border: 3px solid $dark !important;
       }
       .form-control::placeholder {
         font-size: 0.9rem;

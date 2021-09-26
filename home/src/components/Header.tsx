@@ -11,23 +11,30 @@ const Header = (): JSX.Element => {
   return (
     <header>
       <nav className="main-top bg-dark ">
-        <div className="container align-items-center d-flex text-light py-1">
-          <div className="left">
-            <span>
-              <i className="fas fa-phone-volume"></i>&nbsp;+234 9012624162&nbsp;
-            </span>
+        <div className="container align-items-center d-flex flex-md-column flex-xl-row justify-content-between text-light py-1">
+          <div className="left d-flex">
+            <div>
+              <i
+                className="fas fa-phone-volume"
+                style={{ transform: "rotate(310deg)" }}
+              ></i>
+              &nbsp;+234 9012624162&nbsp;
+            </div>
             |
-            <span>
+            <div>
               &nbsp;<i className="fas fa-envelope"></i>
               &nbsp;info@yourcompany.com&nbsp;
-            </span>
+            </div>
             |
-            <span>
+            <div className="social-top d-flex flex-row">
               &nbsp;
-              <i className="fab fa-facebook"></i>
-              &nbsp; <i className="fab fa-instagram"></i>&nbsp; &nbsp;
-              <i className="fab fa-twitter"></i> &nbsp;
-            </span>
+              <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-dark justify-content-center align-items-center"></i>
+              &nbsp;
+              <i className="soc fab fa-xs fa-instagram text-dark bg-light d-flex justify-content-center align-items-center"></i>
+              &nbsp;
+              <i className="soc fab fa-xs fa-twitter d-flex text-dark bg-light justify-content-center align-items-center"></i>
+              &nbsp;
+            </div>
           </div>
           <div className="right d-none d-md-flex justify-content-end ">
             <WorkWithUs />

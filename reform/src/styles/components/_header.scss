@@ -2,8 +2,8 @@ header {
   .main-top {
     background: #7ca2b5;
     .left {
-      flex: 1.5;
-
+      //flex: 1.5
+      flex-wrap: wrap;
       .social-top {
         .soc {
           width: 23px;
@@ -13,7 +13,7 @@ header {
       }
     }
     .right {
-      flex: 1;
+      //flex: 1;
     }
   }
   .main-bottom {

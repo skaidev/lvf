@@ -11,8 +11,8 @@ const Header = (): JSX.Element => {
   return (
     <header>
       <nav className="main-top">
-        <div className="container align-items-center d-flex flex-md-column flex-lg-row text-light py-1">
-          <div className="left d-md-flex">
+        <div className="container align-items-center d-flex flex-md-column flex-xl-row text-light justify-content-between py-1">
+          <div className="left d-flex ">
             <div>
               <i
                 className="fas fa-phone-volume"
@@ -29,14 +29,14 @@ const Header = (): JSX.Element => {
             <div className="social-top d-flex flex-row">
               &nbsp;
               <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-danger justify-content-center align-items-center"></i>
-              &nbsp;{" "}
+              &nbsp;
               <i className="soc fab fa-xs fa-instagram text-danger bg-light d-flex justify-content-center align-items-center"></i>
-              &nbsp; &nbsp;
-              <i className="soc fab fa-xs fa-twitter d-flex text-danger bg-light justify-content-center align-items-center"></i>{" "}
+              &nbsp;
+              <i className="soc fab fa-xs fa-twitter d-flex text-danger bg-light justify-content-center align-items-center"></i>
               &nbsp;
             </div>
           </div>
-          <div className="right d-none d-md-flex justify-content-end ">
+          <div className="right d-none d-md-flex justify-content-end">
             <WorkWithUs />
             <p className="p-0 m-0 ">
               <span className="fw-lighter">

@@ -18,40 +18,40 @@ const index = (): JSX.Element => {
         <section className="first">
           <div className="first-cover d-flex p-0 m-0   align-items-center position-relative">
             <div className="container text-light">
-              <h4 className="fw-bold font-24 text-center mb-3">
+              <p className="fw-bold h2 font-24 text-center mb-3">
                 Donate, Fundraise & volunteer
-              </h4>
+              </p>
               <h1 className="text-center mb-3 fw-700 font-64">
                 Together We Can Make <br /> A Difference
               </h1>
-              <p className="p-0 m-0 mb-4 text-center fw-400 font-24">
+              <p className="p-0 m-0 mb-4 mb-lg-5 text-center fw-400 font-24">
                 To improve Learning environment and cater for the well being of
                 the needy
               </p>
-              <button className="btn fw-bold text-light btn-primary py-3 px-5 mx-auto d-block">
+              <button className="btn mb-5 mb-lg-0  fw-bold text-light btn-primary py-3 px-5 mx-auto d-block">
                 Visit Love Homes
               </button>
             </div>
-            <h1
-              className="p-0 text-center fw-700 spacing-1 font-64 mx-auto w-100 text-light position-absolute"
+            <p
+              className="h1 p-lg-0 pb-3 text-center fw-700 spacing-1 font-64 mx-auto w-100 text-light position-absolute"
               style={{ opacity: 0.5, bottom: "-25px" }}
             >
               Love Homes
-            </h1>
+            </p>
           </div>
         </section>
         <section className="second py-5">
           <div className="container align-items-md-center d-flex flex-column flex-lg-row second-cover">
-            <div className="left">
-              <h4 className="text-warning mb-3" id="about">
+            <div className="left-box">
+              <p className=" h4 text-warning mb-3" id="about">
                 _______ &nbsp;&nbsp;&nbsp;About Us
-              </h4>
-              <h1 className="fw-700 font-48 mb-3">
+              </p>
+              <p className="h1 fw-700 font-48 mb-3">
                 Be Part of a&nbsp;
                 <span className="fw-700 font-48 text-light bg-warning">
                   Change
                 </span>
-              </h1>
+              </p>
               <p className="text-muted fw-400 font-16 mb-3">
                 How all this mistaken idea of denouncing pleasure and praising
                 pain was <br /> born and I will give you a complete account of
@@ -59,7 +59,7 @@ const index = (): JSX.Element => {
                 explorer of the truth pursues.
               </p>
               <div className="left-btn-holder mb-4 d-flex flex-wrap">
-                <div className="left">
+                <div className="left me-2">
                   <button className="btn w-100 ps-0 py-2 pe-5 btn-warning">
                     <i className="fas fa-arrow-right animate__animated animate__heartBeat animate__infinite"></i>
                     &nbsp;&nbsp;Our Mission
@@ -82,7 +82,7 @@ const index = (): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div className="right d-flex justify-content-end">
+            <div className="right-box d-flex justify-content-center justify-content-lg-end">
               <div className="img-ring">
                 <img src="about_us.png" alt="" className="" />
                 <div className="banner"></div>
@@ -92,14 +92,16 @@ const index = (): JSX.Element => {
         </section>
         <section className="third py-5">
           <div className="container">
-            <h4 className="text-center fw-500 text-warning mb-3">What We Do</h4>
-            <h1 className="fw-700 font-48 mb-4 text-center">
+            <p className="h4 text-center fw-500 text-warning mb-3">
+              What We Do
+            </p>
+            <p className="h1 fw-700 font-48 mb-4 text-center">
               We have selected the <br /> following&nbsp;
               <span className="text-light fw-700 font-48 bg-warning">
                 Issues
               </span>
-            </h1>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            </p>
+            <div className="row row-cols-1 row-cols-md-3 g-3">
               {whatWeDo.map((e) => (
                 <div className="col bg-transparent" key={e.id}>
                   <div className="card bg-transparent border-0 d-flex flex-column align-items-center">
@@ -119,9 +121,9 @@ const index = (): JSX.Element => {
         </section>
         <section className="fourth py-5">
           <div className="container ">
-            <h4 className=" mb-5 mt-5 text-center text-warning">
+            <p className="h4 mb-5 mt-5 text-center text-warning">
               What You Can Do
-            </h4>
+            </p>
             <div className="row what mb-lg-5 row-cols-1  row-cols-lg-3 g-3">
               {whatYouCanDo.map((e) => (
                 <div
@@ -189,13 +191,13 @@ const index = (): JSX.Element => {
               // style={{ gap: "3rem" }}
             >
               <div className="left">
-                <h1 className=" fw-700 font-48">
+                <p className="h1 fw-700 font-48">
                   <span className="bg-warning fw-700 font-48 m-0 p-0 text-light">
                     Volunteers
                   </span>
                   &nbsp;Who <br />
                   Always Support Us
-                </h1>
+                </p>
               </div>
               <div className="right">
                 <p className="p-0 fw-400 m-0">
@@ -236,7 +238,7 @@ const index = (): JSX.Element => {
         </section>
         <section className="seventh py-5">
           <div className="container">
-            <h1 className="text-center mb-3 fw-bold">Become a Volunteer</h1>
+            <p className="h1 text-center mb-3 fw-bold">Become a Volunteer</p>
             <p className="text-center mb-5">
               We are a non-profit organisation in USA that works towards
               supporting <br /> underprivileged children reach their full
@@ -297,14 +299,14 @@ const index = (): JSX.Element => {
         </section>
         <section className="eighth text-white py-5">
           <div className="container">
-            <h4 className="text-center fw-500 mb-3">Testimonials</h4>
-            <h1 className="text-center fw-700 mb-4 font-48">
+            <p className="h4 text-center fw-500 mb-3">Testimonials</p>
+            <p className="h1 text-center fw-700 mb-4 font-48">
               What&nbsp;
               <mark className="bg-warning fw-700 font-48 mb-5 p-0 text-white">
                 People
               </mark>{" "}
               Say About Us
-            </h1>
+            </p>
             <div className="loader mb-4 row row-cols-1 justify-content-center justify-content-md-around row-cols-sm-1 row-cols-md-3">
               <div className="col mb-2  two">
                 <span>
@@ -325,12 +327,12 @@ const index = (): JSX.Element => {
                 <span></span>
               </div>
             </div>
-            <h4 className="text-center fw-600 mb-4  ">Charles Cliff</h4>
-            <h4 className="text-center fw-lighter fw-400 mb-5">
+            <p className="h4 text-center fw-600 mb-4  ">Charles Cliff</p>
+            <p className="h4 text-center fw-lighter fw-400 mb-5">
               “I’m so very grateful to the Love Vision Foundation <br /> charity
               – and for the great and important work <br /> that they do for
               other people.”
-            </h4>
+            </p>
             <div className="row blur py-5 row-cols-1 justify-content-center justify-content-sm-between row-cols-sm-2 row-cols-md-3 g-3">
               {blurItem.map((item) => (
                 <div className="col " key={item.id}>
@@ -340,8 +342,8 @@ const index = (): JSX.Element => {
                   >
                     {item.icon}
                     <div className="txt">
-                      <h2 className="fw-600 p-0 m-0 mb-1">{item.num}</h2>
-                      <h6 className="fw-500">{item.txt}</h6>
+                      <p className="h2 fw-600 p-0 m-0 mb-1">{item.num}</p>
+                      <p className="h6 fw-500">{item.txt}</p>
                     </div>
                   </div>
                 </div>
@@ -351,9 +353,9 @@ const index = (): JSX.Element => {
         </section>
         <section className="ninth py-5">
           <div className="container">
-            <h1 className="mb-3 fw-700 font-48 text-center">
+            <p className="h1 mb-3 fw-700 font-48 text-center">
               Our Amazing Team
-            </h1>
+            </p>
             <p className="text-muted text-center mb-4">
               We cant do it alone – from crisis to sustainably. There is no
               limit to what you can do, from a bake sale to a 10k run your
@@ -389,19 +391,19 @@ const index = (): JSX.Element => {
         </section>
         <section className="tenth py-5">
           <div className="container">
-            <h2 className="text-center text-warning mb-4">
+            <p className="h2 text-center text-warning mb-4">
               Our Successful Cases
-            </h2>
-            <h1 className="text-center fw-bolder mb-4 fa-2x">Gallery</h1>
-            <div className="row row-cols-1 mb-4 row-cols-sm-2 row-cols-md-3 g-3">
+            </p>
+            <p className="h1 text-center fw-bolder mb-4 fa-2x">Gallery</p>
+            <div className="row row-cols-1 mb-4 row-cols-md-3 g-3">
               {galley.map((card) => (
                 <div className="col" key={card.id}>
                   <div className="card border-0 bg-transparent">
                     <img src={`g${card.id}.png`} alt="" className="card-img" />
                     <div className="card-body bg-white p-2">
-                      <h5 className=" p-0 mb-4 fw-bold">
+                      <p className="h5 p-0 mb-4 fw-bold">
                         Cancer support - For less priviledged children
-                      </h5>
+                      </p>
                       <div
                         className="row-1 text-muted mb-2 d-flex align-items-center"
                         style={{ gap: "1rem" }}
@@ -430,9 +432,9 @@ const index = (): JSX.Element => {
         </section>
         <section className="eleven py-5">
           <div className="container">
-            <h1 className="text-center text-dark fw-700 font-48 mb-3">
+            <p className="h1 text-center text-dark fw-700 font-48 mb-3">
               Contact Us
-            </h1>
+            </p>
             <p className="text-muted fw-400 text-center mb-5">
               We cant do it alone – from crisis to sustainably. There is no
               limit to what you can do, from a bake <br /> sale to a 10k run
@@ -602,18 +604,18 @@ const blurItem = [
 const teamCard = [
   {
     id: 1,
-    name: <h3 className="text-center fw-700 mb-3">Lopez I. Ukpebor</h3>,
-    title: <h5 className="fw-500 text-center">African Cordinator</h5>,
+    name: <p className="h3 text-center fw-700 mb-3">Lopez I. Ukpebor</p>,
+    title: <p className="h5 fw-500 text-center">African Cordinator</p>,
   },
   {
     id: 2,
-    name: <h3 className="text-center  fw-700 mb-3">Save Homeless</h3>,
-    title: <h5 className="fw-500  text-center">Secretary</h5>,
+    name: <p className="h3 text-center  fw-700 mb-3">Save Homeless</p>,
+    title: <p className="h5 fw-500  text-center">Secretary</p>,
   },
   {
     id: 3,
-    name: <h3 className="text-center fw-700 mb-3">Chika Longjohn</h3>,
-    title: <h5 className="fw-500 text-center">Secretary</h5>,
+    name: <p className="h3 text-center fw-700 mb-3">Chika Longjohn</p>,
+    title: <p className="h5 fw-500 text-center">Secretary</p>,
   },
 ];
 

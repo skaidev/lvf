@@ -127,19 +127,12 @@
   }
   &-4 {
     .partners {
-      min-height: 100px;
-      overflow: hidden;
-      .part {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 0rem;
+      min-height: 260px;
 
-        img {
-          transform: scale(0.6, 0.6);
-        }
+      background: rgba(196, 196, 196, 0.17);
+      img {
+        display: block;
+        padding: 0 3rem;
       }
     }
   }

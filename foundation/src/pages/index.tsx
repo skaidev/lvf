@@ -5,6 +5,7 @@ import Save from "../components/icon/Save";
 import Slider from "../components/Slider";
 import Slide from "../components/slide/Slide";
 import FrontLayout from "../layout/FrontLayout";
+import Marquee from "react-fast-marquee";
 
 const index = (): JSX.Element => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -19,9 +20,9 @@ const index = (): JSX.Element => {
             <div className="home-1_about">
               <div className="d-md-flex align-items-center inner">
                 <div className="left">
-                  <h1 className="fw-700 font-48">
+                  <p className="h1 fw-700 font-48">
                     About Love Vision <br /> Foundation
-                  </h1>
+                  </p>
                   <p className="text-muted">
                     See how we view God, Jesus, the Bible, man, and many
                     significant aspects of our faith.Progressively maintain
@@ -119,7 +120,7 @@ const index = (): JSX.Element => {
               efforts will help give a local person in crisis much more than
               food, but hope for the future.
             </p>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div className="row row-cols-1 row-cols-md-3 g-3">
               {raiseFund.map((one) => (
                 <div className="col" key={one.id}>
                   <div className="card fund-card border-0 h-100">
@@ -129,7 +130,7 @@ const index = (): JSX.Element => {
                       className="card-img"
                     />
                     <div className="card-body">
-                      <h5 className="fw-bold my-3">{one.title}</h5>
+                      <p className="h5 fw-bold my-3">{one.title}</p>
                       <p className="text-muted mb-4">{one.body}</p>
                       <button className="btn text-primary border-3 rounded border-primary px-4">
                         {one.btnTxt}
@@ -143,25 +144,24 @@ const index = (): JSX.Element => {
         </section>
         <section className="home-4 pt-5">
           <div className="container">
-            <h2 className="fw-bold mb-3">Our Partners</h2>
+            <p className="fw-bold mb-3 h2">Our Partners</p>
           </div>
-          <div className="partners d-flex flex-column flex-md-row ">
-            <div className="part bg-light py-5">
-              <img src="./images/heirs.png" alt="" />
-              <span className="text-muted fw-bold">Joint Heirs</span>
-            </div>
-            <div className="part py-5">
-              <img src="./images/winners.png" alt="" />
-              <span className="text-muted fw-bold">Winners Chapel</span>
-            </div>
-            <div className="part bg-light py-5">
-              <img src="./images/heirs.png" alt="" />
-              <span className="text-muted fw-bold">The Carpenters Church</span>
-            </div>
-            <div className="part bg-light py-5">
-              <img src="./images/heirs.png" alt="" />
-              <span className="text-muted fw-bold">The Carpenters Church</span>
-            </div>
+          <div className="partners d-flex align-itmes-center">
+            <Marquee
+              pauseOnHover={true}
+              speed={50}
+              delay={3}
+              className="d-flex align-items-center"
+            >
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+              <img src="./images/spon1.png" alt="" />
+              <img src="./images/spon2.png" alt="" />
+            </Marquee>
           </div>
         </section>
         <section className="slide text-light">
@@ -201,9 +201,9 @@ const index = (): JSX.Element => {
         </section>
         <section className="home-5 py-5">
           <div className="container">
-            <h1 className="mb-3 fw-700 font-48 text-center">
+            <p className="h1 mb-3 fw-700 font-48 text-center">
               Our Amazing Team
-            </h1>
+            </p>
             <p className="text-muted text-center mb-4">
               We cant do it alone – from crisis to sustainably. There is no
               limit to what you can do, from a bake sale to a 10k run your
@@ -239,9 +239,9 @@ const index = (): JSX.Element => {
         </section>
         <section className="home-6 py-5">
           <div className="container">
-            <h1 className="text-center mb-3 fw-700 font-48" id="contact">
+            <p className="h1 text-center mb-3 fw-700 font-48" id="contact">
               Contact Us
-            </h1>
+            </p>
             <p className="text-muted text-center mb-5">
               We cant do it alone – from crisis to sustainably. There is no
               limit to what you can do, from a bake sale to a 10k run your help
