@@ -1,11 +1,8 @@
 .donations {
   &-1 {
     min-height: 50vh;
-    background: linear-gradient(
-        rgba(158, 64, 35, 0.73),
-        rgba(158, 64, 35, 0.73)
-      ),
-      url("../img/partner.png") no-repeat;
+
+    background: url("../img/partner_1.png") no-repeat;
     background-size: cover;
     .donate-text {
       min-height: inherit;
@@ -20,7 +17,7 @@
         background: rgba(196, 196, 196, 0.25);
       }
       .form-control:focus {
-        border: 4px solid $primary;
+        border: 2px solid $dark;
         box-shadow: none;
         outline: none !important;
         -webkit-box-shadow: none;
@@ -38,15 +35,6 @@
       // .form-control:active {
       //   background-color: $light;
       // }
-    }
-    .pay-don {
-      .radio {
-        .form-check {
-          input {
-            color: $info !important;
-          }
-        }
-      }
     }
   }
 }

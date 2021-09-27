@@ -1,26 +1,26 @@
-.donations {
+.partner {
   &-1 {
     min-height: 50vh;
-    background: linear-gradient(
-        rgba(158, 64, 35, 0.73),
-        rgba(158, 64, 35, 0.73)
-      ),
-      url("../img/partner.png") no-repeat;
+    // background: linear-gradient(
+    //     rgba(158, 64, 35, 0.73),
+    //     rgba(158, 64, 35, 0.73)
+    //   ),
+    background: url("../img/partner_1.png") no-repeat;
     background-size: cover;
-    .donate-text {
+    .partner-text {
       min-height: inherit;
     }
   }
   &-2 {
-    min-height: 110vh;
     form {
       .form-control {
         border: 2px solid #c4c4c4;
         border-radius: 5px;
         background: rgba(196, 196, 196, 0.25);
       }
+
       .form-control:focus {
-        border: 4px solid $primary;
+        border: 2px solid $dark;
         box-shadow: none;
         outline: none !important;
         -webkit-box-shadow: none;
@@ -32,20 +32,8 @@
         background-color: $light;
       }
       .form-control::placeholder {
-        font-weight: 500;
         font-size: 1rem;
-      }
-      // .form-control:active {
-      //   background-color: $light;
-      // }
-    }
-    .pay-don {
-      .radio {
-        .form-check {
-          input {
-            color: $info !important;
-          }
-        }
+        font-weight: 500;
       }
     }
   }

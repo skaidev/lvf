@@ -70,16 +70,7 @@ const Header = (): JSX.Element => {
                 <a>About</a>
               </Link>
             </li>
-            <li>
-              <Link href="/#team">
-                <a>Team</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/#gallery">
-                <a>Gallery</a>
-              </Link>
-            </li>
+
             <li>
               <Link href="/#contact">
                 <a>Contact us</a>
@@ -110,8 +101,7 @@ const Header = (): JSX.Element => {
             <ul className="p-0 fw-bold m-0">
               <li className="text-center py-4 border-bottom">Home</li>
               <li className="text-center py-4 border-bottom">About</li>
-              <li className="text-center py-4 border-bottom">Team</li>
-              <li className="text-center py-4 border-bottom">Gallery</li>
+
               <li className="text-center py-4 border-bottom">Contact us</li>
               <li className="text-center text-primary py-4 border-bottom">
                 Join Us

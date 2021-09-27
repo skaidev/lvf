@@ -2,25 +2,24 @@
   min-height: 108vh;
   .first {
     min-height: 90vh;
-    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 2.png")
-      no-repeat;
+    background: url("./img/Mask Group.png") no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
     &-cover {
       min-height: inherit;
-      background: linear-gradient(
-        105.13deg,
-        #2d3fa2 -4.28%,
-        rgba(152, 64, 42, 0.21) 20.25%,
-        rgba(211, 11, 243, 0.5) 40.15%,
-        rgba(251, 0, 101, 0.456949) 102.64%,
-        rgba(158, 64, 35, 0) 107.92%,
-        #2d3fa2 111.01%
-      );
-      mix-blend-mode: normal;
-      b {
-        mix-blend-mode: color-burn;
-      }
+      //   background: linear-gradient(
+      //     105.13deg,
+      //     #2d3fa2 -4.28%,
+      //     rgba(152, 64, 42, 0.21) 20.25%,
+      //     rgba(211, 11, 243, 0.5) 40.15%,
+      //     rgba(251, 0, 101, 0.456949) 102.64%,
+      //     rgba(158, 64, 35, 0) 107.92%,
+      //     #2d3fa2 111.01%
+      //   );
+      //   mix-blend-mode: normal;
+      //   b {
+      //     mix-blend-mode: color-burn;
+      //   }
       .first-content {
         min-height: inherit;
       }
@@ -29,17 +28,41 @@
       height: 125px;
       background-image: url("./img/Vector 15.png");
       background-repeat: no-repeat;
-      background-color: $info;
+      //background-color: $light;
       background-size: 100% 100%;
     }
   }
   .second {
     .right {
-      img {
-        max-height: 601px;
-        width: 676px;
-        max-width: 100%;
-        border-radius: 190px 0px 0px;
+      .image-box {
+        width: 100%;
+        max-width: 448.5px;
+        min-width: 320px;
+        height: 322px;
+        border-radius: 10px;
+        background: url("./img/home_2a.png") no-repeat;
+        background-size: 100% 100%;
+
+        .outer-circle {
+          width: 92.7px;
+          height: 92.7px;
+          border-radius: 50%;
+          border: 2px solid rgba(235, 170, 73, 0.4);
+          position: relative;
+          .inner-circle {
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.39);
+            width: 68px;
+            height: 68px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -34px 0px 0px -34px;
+            i {
+              color: $light;
+            }
+          }
+        }
       }
     }
   }
@@ -142,9 +165,27 @@
   }
   .eight {
     .revived-card {
-      background-color: $secondary;
-      max-width: 847px;
+      max-width: 950px;
       min-height: 248px;
+      background: $secondary;
+      border: 3px solid $light;
+      box-sizing: border-box;
+      box-shadow: 0px 8px 8px rgba(196, 196, 196, 0.35);
+      border-radius: 10px;
+      .card-img-top {
+        position: relative;
+        width: 85.53px !important;
+        height: 93.82px;
+
+        .revived-card-image {
+          position: absolute;
+          top: -46.91px;
+          left: -50px;
+          img {
+            box-shadow: 0 8px 8px rgba(196, 196, 196, 0.35);
+          }
+        }
+      }
     }
   }
   .nine {

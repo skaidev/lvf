@@ -31,8 +31,8 @@ const index = () => {
           </div>
           <div className="art"></div>
         </section>
-        <section className="second">
-          <div className="d-flex container me-md-0 pe-md-0 align-items-center flex-column flex-md-row">
+        <section className="second py-5">
+          <div className="d-flex container  align-items-center justify-content-between flex-column flex-md-row">
             <div className="left">
               <div className="left-text ">
                 <p className="h1 fw-700 mb-3 font-48">
@@ -45,17 +45,20 @@ const index = () => {
                   enim <br /> ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut <br /> aliquip ex ea commodo consequat.
                 </p>
-                <p className="fw-400">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do <br />
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim <br /> ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut <br /> aliquip ex ea commodo consequat.
-                </p>
               </div>
+              <button className="btn text-primary p-0">
+                Learn More <i className="fas fa-chevron-down"></i>
+              </button>
             </div>
-            <div className="right">
-              <img src="/images/home_2.png" alt="" className="" />
+            <div className="right mb-4">
+              <div className="image-box d-flex flex-column align-items-center justify-content-center">
+                <div className=" outer-circle">
+                  <div className="inner-circle d-flex justify-content-center align-items-center">
+                    <i className="fas fa-lg fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <p className="font-24 fw-600">watch video</p>
             </div>
           </div>
         </section>
@@ -219,35 +222,37 @@ const index = () => {
             <p className="h1 fw-700 font-48 mb-4">
               <span className="h1 fw-700 font-48">Lives</span> Revived
             </p>
-            <p>
+            <p className="mb-5">
               Testimonies from people who visited Love Revival conserts and were
               Revived by praising God...
             </p>
-            <div className="row bg-info">
-              <div className="col">
-                <div className="card me-auto ms-auto border-0 revived-card">
-                  <div className="card-img-top">
-                    <div className="revived-card-image">
-                      <img src="/images/lives_revived.png" alt="" />
-                    </div>
+            <div className="row">
+              <div className="card me-auto ms-auto revived-card">
+                <div className="card-img-top">
+                  <div className="revived-card-image">
+                    <img
+                      src="/images/lives_revived.png"
+                      alt=""
+                      className="img-circle rounded-circle"
+                    />
                   </div>
-                  <div className="card-body">
-                    <p className="h6 fw-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut tempor orci gravida dui tristique, eget <br /> gravida
-                      diam ullamcorper. Morbi interdum ipsum turpis. Quisque
-                      pellentesque dolor id nunc <br /> condimentum volutpat.
-                      Phasellus vehicula libero dolor, sed laoreet enim volutpat
-                      non. Aenean non <br /> aliquet elit. Lorem ipsum dolor sit
-                      amet, consectetur adipiscing elit. Donec diam nibh,
-                      egestas <br />
-                      varius elementum eu, accumsan quis elit. Mauris varius
-                      lobortis sem, eu porta augue interdum in. <br /> Curabitur
-                      lobortis dolor quis nibh ultricies, a pellentesque ipsum
-                      placerat.
-                    </p>
-                    <p>Mr Chika Elvis,</p>
-                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="h6 fw-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    tempor orci gravida dui tristique, eget <br /> gravida diam
+                    ullamcorper. Morbi interdum ipsum turpis. Quisque
+                    pellentesque dolor id nunc <br /> condimentum volutpat.
+                    Phasellus vehicula libero dolor, sed laoreet enim volutpat
+                    non. Aenean non <br /> aliquet elit. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Donec diam nibh, egestas{" "}
+                    <br />
+                    varius elementum eu, accumsan quis elit. Mauris varius
+                    lobortis sem, eu porta augue interdum in. <br /> Curabitur
+                    lobortis dolor quis nibh ultricies, a pellentesque ipsum
+                    placerat.
+                  </p>
+                  <p className="h6 fw-600">Mr Chika Elvis,</p>
                 </div>
               </div>
             </div>
@@ -367,23 +372,25 @@ const third = [
   {
     id: 1,
     body: (
-      <div className="card-body text-center three--item">
+      <div className="card-body  d-flex flex-column justify-content-center three--item">
         <p className="h1 text-light">Join Community</p>
         <p className="text-light">
           Lorem ipsum dolor sit amet, consectetur <br /> adipisicing elit, sed
           do eiusmod tempor <br /> incididunt ut labore et dolore magna <br />
           aliqua. Ut enim ad minim veniam, quis <br /> nostrud exercitation
         </p>
-        <button className="btn btn-outline-primary text-light">
-          Join us now
-        </button>
+        <div>
+          <button className="btn  btn-outline-primary text-light">
+            Join us now
+          </button>
+        </div>
       </div>
     ),
   },
   {
     id: 2,
     body: (
-      <div className="card-body text-center three--item">
+      <div className="card-body  d-flex flex-column justify-content-center three--item">
         <p className="h1 text-light">Partner With Us</p>
       </div>
     ),
@@ -391,7 +398,7 @@ const third = [
   {
     id: 3,
     body: (
-      <div className="card-body text-center three--item">
+      <div className="card-body d-flex flex-column justify-content-center three--item">
         <p className="h1 text-light">Support The Mission</p>
       </div>
     ),
