@@ -1,0 +1,41 @@
+.gallery {
+  &-1 {
+    min-height: 50vh;
+    background: url("../img/partner_1.png") no-repeat;
+    background-size: cover;
+    .gallery-text {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    .image-box {
+      object-fit: contain;
+      .img-box {
+        width: 21rem;
+        height: 20rem;
+        //border-radius: 20px !important;
+        .card-img {
+          background-size: cover !important;
+          height: inherit;
+        }
+        .img-lay {
+          background: linear-gradient(
+            180deg,
+            rgba(37, 40, 58, 0) 0%,
+            #25283a 100%
+          );
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background: linear-gradient(180deg, #25283a -40.78%, #7ca2b5 100%);
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.gallery {
+  &-1 {
+    min-height: 50vh;
+    background: url("../img/partner_1.png") no-repeat;
+    background-size: cover;
+    .gallery-text {
+      min-height: inherit;
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background: linear-gradient(180deg, #9e4023 0%, #750000 153.75%);
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}

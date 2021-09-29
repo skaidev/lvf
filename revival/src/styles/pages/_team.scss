@@ -1,0 +1,10 @@
+.team {
+  &-1 {
+    min-height: 50vh;
+    background: url("../img/partner_1.png") no-repeat;
+    background-size: cover;
+    .gallery-text {
+      min-height: inherit;
+    }
+  }
+}

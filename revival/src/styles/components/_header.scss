@@ -2,24 +2,25 @@ header {
   .main-top {
     background: linear-gradient(180deg, #9e4023 0%, #750000 153.75%);
     .left {
-      flex: 1;
-    }
-    .right {
-      flex: 1;
-    }
-  }
-  .main-bottom {
-    .logo-sec {
-      flex: 0.3;
-      @media screen and (max-width: 768px) {
+      //flex: 1;
+      flex-wrap: wrap;
+      .social-top {
+        .soc {
+          width: 23px;
+          height: 23px;
+          border-radius: 50%;
+        }
       }
     }
-    .items-sec {
-      flex: 0.7;
-      list-style: none;
+    // .right {
+    //   flex: 1;
+    // }
+  }
+  .main-bottom {
+    .nav {
+      gap: 2rem;
+      align-items: center;
       li {
-        flex: 1;
-        text-align: right;
         a {
           text-decoration: none;
           color: $dark;
@@ -38,6 +39,9 @@ header {
         box-shadow: inset 0px -3px 0px #2d3fa2;
         border-radius: 5px;
         padding: 15px 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        gap: 0.8rem;
       }
     }
   }

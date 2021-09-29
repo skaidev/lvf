@@ -1,0 +1,104 @@
+.gallery {
+  &-1 {
+    min-height: 50vh;
+    background: linear-gradient(
+        rgba(158, 64, 35, 0.73),
+        rgba(158, 64, 35, 0.73)
+      ),
+      url("../img/medical-missions-africa-stanford-childrens-1200x675-1\ 1.png")
+        no-repeat;
+    background-size: cover;
+    .gallery-text-1 {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    .visitation-heading-1 {
+      min-height: 16vh;
+      background-color: #cccccc;
+    }
+    .visitation-box-1 {
+      min-height: 82rem;
+      .container {
+        min-height: inherit;
+        .image-box {
+          //min-height: inherit;
+
+          .img-box {
+            width: 21rem;
+            height: 20rem;
+            //border-radius: 20px !important;
+            .card-img {
+              background-size: cover !important;
+              height: inherit;
+            }
+            .img-lay {
+              background: linear-gradient(
+                180deg,
+                rgba(37, 40, 58, 0) 0%,
+                #25283a 100%
+              );
+            }
+
+            // background-size: cover;
+            // border-radius: 10px;
+          }
+          .img-box-2 {
+            max-width: 35rem;
+            height: 19rem;
+            //border-radius: 20px !important;
+            .card-img {
+              background-size: cover !important;
+              height: inherit;
+            }
+            .img-lay {
+              background: linear-gradient(
+                180deg,
+                rgba(37, 40, 58, 0) 0%,
+                #25283a 100%
+              );
+            }
+          }
+        }
+      }
+    }
+    .visitation-heading-2 {
+      min-height: 16vh;
+      background-color: #cccccc;
+    }
+    .visitation-box-2 {
+      min-height: 30rem;
+      .container {
+        .image-box-2 {
+          //min-height: inherit;
+          .img-box-3 {
+            max-width: 35rem;
+            height: 19rem;
+            //border-radius: 20px !important;
+            .card-img {
+              background-size: cover !important;
+              height: inherit;
+            }
+            .img-lay {
+              background: linear-gradient(
+                180deg,
+                rgba(37, 40, 58, 0) 0%,
+                #25283a 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background-color: $warning;
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}

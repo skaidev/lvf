@@ -1,0 +1,15 @@
+.team {
+  &-1 {
+    min-height: 50vh;
+    background: linear-gradient(
+        rgba(158, 64, 35, 0.73),
+        rgba(158, 64, 35, 0.73)
+      ),
+      url("../img/medical-missions-africa-stanford-childrens-1200x675-1\ 1.png")
+        no-repeat;
+    background-size: cover;
+    .team-text {
+      min-height: inherit;
+    }
+  }
+}
