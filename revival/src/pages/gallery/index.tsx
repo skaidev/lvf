@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import FrontLayout from "../../Layout/FrontLayout";
+import MyGallery from "../../components/gallery/Gallery";
+import GalleryTwo from "../../components/gallery/GalleryTwo";
 
 const galleryPage = () => {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState("");
+
+  const click = useRef<HTMLImageElement>();
   return (
     <FrontLayout>
       <main className="gallery">
@@ -14,138 +20,56 @@ const galleryPage = () => {
           <div className="container">
             <div className="one mb-5">
               <p className="h1 fw-700 font-48">Love Revival Concert 2019</p>
-              <div className="img-box">
-                <div className="d-flex justify-content-between">
-                  <div className="p-lg-3 img-1">
+              <MyGallery
+                Image={Image}
+                open={open}
+                Index={index}
+                btnRef={click}
+              />
+              <div className="wrapper row gy-5 gx-3">
+                {Image?.map((e, i) => (
+                  <div className="box d-flex flex-column col" key={i}>
                     <img
-                      src="/images/revivalA_1.png"
+                      src={e}
                       alt=""
-                      className="img-fluid"
+                      className=""
+                      onClick={() => {
+                        setOpen(true);
+                        setIndex(String(e));
+                        click?.current?.click();
+                      }}
                     />
                   </div>
-                  <div className="p-lg-3 img-2">
-                    <img
-                      src="/images/revivalA_2.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div className="d-flex justify-content-between">
-                  <div className="p-lg-3 img-3">
-                    <img
-                      src="/images/revivalA_3.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-4">
-                    <img
-                      src="/images/revivalA_4.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-5">
-                    <img
-                      src="/images/revivalA_5.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div className="d-flex justify-content-between">
-                  <div className="p-lg-3 img-6">
-                    <img
-                      src="/images/revivalA_6.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-7">
-                    <img
-                      src="/images/revivalA_7.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
+          </div>
+        </section>
+        <section className="gallery-2b py-3">
+          <div className="container">
             <div className="two">
               <p className="h1 fw-700 font-48">Love Revival Concert 2020</p>
-              <div className="img-box">
-                <div className="d-flex justify-content-between">
-                  <div className="p-lg-3 img-1">
+              <GalleryTwo
+                ImageTwo={ImageTwo}
+                open={open}
+                Index={index}
+                btnRef={click}
+              />
+              <div className="wrapper row gy-4">
+                {ImageTwo?.map((card, i) => (
+                  <div className="box d-flex flex-column col" key={i}>
                     <img
-                      src="/images/revivalB_1.png"
+                      src={card}
                       alt=""
-                      className="img-fluid"
+                      style={{ maxHeight: "325px" }}
+                      onClick={() => {
+                        setOpen(true);
+                        setIndex(String(card));
+                        click?.current?.click();
+                      }}
                     />
                   </div>
-                  <div className="p-lg-3 img-2">
-                    <img
-                      src="/images/revivalB_2.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div className="d-flex justify-content-between">
-                  <div className="p-lg-3 img-3">
-                    <img
-                      src="/images/revivalB_3.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-4">
-                    <img
-                      src="/images/revivalB_4.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div className="d-flex justify-content-between">
-                  <div className="p-lg-3 img-5">
-                    <img
-                      src="/images/revivalB_5.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-6">
-                    <img
-                      src="/images/revivalB_6.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-7">
-                    <img
-                      src="/images/revivalB_7.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <div className="p-lg-3 img-8">
-                    <img
-                      src="/images/revivalB_8.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="p-lg-3 img-9">
-                    <img
-                      src="/images/revivalB_9.png"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -153,7 +77,7 @@ const galleryPage = () => {
         <section className="gallery-3">
           <div className="content">
             <div className="container text-light d-lg-flex justify-content-center align-items-center">
-              <div className="text me-5 ">
+              <div className="text me-lg-5 ">
                 <h2 className="fw-700 font-48 text-center ">
                   Volunteer to Help us help others
                 </h2>
@@ -172,3 +96,25 @@ const galleryPage = () => {
 };
 
 export default galleryPage;
+
+const Image = [
+  "/images/revivalA_1.png",
+  "/images/revivalA_2.png",
+  "/images/revivalA_3.png",
+  "/images/revivalA_4.png",
+  "/images/revivalA_5.png",
+  "/images/revivalA_6.png",
+  "/images/revivalA_7.png",
+];
+
+const ImageTwo = [
+  "/images/revivalB_1.png",
+  "/images/revivalB_2.png",
+  "/images/revivalB_3.png",
+  "/images/revivalB_4.png",
+  "/images/revivalB_5.png",
+  "/images/revivalB_6.png",
+  "/images/revivalB_7.png",
+  "/images/revivalB_8.png",
+  "/images/revivalB_9.png",
+];

@@ -3,8 +3,7 @@ main {
   min-height: 100vh;
   .first {
     min-height: calc(100vh - 100px);
-    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png")
-        no-repeat,
+    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png") no-repeat,
       linear-gradient(180deg, #25283a -24.35%, rgba(37, 40, 58, 0) 95.57%);
     background-size: cover;
     &-cover {
@@ -12,6 +11,13 @@ main {
       background: rgba(117, 0, 0, 0.63);
       .first-content {
         min-height: inherit;
+        .btn-holder {
+          button:focus {
+            box-shadow: none;
+            outline: none !important;
+            -webkit-box-shadow: none;
+          }
+        }
       }
     }
   }
@@ -113,18 +119,6 @@ main {
       border-radius: 10px;
     }
   }
-  .sixth {
-    .fundbox {
-      background: #ffffff;
-      box-shadow: 0px 4px 8px rgba(130, 130, 130, 0.17);
-      border-radius: 10px;
-      .side {
-        transform: rotate(-42.79deg) translate(27%, -20%);
-        right: 0;
-        bottom: 0;
-      }
-    }
-  }
   .seventh {
     min-height: 100vh;
     background: url("./img/annie-spratt-yrzBgqapG1I-unsplash 1.png") no-repeat,
@@ -133,6 +127,11 @@ main {
     &-cover {
       min-height: inherit;
       background: rgba(117, 0, 0, 0.63);
+      button:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+      }
     }
   }
   .eight {
@@ -203,6 +202,7 @@ main {
         .card {
           min-height: 565px !important;
           max-width: 388px !important;
+          box-shadow: 0px 14px 4px rgba(0, 0, 0, 0.15) !important;
         }
         &-wrap {
           border-radius: 10px;

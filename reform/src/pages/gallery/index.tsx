@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import FrontLayout from "../../layout/FrontLayout";
+import Gallery from "../../components/gallery/Gallery";
 
 const galleryPage = (): JSX.Element => {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState("");
+
+  const click = useRef<HTMLImageElement>();
   return (
     <FrontLayout>
       <main className="gallery">
@@ -19,32 +24,36 @@ const galleryPage = (): JSX.Element => {
         <section className="gallery-2 py-5 mb-3">
           <div className="container">
             <p className="h1 pt-5 text-center text-lg-start">Empowerment</p>
-            <div className="row row-cols-1 row-cols-lg-3 image-box g-3">
-              {empowermentImage.map((card) => (
-                <div className="col" key={card.id}>
-                  <div className="card me-auto ms-auto me-lg-0 ms-lg-0 img-box">
-                    <img
-                      src={`/images/gallery_${card.image}.png`}
-                      alt=""
-                      className="card-img"
-                    />
-                    <div className="img-lay card-img-overlay d-flex flex-column justify-content-end">
-                      <div className="container items text-light d-flex flex-column ">
-                        <div>
-                          <p>
-                            <i className="fas fa-map-marker-alt me-3"></i>
-                            No 6 Mission Road
-                          </p>
-                        </div>
-                        <div>
-                          <p>
-                            <i className="fas fa-calendar-week me-3"></i>5th
-                            june 2020
-                          </p>
-                        </div>
+            <Gallery Image={Image} open={open} Index={index} btnRef={click} />
+            <div className="wrapper row g-2">
+              {Image?.map((e, i) => (
+                <div className="box d-flex flex-column col" key={i}>
+                  <img
+                    className=""
+                    style={{ maxHeight: "325px" }}
+                    src={e}
+                    alt=""
+                    onClick={() => {
+                      setOpen(true);
+                      setIndex(String(e));
+                      click?.current?.click();
+                    }}
+                  />
+                  {/* <div className="img-overlay">
+                    <div className="img-text">
+                      <div>
+                        <p>
+                          <i className="text-light fas fa-map-marker-alt me-3"></i>
+                          No 6 Mission Road
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <i className="text-light fas fa-calendar-week me-3"></i>5th june 2020
+                        </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
@@ -52,11 +61,9 @@ const galleryPage = (): JSX.Element => {
         </section>
         <section className="gallery-3">
           <div className="content">
-            <div className="container text-light d-lg-flex justify-content-center align-items-center">
-              <div className="text me-5 ">
-                <h2 className="fw-700 font-48 text-center ">
-                  Volunteer to Help us help others
-                </h2>
+            <div className="container text-light d-flex flex-lg-row flex-column justify-content-center align-items-center">
+              <div className="text text-center me-lg-5 ">
+                <h2 className="fw-700 font-48 ">Volunteer to Help us help others</h2>
               </div>
               <div className="button text-center">
                 <button className="btn btn-primary text-light fw-600 font-20 mb-2">
@@ -66,6 +73,9 @@ const galleryPage = (): JSX.Element => {
             </div>
           </div>
         </section>
+        {/* <section className="gallery-4">
+          
+        </section> */}
       </main>
     </FrontLayout>
   );
@@ -73,25 +83,10 @@ const galleryPage = (): JSX.Element => {
 
 export default galleryPage;
 
-const empowermentImage = [
-  {
-    id: 1,
-    image: 1,
-  },
-  {
-    id: 2,
-    image: 2,
-  },
-  {
-    id: 3,
-    image: 3,
-  },
-  {
-    id: 4,
-    image: 4,
-  },
-  {
-    id: 5,
-    image: 5,
-  },
+const Image = [
+  "/images/gallery_1.png",
+  "/images/gallery_2.png",
+  "/images/gallery_3.png",
+  "/images/gallery_4.png",
+  "/images/gallery_5.png",
 ];

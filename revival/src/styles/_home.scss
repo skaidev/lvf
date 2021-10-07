@@ -3,7 +3,8 @@
   .first {
     min-height: 90vh;
     background: url("./img/Mask Group.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: right;
     overflow: hidden;
     &-cover {
       min-height: inherit;
@@ -33,36 +34,20 @@
     }
   }
   .second {
+    .left {
+      flex: 1;
+    }
     .right {
-      .image-box {
+      position: relative;
+      overflow: hidden;
+      flex: 1;
+      height: 631px;
+      border-top-left-radius: 100px;
+      img {
+        position: absolute;
         width: 100%;
-        max-width: 448.5px;
-        min-width: 320px;
-        height: 322px;
-        border-radius: 10px;
-        background: url("./img/home_2a.png") no-repeat;
-        background-size: 100% 100%;
-
-        .outer-circle {
-          width: 92.7px;
-          height: 92.7px;
-          border-radius: 50%;
-          border: 2px solid rgba(235, 170, 73, 0.4);
-          position: relative;
-          .inner-circle {
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.39);
-            width: 68px;
-            height: 68px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -34px 0px 0px -34px;
-            i {
-              color: $light;
-            }
-          }
-        }
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -96,7 +81,7 @@
       min-height: 470px;
       max-width: 100%;
       background: url("./img/fifth.png") no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
 
       .fifth-cover {
         min-height: inherit;
@@ -181,6 +166,10 @@
           position: absolute;
           top: -46.91px;
           left: -50px;
+          @media screen and (max-width: 768px) {
+            top: -10%;
+            left: 0%;
+          }
           img {
             box-shadow: 0 8px 8px rgba(196, 196, 196, 0.35);
           }
