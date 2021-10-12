@@ -20,12 +20,7 @@ const galleryPage = () => {
           <div className="container">
             <div className="one mb-5">
               <p className="h1 fw-700 font-48">Love Revival Concert 2019</p>
-              <MyGallery
-                Image={Image}
-                open={open}
-                Index={index}
-                btnRef={click}
-              />
+              <MyGallery Image={Image} open={open} Index={index} btnRef={click} />
               <div className="wrapper row gy-5 gx-3">
                 {Image?.map((e, i) => (
                   <div className="box d-flex flex-column col" key={i}>
@@ -49,12 +44,7 @@ const galleryPage = () => {
           <div className="container">
             <div className="two">
               <p className="h1 fw-700 font-48">Love Revival Concert 2020</p>
-              <GalleryTwo
-                ImageTwo={ImageTwo}
-                open={open}
-                Index={index}
-                btnRef={click}
-              />
+              <GalleryTwo ImageTwo={ImageTwo} open={open} Index={index} btnRef={click} />
               <div className="wrapper row gy-4">
                 {ImageTwo?.map((card, i) => (
                   <div className="box d-flex flex-column col" key={i}>
@@ -76,16 +66,12 @@ const galleryPage = () => {
         </section>
         <section className="gallery-3">
           <div className="content">
-            <div className="container text-light d-lg-flex justify-content-center align-items-center">
-              <div className="text me-lg-5 ">
-                <h2 className="fw-700 font-48 text-center ">
-                  Volunteer to Help us help others
-                </h2>
+            <div className="content-box text-light d-lg-flex justify-content-center align-items-center">
+              <div className="text me-lg-3 ">
+                <h2 className="fw-700 font-48 text-center ">Volunteer to Help us help others</h2>
               </div>
               <div className="button text-center">
-                <button className="btn btn-primary text-light fw-600 font-20 mb-2">
-                  Join Team
-                </button>
+                <button className="btn btn-primary text-light fw-600 font-20 mb-2">Join Team</button>
               </div>
             </div>
           </div>
@@ -97,24 +83,6 @@ const galleryPage = () => {
 
 export default galleryPage;
 
-const Image = [
-  "/images/revivalA_1.png",
-  "/images/revivalA_2.png",
-  "/images/revivalA_3.png",
-  "/images/revivalA_4.png",
-  "/images/revivalA_5.png",
-  "/images/revivalA_6.png",
-  "/images/revivalA_7.png",
-];
+const Image = ["/images/revivalA_1.png", "/images/revivalA_2.png", "/images/revivalA_3.png", "/images/revivalA_4.png", "/images/revivalA_5.png", "/images/revivalA_6.png", "/images/revivalA_7.png"];
 
-const ImageTwo = [
-  "/images/revivalB_1.png",
-  "/images/revivalB_2.png",
-  "/images/revivalB_3.png",
-  "/images/revivalB_4.png",
-  "/images/revivalB_5.png",
-  "/images/revivalB_6.png",
-  "/images/revivalB_7.png",
-  "/images/revivalB_8.png",
-  "/images/revivalB_9.png",
-];
+const ImageTwo = ["/images/revivalB_1.png", "/images/revivalB_2.png", "/images/revivalB_3.png", "/images/revivalB_4.png", "/images/revivalB_5.png", "/images/revivalB_6.png", "/images/revivalB_7.png", "/images/revivalB_8.png", "/images/revivalB_9.png"];

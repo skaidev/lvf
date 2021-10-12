@@ -31,6 +31,7 @@ const Slider = (): JSX.Element => {
         className="figures"
         style={{
           background: `url(./images/slide${slides[slidestate]}.png)`,
+          height: "764px",
         }}
       >
         <div className={`g-${slides[slidestate]} fig-cover `}>
