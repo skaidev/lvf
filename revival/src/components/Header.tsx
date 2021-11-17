@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import WorkWithUs from "./icon/WorkWithUs";
+import { useRouter } from "next/router";
 
 const Header = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
@@ -8,6 +9,8 @@ const Header = (): JSX.Element => {
   setTimeout(() => {
     setSec(true);
   }, 2000);
+
+  const router = useRouter();
   return (
     <header>
       <nav className="main-top">
@@ -69,22 +72,46 @@ const Header = (): JSX.Element => {
           <ul className="nav fw-bold d-none d-lg-flex">
             <li className="nav-item active">
               <Link href="/">
-                <a className="nav-link">Home</a>
+                <a
+                  className={`nav-link ${
+                    router.pathname == "/" ? "active" : ""
+                  }`}
+                >
+                  Home
+                </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/#about">
-                <a className="nav-link">About</a>
+                <a
+                  className={`nav-link ${
+                    router.pathname == "/#about" ? "active" : ""
+                  }`}
+                >
+                  About
+                </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/team">
-                <a className="nav-link">Team</a>
+                <a
+                  className={`nav-link ${
+                    router.pathname == "/team" ? "active" : ""
+                  }`}
+                >
+                  Team
+                </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/gallery">
-                <a className="nav-link">Gallery</a>
+                <a
+                  className={`nav-link ${
+                    router.pathname == "/gallery" ? "active" : ""
+                  }`}
+                >
+                  Gallery
+                </a>
               </Link>
             </li>
             <li className="nav-item">
