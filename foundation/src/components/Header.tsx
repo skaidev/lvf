@@ -7,11 +7,7 @@ const Header = (): JSX.Element => {
     <header className="navbar fixed-top flex-column py-2 top-header">
       <div className="_top-header container">
         <nav className="logo  navbar-brand d-flex align-items-center">
-          <img
-            src="./images/logo.png"
-            alt=""
-            className="navbar-brand logo-img"
-          />
+          <img src="./images/logo.png" alt="" className="navbar-brand logo-img" />
           <div className="logo-txt d-flex flex-column">
             <span>
               <code>
@@ -21,7 +17,7 @@ const Header = (): JSX.Element => {
             <kbd className="bg-transparent letter-spacing p-0">FOUNDATION</kbd>
           </div>
         </nav>
-        <ul className="nav d-none d-md-flex">
+        <ul className="nav d-none d-lg-flex">
           <li className="nav-item active">
             <Link href="/">
               <a className="nav-link">Home</a>
@@ -48,18 +44,14 @@ const Header = (): JSX.Element => {
             </Link>
           </li>
         </ul>
-        <div
-          className="toggler  d-md-none "
-          role="button"
-          onClick={() => setMenu(!menu)}
-        >
+        <div className="toggler  d-lg-none " role="button" onClick={() => setMenu(!menu)}>
           <div className="bar bg-primary"></div>
           <div className="bar bg-primary"></div>
           <div className="bar bg-primary"></div>
         </div>
       </div>
       {menu && (
-        <div className="min d-md-none mt-2 animate__animated animate__bounceInDown text-center">
+        <div className="min d-lg-none mt-2 animate__animated animate__bounceInDown text-center">
           <div>Home</div>
           <div>About</div>
           <div>Contact us</div>

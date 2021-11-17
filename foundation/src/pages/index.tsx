@@ -15,7 +15,7 @@ const index = (): JSX.Element => {
     <FrontLayout>
       <main className="home">
         <Slider />
-        <section className="home-1 py-4">
+        <section className="home-1">
           <div className="container mb-5">
             <div className="home-1_about">
               <div className="d-md-flex align-items-center inner">
