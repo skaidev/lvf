@@ -28,19 +28,23 @@ header {
           transition: all ease-in-out 0.5s;
           font-weight: 600;
           font-size: 1rem;
+          &.active {
+            color: $primary;
+          }
         }
         &:hover {
           a {
             color: $primary;
           }
         }
+        .active {
+          background: rgba(185, 185, 185, 0.01);
+          box-shadow: inset 0px -3px 0px #25283a;
+          border-radius: 5px;
+          padding: 15px 20px;
+        }
       }
-      .active {
-        background: rgba(185, 185, 185, 0.01);
-        box-shadow: inset 0px -3px 0px #25283a;
-        border-radius: 5px;
-        padding: 15px 20px;
-      }
+
       @media screen and (max-width: 1200px) {
         gap: 0.8rem;
       }
