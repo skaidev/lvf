@@ -16,35 +16,34 @@ header {
     // }
   }
   .main-bottom {
-    .logo-sec {
-      flex: 0.3;
-      @media screen and (max-width: 768px) {
-      }
-    }
-    .items-sec {
-      flex: 0.7;
-      list-style: none;
+    .nav {
+      gap: 2rem;
+      align-items: center;
       li {
-        flex: 1;
-        text-align: right;
         a {
           text-decoration: none;
           color: $dark;
           transition: all ease-in-out 0.5s;
           font-weight: 600;
           font-size: 1rem;
+          &.active {
+            color: $primary;
+          }
         }
         &:hover {
           a {
             color: $primary;
           }
         }
+        .active {
+          background: rgba(185, 185, 185, 0.01);
+          box-shadow: inset 0px -3px 0px #25283a;
+          border-radius: 5px;
+          padding: 15px 20px;
+        }
       }
-      .active {
-        background: rgba(185, 185, 185, 0.01);
-        box-shadow: inset 0px -3px 0px #25283a;
-        border-radius: 5px;
-        padding: 15px 20px;
+      @media screen and (max-width: 1200px) {
+        gap: 0.8rem;
       }
     }
   }

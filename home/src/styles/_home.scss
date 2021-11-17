@@ -90,20 +90,21 @@ main {
   .fifth {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/image_2.png') no-repeat;
     background-size: cover;
-    height: 587px;
+    min-height: 33rem;
     position: relative;
     &-wrap {
-      height: inherit;
+      min-height: inherit;
       .left {
         flex: 1;
         position: relative;
-        // @media screen and (max-width: 480px) {
-        //   p {
-        //     span {
-        //       margin-top: 40px;
-        //     }
-        //   }
-        // }
+        @media screen and (max-width: 480px) {
+          .paragraph {
+            margin-top: 6rem;
+            span {
+              margin-top: 2rem;
+            }
+          }
+        }
       }
       .right {
         flex: 0.3;

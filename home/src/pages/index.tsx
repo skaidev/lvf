@@ -117,13 +117,13 @@ const index = (): JSX.Element => {
           </div>
         </section>
         <section className="fifth">
-          <div className="container align-items-center d-flex flex-column flex-md-row fifth-wrap">
+          <div className="container align-items-center justify-content-end d-flex flex-column flex-md-row fifth-wrap">
             <div className="left">
-              <p className="text-light fw-700 font-48">
+              <p className="text-light paragraph fw-700 pt-lg-5 font-48">
                 Is Working Towards Helping the <br /> Lesspriviledged/ Underpriviledge <br />
                 people
                 <span
-                  className="position-absolute fw-lighter cursive text-primary font-288 mt-5 mt-lg-0"
+                  className="position-absolute fw-lighter cursive text-primary font-288 mt-5"
                   style={{
                     transform: 'translateY(-30%)',
                     left: '0',

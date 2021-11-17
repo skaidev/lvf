@@ -28,7 +28,7 @@ const galleryPage = (): JSX.Element => {
                 <SRLWrapper>
                   <div className="image-gallery">
                     {images.map((image, i) => (
-                      <img src={image} alt="" key={i} />
+                      <img src={image} alt="" key={i} className="img-fluid" />
                     ))}
                   </div>
                 </SRLWrapper>{' '}
