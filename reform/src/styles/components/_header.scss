@@ -2,45 +2,63 @@ header {
   .main-top {
     background: #7ca2b5;
     .left {
-      flex: 1;
-    }
-    .right {
-      flex: 1;
-    }
-  }
-  .main-bottom {
-    .logo-sec {
-      flex: 0.3;
-      @media screen and (max-width: 768px) {
-      }
-    }
-    .items-sec {
-      flex: 0.7;
-      list-style: none;
-      li {
-        flex: 1;
-        text-align: right;
-        a {
-          text-decoration: none;
+      //flex: 1.5
+      flex-wrap: wrap;
+      .social-top {
+        .soc {
+          width: 23px;
+          height: 23px;
+          border-radius: 50%;
         }
       }
-      .active {
-        background: rgba(185, 185, 185, 0.01);
-        box-shadow: inset 0px -3px 0px #25283a;
-        border-radius: 5px;
-        padding: 15px 20px;
+    }
+    // .right {
+    //   flex: 1;
+    // }
+  }
+  .main-bottom {
+    .nav {
+      gap: 2rem;
+      align-items: center;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $dark;
+          transition: all ease-in-out 0.5s;
+          font-weight: 600;
+          font-size: 1rem;
+          &.active {
+            color: $primary;
+          }
+        }
+        &:hover {
+          a {
+            color: $primary;
+          }
+        }
+        .active {
+          background: rgba(185, 185, 185, 0.01);
+          box-shadow: inset 0px -3px 0px #25283a;
+          border-radius: 5px;
+          padding: 15px 20px;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        gap: 0.8rem;
       }
     }
   }
   .min-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.308);
     width: 90%;
     z-index: 1000;
     left: 10%;
-    animation: movein 1s linear alternate;
+    animation: movein 0.1s linear alternate;
 
     @keyframes movein {
       from {
@@ -55,7 +73,7 @@ header {
       background: white;
       z-index: 1000;
       min-height: 100vh;
-      animation: moveinafter 1s linear;
+      animation: moveinafter 0.3s linear;
       animation-iteration-count: once;
       position: relative;
       left: 20%;

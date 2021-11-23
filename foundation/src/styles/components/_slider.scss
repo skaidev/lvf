@@ -1,7 +1,7 @@
 .main-slide {
   .figures {
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     margin: 0;
     padding: 0;
     background-position: center;
@@ -15,6 +15,7 @@
       flex-direction: column;
       justify-content: center;
       .fig-middle {
+        margin-top: 185px;
         background: rgba(118, 118, 118, 0.31);
         backdrop-filter: blur(33px);
         button {
@@ -22,6 +23,11 @@
             background: #50ebb2;
             color: white !important;
           }
+        }
+        button:focus {
+          box-shadow: none;
+          outline: none !important;
+          -webkit-box-shadow: none;
         }
       }
       .fig-fixed {
@@ -46,26 +52,13 @@
       background: rgba(158, 64, 35, 0.22);
     }
     .g-2 {
-      background: linear-gradient(
-        90deg,
-        rgba(158, 64, 35, 0.78) -26.19%,
-        rgba(158, 64, 35, 0) 100%
-      );
+      background: linear-gradient(90deg, rgba(158, 64, 35, 0.78) -26.19%, rgba(158, 64, 35, 0) 100%);
     }
     .g-3 {
-      background: linear-gradient(
-        86.26deg,
-        #2100a6 -33.89%,
-        rgba(0, 75, 129, 0) 61.23%,
-        rgba(0, 75, 129, 0.02) 96.46%
-      );
+      background: linear-gradient(86.26deg, #2100a6 -33.89%, rgba(0, 75, 129, 0) 61.23%, rgba(0, 75, 129, 0.02) 96.46%);
     }
     .g-4 {
-      background: linear-gradient(
-        86.64deg,
-        #000000 -2.86%,
-        rgba(0, 0, 0, 0) 88.53%
-      );
+      background: linear-gradient(86.64deg, #000000 -2.86%, rgba(0, 0, 0, 0) 88.53%);
     }
   }
 }

@@ -19,7 +19,7 @@ const Footer = (): JSX.Element => {
               <i className="fab fa-instagram"></i>
             </span>
           </div>
-          <div className="list fw-bold w-75 mx-auto d-flex flex-column flex-md-row py-3 justify-content-md-between">
+          <div className="list fw-600 w-75 mx-auto d-flex flex-column align-items-center flex-md-row py-3 justify-content-md-between">
             <span>Home</span>
             <span>About</span>
             <span>Team</span>

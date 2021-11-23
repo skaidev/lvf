@@ -2,37 +2,67 @@ main {
   min-height: 100vh;
   .first {
     min-height: 90vh;
-    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png")
-      no-repeat;
+    background: url('./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png') no-repeat;
     background-size: cover;
     overflow: hidden;
     &-cover {
       min-height: inherit;
       background: rgba(158, 64, 35, 0.63);
       mix-blend-mode: normal;
+      button:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+      }
     }
   }
   .second {
     &-cover {
-      gap: 3rem;
-      .left {
+      gap: 2rem;
+      .left-box {
         flex: 1;
         &-btn-holder {
           gap: 2rem;
+          .left-btn-holder {
+            .left {
+              button:focus {
+                box-shadow: none !important;
+                outline: none !important;
+                -webkit-box-shadow: none !important;
+              }
+              .right {
+                button:focus {
+                  box-shadow: none;
+                  outline: none !important;
+                  -webkit-box-shadow: none;
+                }
+              }
+            }
+          }
         }
       }
-      .right {
+      .right-box {
         flex: 1;
-        .img-ring {
-          flex: 0.6;
-          img {
-            transform: translate(-40px, -40px);
 
-            background: linear-gradient(
-              90deg,
-              rgba(158, 64, 35, 0.78) -26.19%,
-              rgba(158, 64, 35, 0) 100%
-            );
+        .img-ring {
+          //flex: 0.6;
+          height: 666px;
+          width: 554px;
+          position: relative;
+          border-radius: 10px;
+          overflow-x: hidden;
+          img {
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+          }
+          .banner {
+            top: 0;
+            border-radius: inherit;
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            background: rgba(158, 64, 35, 0.3);
           }
         }
       }
@@ -47,6 +77,7 @@ main {
         &-card {
           border-radius: 10px;
           overflow: hidden;
+          width: 370px;
           .rotate {
             border: 4px dashed #ffffff;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -57,28 +88,45 @@ main {
     }
   }
   .fifth {
-    background: url("./img/bill-wegener-8ldqRkOk5oo-unsplash 1.png") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/image_2.png') no-repeat;
     background-size: cover;
+    min-height: 33rem;
+    position: relative;
     &-wrap {
+      min-height: inherit;
       .left {
-        flex: 0.7;
+        flex: 1;
+        position: relative;
+        @media screen and (max-width: 480px) {
+          .paragraph {
+            margin-top: 6rem;
+            span {
+              margin-top: 2rem;
+            }
+          }
+        }
       }
       .right {
         flex: 0.3;
+
         &-circle {
           width: 80px;
           height: 80px;
           i {
-            transform: translate(-10px, -10px);
+            transform: translate(18px, -18px);
+            background: #ffffff;
+            border-radius: 50%;
           }
         }
       }
+    }
+    @media screen and (max-width: 480px) {
+      background-position: center;
     }
   }
   .sixth {
     &-card {
       height: 306px;
-
       .polygon {
         clip-path: polygon(0 0, 51% 0, 100% 100%, 0% 100%);
         backdrop-filter: blur(33px);
@@ -112,57 +160,51 @@ main {
           animation: topb 10s linear alternate infinite;
           @keyframes topb {
             0% {
-              transform: translate(0, 0)
-                matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -100, 0, 1.1)
-                rotateY(60deg);
+              transform: translate(0, 0) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -50, -100, 0, 1.1) rotateY(60deg);
             }
             50% {
-              transform: translate(-10px, -30px)
-                matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.9)
-                rotateY(-60deg);
+              transform: translate(-10px, -30px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.9) rotateY(-60deg);
             }
             70% {
               transform: translate(10px, 30px);
             }
             100% {
-              transform: skewX(20deg)
-                matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 100, 0, 1.1)
-                rotateY(60deg);
+              transform: skewX(20deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 100, 0, 1.1) rotateY(60deg);
             }
           }
           @media screen and (max-width: 768px) {
             transform: scale(0.8, 0.8);
           }
         }
-        img[src="one.png"] {
+        img[src='one.png'] {
           bottom: -20%;
           left: 20%;
           animation-delay: 0.5s;
           animation-direction: alternate-reverse;
         }
-        img[src="two.png"] {
+        img[src='two.png'] {
           left: 105%;
           top: 25%;
           animation-delay: 1s;
         }
-        img[src="three.png"] {
+        img[src='three.png'] {
           left: -25%;
           top: 20%;
           animation-delay: 1.5s;
           animation-direction: alternate-reverse;
         }
-        img[src="four.png"] {
+        img[src='four.png'] {
           right: -25%;
           top: -14%;
           animation-delay: 2s;
           animation-direction: alternate-reverse;
         }
-        img[src="five.png"] {
+        img[src='five.png'] {
           top: -14%;
           left: -15%;
           animation-delay: 2.5s;
         }
-        img[src="six.png"] {
+        img[src='six.png'] {
           right: -10%;
           bottom: -23%;
           animation-delay: 3s;
@@ -173,12 +215,30 @@ main {
             gap: 1rem;
           }
         }
+        input {
+          border-radius: 5px;
+          border: 2px solid $dark;
+        }
+        textarea {
+          border-radius: 5px;
+          border: 2px solid $dark !important;
+        }
+        .form-control:focus {
+          box-shadow: none;
+          outline: none !important;
+          -webkit-box-shadow: none;
+          border: 3px solid $dark !important;
+        }
+        .form-control::placeholder {
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
       }
     }
   }
   .eighth {
     min-height: 500px;
-    background: url("./img/bill-wegener-8ldqRkOk5oo-unsplash 1.png") no-repeat;
+    background: url('./img/bill-wegener-8ldqRkOk5oo-unsplash 1.png') no-repeat;
     background-size: cover;
     .loader {
       position: relative;
@@ -215,7 +275,7 @@ main {
         overflow: hidden;
         animation: rotateCircle 1s linear infinite;
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: 50%;
           left: 50%;
@@ -232,46 +292,60 @@ main {
   }
   .ninth {
     .team {
-      height: 600px;
-      &-card {
-        overflow: hidden;
-        position: relative;
-        &:hover {
-          .team-card-abs {
-            bottom: -100%;
+      &- {
+        height: 621px;
+
+        &- {
+          background-position: center !important;
+          width: 100%;
+          height: inherit;
+          position: relative;
+          background-size: cover !important;
+          position: relative;
+          overflow: hidden !important;
+          border-radius: 20px;
+          &:hover {
+            .team--layer {
+              left: 0;
+              animation: left 0.5s linear alternate;
+              animation-play-state: running;
+              @keyframes left {
+                from {
+                  left: 100%;
+                }
+                to {
+                  left: 0%;
+                }
+              }
+            }
+            .team--bottom {
+              bottom: -100%;
+            }
           }
-          aside {
+          &bottom {
+            position: absolute;
+            bottom: 0;
+            transition: all 0.5s linear;
             left: 0;
+            width: 100%;
+          }
+          &layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #50ebb2;
+            opacity: 0.7;
+            gap: 1rem;
+            left: -100%;
+            transition: all 0.5s linear;
+            i {
+              transition: all 0.5s ease-in-out;
+              &:hover {
+                transform: translateY(-30px);
+              }
+            }
           }
         }
-        img {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        &-abs {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          transition-duration: 0.2s;
-        }
-        aside {
-          width: 100%;
-          height: 100%;
-          background: #50ebb2;
-          position: absolute;
-          left: -100%;
-          opacity: 0.5;
-          transition-delay: 0.1s;
-          transition-duration: 0.1s;
-        }
-      }
-    }
-    .see-all {
-      gap: 1rem;
-      hr {
-        flex: 1;
       }
     }
   }
@@ -281,6 +355,28 @@ main {
       gap: 1rem;
       hr {
         flex: 1;
+      }
+    }
+  }
+  .eleven {
+    form {
+      input {
+        border-radius: 5px;
+        border: 2px solid $dark;
+      }
+      textarea {
+        border-radius: 5px;
+        border: 2px solid $dark !important;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+        border: 3px solid $dark !important;
+      }
+      .form-control::placeholder {
+        font-size: 0.9rem;
+        font-weight: 500;
       }
     }
   }

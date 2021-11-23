@@ -1,0 +1,117 @@
+.gallery {
+  &-1 {
+    min-height: 50vh;
+    background: linear-gradient(rgba(158, 64, 35, 0.73), rgba(158, 64, 35, 0.73)), url('../img/medical-missions-africa-stanford-childrens-1200x675-1\ 1.png') no-repeat;
+    background-size: cover;
+    .gallery-text-1 {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    .visitation-heading-1 {
+      min-height: 16vh;
+      background-color: #cccccc;
+    }
+    .visitation-box-1 {
+      // min-height: 40rem;
+      width: 100%;
+      .container {
+        min-height: inherit;
+        .image-gallery {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1.5rem;
+          grid-auto-rows: auto;
+          //overflow: hidden;
+          .box {
+            img {
+              border-radius: 10px;
+            }
+
+            // .img-overlay {
+            //   position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   width: inherit;
+            //   height: 100%;
+            //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
+            // }
+          }
+        }
+      }
+    }
+  }
+  &-2a {
+    .wrapper {
+      .box {
+        // padding: 10px;
+        // overflow: hidden;
+        // position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 35px;
+        grid-auto-rows: 320px;
+
+        img {
+          border-radius: 10px;
+          display: block !important;
+        }
+        // .img-overlay {
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   width: inherit;
+        //   height: 100%;
+        //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
+        // }
+      }
+    }
+  }
+  &-2b {
+    .visitation-heading-2 {
+      min-height: 16vh;
+      background-color: #cccccc;
+    }
+    .visitation-box-2 {
+      min-height: 30rem;
+      .container {
+        .wrapper {
+          .box {
+            // padding: 10px;
+            // overflow: hidden;
+            // position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 35px;
+            grid-auto-rows: 320px;
+
+            img {
+              border-radius: 10px;
+              display: block !important;
+              width: 100%;
+              height: 325px !important;
+            }
+            // .img-overlay {
+            //   position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   width: inherit;
+            //   height: 100%;
+            //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
+            // }
+          }
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background-color: $warning;
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.revival {
+  min-height: 108vh;
+  .first {
+    min-height: 90vh;
+    background: url("./img/Mask Group.png") no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+    &-cover {
+      min-height: inherit;
+      //   background: linear-gradient(
+      //     105.13deg,
+      //     #2d3fa2 -4.28%,
+      //     rgba(152, 64, 42, 0.21) 20.25%,
+      //     rgba(211, 11, 243, 0.5) 40.15%,
+      //     rgba(251, 0, 101, 0.456949) 102.64%,
+      //     rgba(158, 64, 35, 0) 107.92%,
+      //     #2d3fa2 111.01%
+      //   );
+      //   mix-blend-mode: normal;
+      //   b {
+      //     mix-blend-mode: color-burn;
+      //   }
+      .first-content {
+        min-height: inherit;
+      }
+    }
+    .art {
+      height: 125px;
+      background-image: url("./img/Vector 15.png");
+      background-repeat: no-repeat;
+      //background-color: $light;
+      background-size: 100% 100%;
+    }
+  }
+  .second {
+    .left {
+      flex: 1;
+    }
+    .right {
+      position: relative;
+      overflow: hidden;
+      flex: 1;
+      height: 631px;
+      border-top-left-radius: 100px;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .fourth {
+    .mg {
+      margin-bottom: 111px;
+    }
+    &-main {
+      .avatar {
+        img {
+          border-radius: 100%;
+        }
+      }
+    }
+    .art-two {
+      height: 125px;
+      background-image: url("./img/Vector 15.png");
+      background-repeat: no-repeat;
+      background-color: $light;
+      background-size: 100% 100%;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+  }
+  .fifth {
+    p {
+      .concert {
+        border-bottom: 12px solid #2d3fa2;
+      }
+    }
+    .fifth-image {
+      min-height: 470px;
+      max-width: 100%;
+      background: url("./img/fifth.png") no-repeat;
+      background-size: cover;
+
+      .fifth-cover {
+        min-height: inherit;
+        background: rgba(45, 63, 162, 0.48);
+        .outer-circle {
+          width: 112.64px;
+          height: 112.64px;
+          border-radius: 50%;
+          border: 2px solid rgba(235, 170, 73, 0.4);
+          position: relative;
+          .inner-circle {
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.39);
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -40px 0px 0px -40px;
+            i {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sixth {
+    p {
+      .gallery {
+        border-bottom: 12px solid #2d3fa2;
+      }
+    }
+    .container {
+      margin-bottom: 50px;
+    }
+    // .art-six {
+    //   height: 125px;
+    //   background-image: url("./img/Vector 15.png");
+    //   background-repeat: no-repeat;
+    //   background-color: $light;
+    //   background-size: 100% 100%;
+    //   transform: matrix(1, 0, 0, -1, 0, 0);
+    // }
+  }
+  .seventh {
+    min-height: 581px;
+    background: url("./img/seventh.png") no-repeat;
+    background-size: 100% 100%;
+    .left {
+      .left-image {
+        img {
+          max-width: 238px;
+          height: 174.53px;
+        }
+      }
+    }
+    .right {
+      .right-image {
+        img {
+          max-width: 94.08px;
+          height: 158pxpx;
+        }
+      }
+    }
+  }
+  .eight {
+    .revived-card {
+      max-width: 950px;
+      min-height: 248px;
+      background: $secondary;
+      border: 3px solid $light;
+      box-sizing: border-box;
+      box-shadow: 0px 8px 8px rgba(196, 196, 196, 0.35);
+      border-radius: 10px;
+      .card-img-top {
+        position: relative;
+        width: 85.53px !important;
+        height: 93.82px;
+
+        .revived-card-image {
+          position: absolute;
+          top: -46.91px;
+          left: -50px;
+          @media screen and (max-width: 768px) {
+            top: -10%;
+            left: 0%;
+          }
+          img {
+            box-shadow: 0 8px 8px rgba(196, 196, 196, 0.35);
+          }
+        }
+      }
+    }
+  }
+  .nine {
+    background: #c4c4c4;
+    .overlay {
+      display: none;
+    }
+    img {
+      display: block;
+      padding: 0 3rem;
+    }
+    .abs {
+      letter-spacing: 0.3rem;
+      color: rgba(255, 255, 255, 0.22);
+      font-size: 3rem;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .ten {
+    form {
+      input {
+        border-radius: 5px;
+        border: 2px solid $info !important;
+      }
+      textarea {
+        border-radius: 5px;
+        border: 2px solid $info !important;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+        border: 3px solid $info !important;
+      }
+      .form-control::placeholder {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

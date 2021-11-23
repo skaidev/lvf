@@ -1,2 +1,8 @@
+@import "./variables";
 @import "./components/header";
 @import "./components/footer";
+@import "./home";
+@import "./helpers";
+@import "./pages/gallery";
+@import "./pages/team";
+@import "react-image-lightbox/style.css";

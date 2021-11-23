@@ -1,0 +1,79 @@
+.gallery {
+  &-1 {
+    min-height: 50vh;
+    background: url("../img/partner_1.png") no-repeat;
+    background-size: cover;
+    .gallery-text {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    min-height: 80vh;
+
+    .one {
+      .wrapper {
+        .box {
+          // padding: 10px;
+          // overflow: hidden;
+          // position: relative;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 35px;
+          grid-auto-rows: 320px;
+
+          img {
+            border-radius: 10px;
+            display: block !important;
+          }
+          // .img-overlay {
+          //   position: absolute;
+          //   top: 0;
+          //   left: 0;
+          //   width: inherit;
+          //   height: 100%;
+          //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
+          // }
+        }
+      }
+    }
+  }
+  &-2b {
+    min-height: 90vw;
+    .two {
+      .wrapper {
+        .box {
+          // padding: 10px;
+          // overflow: hidden;
+          // position: relative;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 35px;
+          grid-auto-rows: 320px;
+
+          img {
+            border-radius: 10px;
+            display: block !important;
+          }
+          // .img-overlay {
+          //   position: absolute;
+          //   top: 0;
+          //   left: 0;
+          //   width: inherit;
+          //   height: 100%;
+          //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
+          // }
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background: linear-gradient(180deg, #9e4023 0%, #750000 153.75%);
+      .content-box {
+        min-height: inherit;
+      }
+    }
+  }
+}

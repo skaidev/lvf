@@ -2,45 +2,59 @@ header {
   .main-top {
     background: linear-gradient(180deg, #9e4023 0%, #750000 153.75%);
     .left {
-      flex: 1;
-    }
-    .right {
-      flex: 1;
+      //flex: 1;
+      flex-wrap: wrap;
+      .social-top {
+        .soc {
+          width: 23px;
+          height: 23px;
+          border-radius: 50%;
+        }
+      }
     }
   }
   .main-bottom {
-    .logo-sec {
-      flex: 0.3;
-      @media screen and (max-width: 768px) {
-      }
-    }
-    .items-sec {
-      flex: 0.7;
-      list-style: none;
+    .nav {
+      gap: 2rem;
+      align-items: center;
       li {
-        flex: 1;
-        text-align: right;
         a {
           text-decoration: none;
+          color: $dark;
+          transition: all ease-in-out 0.5s;
+          font-weight: 600;
+          font-size: 1rem;
+          &.active {
+            color: $info;
+          }
+        }
+        &:hover {
+          a {
+            color: $info;
+          }
+        }
+        .active {
+          background: rgba(185, 185, 185, 0.01);
+          box-shadow: inset 0px -3px 0px #2d3fa2;
+          border-radius: 5px;
+          padding: 15px 20px;
         }
       }
-      .active {
-        background: rgba(185, 185, 185, 0.01);
-        box-shadow: inset 0px -3px 0px #2d3fa2;
-        border-radius: 5px;
-        padding: 15px 20px;
+
+      @media screen and (max-width: 1200px) {
+        gap: 0.8rem;
       }
     }
   }
   .min-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.308);
     width: 90%;
     z-index: 1000;
     left: 10%;
-    animation: movein 1s linear alternate;
+    animation: movein 0.1s linear alternate;
 
     @keyframes movein {
       from {
@@ -55,7 +69,7 @@ header {
       background: white;
       z-index: 1000;
       min-height: 100vh;
-      animation: moveinafter 1s linear;
+      animation: moveinafter 0.3s linear;
       animation-iteration-count: once;
       position: relative;
       left: 20%;

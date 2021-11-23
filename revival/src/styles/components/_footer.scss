@@ -11,7 +11,29 @@ footer {
         flex: 1.4;
       }
       .two {
-        flex: 7;
+        flex: 6;
+        h4 {
+          white-space: nowrap;
+        }
+        form {
+          input {
+            max-width: 387px;
+            min-height: 49px;
+            border-radius: 5px 0px 0px 5px;
+          }
+          .form-control:focus {
+            box-shadow: none;
+            outline: none !important;
+            -webkit-box-shadow: none;
+          }
+          .form-control::placeholder {
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+          .btn {
+            border-radius: 0px 5px 5px 0px !important;
+          }
+        }
       }
       .three {
         flex: 1.6;
@@ -35,6 +57,12 @@ footer {
             color: #50ebb2;
           }
         }
+      }
+    }
+    .list {
+      span {
+        font-weight: 600;
+        font-size: 1rem;
       }
     }
     .layer {

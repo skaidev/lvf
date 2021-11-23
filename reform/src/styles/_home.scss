@@ -1,9 +1,9 @@
+@import "./variable";
 main {
   min-height: 100vh;
   .first {
     min-height: calc(100vh - 100px);
-    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png")
-        no-repeat,
+    background: url("./img/medical-missions-africa-stanford-childrens-1200x675-1 1.png") no-repeat,
       linear-gradient(180deg, #25283a -24.35%, rgba(37, 40, 58, 0) 95.57%);
     background-size: cover;
     &-cover {
@@ -11,6 +11,13 @@ main {
       background: rgba(117, 0, 0, 0.63);
       .first-content {
         min-height: inherit;
+        .btn-holder {
+          button:focus {
+            box-shadow: none;
+            outline: none !important;
+            -webkit-box-shadow: none;
+          }
+        }
       }
     }
   }
@@ -19,15 +26,18 @@ main {
       background: #ffffff;
       box-shadow: 0px 6px 14px 2px rgba(196, 196, 196, 0.47);
       border-radius: 10px;
+      margin-bottom: 100px;
     }
   }
   .third {
-    min-height: 100px;
+    min-height: 587px;
     background: url("./img/bill-wegener-8ldqRkOk5oo-unsplash 1.png") no-repeat;
     background-size: cover;
     &-wrap {
+      max-height: 587px;
       .left {
         flex: 0.7;
+        max-height: 587px;
       }
       .right {
         flex: 0.3;
@@ -35,7 +45,9 @@ main {
           width: 80px;
           height: 80px;
           i {
-            transform: translate(-10px, -10px);
+            transform: translate(18px, -18px);
+            background: #ffffff;
+            border-radius: 50%;
           }
         }
       }
@@ -43,19 +55,19 @@ main {
   }
   .fourth {
     background: #25283a;
-    position: relative;
+    //position: relative;
     overflow: hidden;
-    &::after {
-      content: "";
-      background: rgba(124, 162, 181, 0.09);
-      mix-blend-mode: normal;
-      position: absolute;
-      width: 70%;
-      height: 60%;
-      clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-      right: 0;
-      bottom: 0;
-    }
+    // &::after {
+    //   content: "";
+    //   background: rgba(124, 162, 181, 0.09);
+    //   mix-blend-mode: normal;
+    //   position: absolute;
+    //   width: 70%;
+    //   height: 60%;
+    //   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    //   right: 0;
+    //   bottom: 0;
+    // }
     &-wrap {
       @media screen and (max-width: 768px) {
         gap: 0.8rem;
@@ -66,12 +78,24 @@ main {
         @media screen and (max-width: 768px) {
           border-right: 0 !important;
         }
+        .icon {
+          border-radius: 10px;
+          border: 4px dashed $light;
+          padding: 30px 44px;
+          // width: 186px;
+          // height: 186px;
+        }
       }
       .right {
         flex: 1;
         flex: 1;
         gap: 1rem;
         border-left: 0 !important;
+        .icon {
+          border-radius: 10px;
+          border: 4px dashed $light;
+          padding: 30px 44px;
+        }
       }
     }
   }
@@ -89,17 +113,10 @@ main {
       right: 0;
       bottom: 0;
     }
-  }
-  .sixth {
-    .fundbox {
-      background: #ffffff;
-      box-shadow: 0px 4px 8px rgba(130, 130, 130, 0.17);
+    .card {
+      background-color: $grey !important;
+      min-height: 484px !important;
       border-radius: 10px;
-      .side {
-        transform: rotate(-42.79deg) translate(27%, -20%);
-        right: 0;
-        bottom: 0;
-      }
     }
   }
   .seventh {
@@ -110,6 +127,11 @@ main {
     &-cover {
       min-height: inherit;
       background: rgba(117, 0, 0, 0.63);
+      button:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+      }
     }
   }
   .eight {
@@ -118,7 +140,15 @@ main {
     }
     .testimonial-card {
       box-shadow: 0px 20px 26px rgba(54, 53, 53, 0.16);
+      max-width: 388px !important;
+      min-height: 389px;
+      position: relative;
       border-radius: 10px;
+      margin-top: 50px;
+      .card-img-top {
+        position: absolute;
+        top: -75px;
+      }
       .testimonial-card-img-wrap {
         position: relative;
         &::before {
@@ -149,6 +179,9 @@ main {
         }
       }
     }
+    .testimonial-card:hover {
+      box-shadow: 0px 15px 26px 6px rgba(54, 53, 53, 0.3);
+    }
   }
   .nine {
     position: relative;
@@ -166,7 +199,11 @@ main {
         left: 0;
       }
       .team-card {
-        height: 465px;
+        .card {
+          min-height: 565px !important;
+          max-width: 388px !important;
+          box-shadow: 0px 14px 4px rgba(0, 0, 0, 0.15) !important;
+        }
         &-wrap {
           border-radius: 10px;
           overflow: hidden;
@@ -193,6 +230,13 @@ main {
           .team-socials {
             transform: translateY(200px);
             transition-duration: 1s;
+            border-top: 0.5px solid #c4c4c4;
+
+            .line {
+              height: 2px !important;
+              width: 20px;
+              color: #000000 !important;
+            }
           }
         }
       }
@@ -227,6 +271,28 @@ main {
       font-size: 3rem;
       left: 0;
       bottom: 0;
+    }
+  }
+  .twelve {
+    form {
+      input {
+        border-radius: 5px;
+        border: 2px solid $secondary !important;
+      }
+      textarea {
+        border-radius: 5px;
+        border: 2px solid $secondary !important;
+      }
+      .form-control:focus {
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+        border: 3px solid $secondary !important;
+      }
+      .form-control::placeholder {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
     }
   }
 }
