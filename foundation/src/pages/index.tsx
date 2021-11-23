@@ -15,7 +15,7 @@ const index = (): JSX.Element => {
     <FrontLayout>
       <main className="home">
         <Slider />
-        <section className="home-1">
+        <section className="home-1" id="about">
           <div className="container mb-5">
             <div className="home-1_about">
               <div className="d-md-flex align-items-center inner">
@@ -156,7 +156,7 @@ const index = (): JSX.Element => {
             </div>
           </div>
         </section>
-        <section className="home-5 py-5">
+        <section className="home-5 py-5" id="team">
           <div className="container">
             <p className="h1 mb-3 fw-700 font-48 text-center">Our Amazing Team</p>
             <p className="text-muted text-center mb-4">We cant do it alone – from crisis to sustainably. There is no limit to what you can do, from a bake sale to a 10k run your efforts will help give a local person in crisis much more than food, but hope for the future.</p>
@@ -194,7 +194,9 @@ const index = (): JSX.Element => {
             <div className="contact-icon d-flex mb-5 flex-column flex-sm-row justify-content-around">
               <div className="mail d-flex flex-column align-items-center">
                 <i className="fas fa-2x fa-map-marker-alt px-4 py-3 text-light mb-3 bg-primary rounded"></i>
-                <span className="text-center">jointheirs5@gmail.com</span>
+                <span className="text-center" id="join">
+                  jointheirs5@gmail.com
+                </span>
               </div>
               <div className="address d-flex flex-column align-items-center">
                 <i className="fas fa-2x fa-envelope px-4 py-3 text-light mb-3 bg-primary rounded"></i>
