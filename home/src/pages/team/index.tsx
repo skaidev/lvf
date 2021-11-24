@@ -1,5 +1,5 @@
-import React from "react";
-import FrontLayout from "../../layout/FrontLayout";
+import React from 'react'
+import FrontLayout from '../../layout/FrontLayout'
 
 const teamPage = (): JSX.Element => {
   return (
@@ -9,9 +9,7 @@ const teamPage = (): JSX.Element => {
           <div className="team-text d-flex align-items-end">
             <div className="container">
               <h1 className="fw-700 font-64 text-light mt-3">Our Team</h1>
-              <p className="fw-400 font-24 pb-3 text-light">
-                The best of of our teams and volunteers around the world
-              </p>
+              <p className="fw-400 font-24 pb-3 text-light">The best of of our team and volunteers around the world</p>
             </div>
           </div>
         </section>
@@ -46,24 +44,20 @@ const teamPage = (): JSX.Element => {
           <div className="content">
             <div className="container text-light d-flex justify-content-center align-items-center">
               <div className="text me-5">
-                <h2 className="fw-700 font-48 text-center">
-                  Join Our Volunteer Team.
-                </h2>
+                <h2 className="fw-700 font-48 text-center">Join Our Volunteering Team.</h2>
               </div>
               <div className="button text-center">
-                <button className="btn btn-primary text-light fw-600 font-20">
-                  Join Team
-                </button>
+                <button className="btn btn-primary text-light fw-600 font-20">Join Team</button>
               </div>
             </div>
           </div>
         </section>
       </main>
     </FrontLayout>
-  );
-};
+  )
+}
 
-export default teamPage;
+export default teamPage
 
 const teamCard = [
   {
@@ -138,4 +132,4 @@ const teamCard = [
     title: <p className="h6 fw-500 text-center">Secretary</p>,
     image: 3,
   },
-];
+]
