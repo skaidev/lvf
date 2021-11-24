@@ -17,10 +17,7 @@ const Header = (): JSX.Element => {
         <div className="container align-items-center d-flex flex-md-column flex-xl-row text-light justify-content-between py-1">
           <div className="left d-flex">
             <div>
-              <i
-                className="fas fa-phone-volume"
-                style={{ transform: "rotate(310deg)" }}
-              ></i>
+              <i className="fas fa-phone-volume" style={{ transform: "rotate(310deg)" }}></i>
               &nbsp;+234 9012624162&nbsp;
             </div>
             |
@@ -42,9 +39,7 @@ const Header = (): JSX.Element => {
           <div className="right d-none d-md-flex justify-content-end ">
             <WorkWithUs />
             <p className="p-0 m-0 ">
-              <span className="fw-lighter">
-                &nbsp;&nbsp; Want to work with us ? &nbsp;&nbsp;
-              </span>
+              <span className="fw-lighter">&nbsp;&nbsp; Want to work with us ? &nbsp;&nbsp;</span>
               <span>Become a Volunteer</span>
             </p>
           </div>
@@ -61,10 +56,7 @@ const Header = (): JSX.Element => {
                 </span>
                 VISION
               </span>
-              <kbd
-                className="bg-transparent  p-0 m-0 text-muted"
-                style={{ letterSpacing: ".15rem" }}
-              >
+              <kbd className="bg-transparent  p-0 m-0 text-muted" style={{ letterSpacing: ".15rem" }}>
                 FOUNDATION
               </kbd>
             </div>
@@ -72,51 +64,27 @@ const Header = (): JSX.Element => {
           <ul className="nav fw-bold d-none d-lg-flex">
             <li className="nav-item active">
               <Link href="/">
-                <a
-                  className={`nav-link ${
-                    router.pathname == "/" ? "active" : ""
-                  }`}
-                >
-                  Home
-                </a>
+                <a className={`nav-link ${router.pathname == "/" ? "active" : ""}`}>Home</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/#about">
-                <a
-                  className={`nav-link ${
-                    router.pathname == "/#about" ? "active" : ""
-                  }`}
-                >
-                  About
-                </a>
+                <a className={`nav-link ${router.pathname == "/#about" ? "active" : ""}`}>About</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/team">
-                <a
-                  className={`nav-link ${
-                    router.pathname == "/team" ? "active" : ""
-                  }`}
-                >
-                  Team
-                </a>
+                <a className={`nav-link ${router.pathname == "/team" ? "active" : ""}`}>Team</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/gallery">
-                <a
-                  className={`nav-link ${
-                    router.pathname == "/gallery" ? "active" : ""
-                  }`}
-                >
-                  Gallery
-                </a>
+                <a className={`nav-link ${router.pathname == "/gallery" ? "active" : ""}`}>Gallery</a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item active">
               <Link href="/#contact">
-                <a className="nav-link">Contact us</a>
+                <a className={`nav-link ${router.pathname == "/#contact" ? "active" : ""}`}>Contact</a>
               </Link>
             </li>
             <li className="text-primary">
@@ -125,11 +93,7 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
           </ul>
-          <i
-            className="fas fa-2x fa-bars d-lg-none"
-            role="button"
-            onClick={() => setMenu(true)}
-          ></i>
+          <i className="fas fa-2x fa-bars d-lg-none" role="button" onClick={() => setMenu(true)}></i>
         </div>
       </nav>
       {menu && (
@@ -152,7 +116,11 @@ const Header = (): JSX.Element => {
                     <a className="text-decoration-none">Home</a>
                   </Link>
                 </li>
-                <li className="text-center py-4 border-bottom">About</li>
+                <li className="text-center py-4 border-bottom">
+                  <Link href="/about">
+                    <a className="text-decoration-none">About</a>
+                  </Link>
+                </li>
                 <li className="text-center py-4 border-bottom">
                   <Link href="/team">
                     <a className="text-decoration-none">Team</a>
@@ -163,10 +131,12 @@ const Header = (): JSX.Element => {
                     <a className="text-decoration-none">Gallery</a>
                   </Link>
                 </li>
-                <li className="text-center py-4 border-bottom">Contact us</li>
-                <li className="text-center text-primary py-4 border-bottom">
-                  Join Us
+                <li className="text-center py-4 border-bottom">
+                  <Link href="/contact">
+                    <a className="text-decoration-none">Contact</a>
+                  </Link>
                 </li>
+                <li className="text-center text-primary py-4 border-bottom">Join Us</li>
               </ul>
             </div>
           )}

@@ -215,7 +215,9 @@ const index = () => {
         </section>
         <section className="ten bg-white py-5">
           <div className="container">
-            <h1 className="text-center font-48 fw-bold mb-3">Contact Us</h1>
+            <h1 className="text-center font-48 fw-bold mb-3" id="contact">
+              Contact Us
+            </h1>
             <p className="text-muted font-500 text-center mb-5" style={{ fontSize: "1.3rem" }}>
               We cant do it alone – from crisis to sustainably. There is no limit to what you can do, from a bake sale to a 10k run your help give food, but hope for the future.
             </p>
