@@ -159,7 +159,7 @@ const index = (): JSX.Element => {
         <section className="home-5 py-5">
           <div className="container">
             <p className="h1 mb-3 fw-700 font-48 text-center">Our Amazing Team</p>
-            <p className="text-muted text-center mb-4">We cant do it alone – from crisis to sustainably. There is no limit to what you can do, from a bake sale to a 10k run your efforts will help give a local person in crisis much more than food, but hope for the future.</p>
+            <p className="text-muted text-center mb-4">We cant do it alone – from crisis to sustainably. There is no limit to what you can do, from bake sale to a 10k run your efforts will help give a local person in crisis much more than food, but hope for the future.</p>
             <div className="row mb-5 row-cols-1 row-cols-lg-3 team g-4">
               {team.map((team) => (
                 <div className="col team- " key={team.id}>

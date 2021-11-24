@@ -1,6 +1,6 @@
 import React, { Fragment, ReactChild } from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../components/FooterComp";
+import Header from "../components/HeaderComp";
 import Scroll from "../components/scroll/Scroll";
 
 const FrontLayout = ({ children }: { children: ReactChild }): JSX.Element => {
