@@ -1,0 +1,20 @@
+//@import "./components/footer";
+@import "./variables";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600&display=swap");
+
+*,
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-weight: 300;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  .poppins {
+    font-family: "Poppins", sans-serif;
+  }
+}
