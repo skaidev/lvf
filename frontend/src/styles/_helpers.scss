@@ -13,6 +13,18 @@
 .fw-300 {
   font-weight: 300;
 }
+.font-288 {
+  font-size: 16rem;
+  @media screen and (max-width: 768px) {
+    font-size: 10rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 8rem;
+  }
+}
+.font-64 {
+  font-size: 3.6rem;
+}
 .font-48 {
   font-size: 2.7rem;
 }
@@ -37,4 +49,7 @@
 }
 .letter-spacing {
   letter-spacing: 0.1em;
+}
+.spacing-1 {
+  letter-spacing: 0.23em;
 }

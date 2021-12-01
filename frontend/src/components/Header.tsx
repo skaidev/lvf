@@ -5,9 +5,9 @@ import Link from "next/link";
 const HeaderComp = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
   return (
-    <header className="header fixed-top flex-column py-2 top-header">
-      <div className="_top-header container">
-        <nav className="navbar">
+    <header className="header fixed-top flex-column top-header">
+      <div className="_top-header p-0 container">
+        <nav className="navbar p-0">
           <Link href="/">
             <a className="navbar-brand d-flex align-items-center">
               <img

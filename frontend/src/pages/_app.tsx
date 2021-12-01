@@ -5,8 +5,12 @@ import "../styles/styles.scss";
 import "animate.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  return (
+    <div>
+      <Component {...pageProps} />
+    </div>
+  );
+};
 
 export default MyApp;
