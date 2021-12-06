@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/link-passhref */
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Slider = (): JSX.Element => {
@@ -51,9 +53,11 @@ const Slider = (): JSX.Element => {
                   <p className="text-center mb-4">
                     {single.paragraph[slidestate]}
                   </p>
-                  <button className="btn border-primary bg-primary mx-auto d-block px-4 py-2 text-white">
-                    Join Us
-                  </button>
+                  <Link href={single.link[slidestate]}>
+                    <button className="btn border-primary bg-primary mx-auto d-block px-4 py-2 text-white">
+                      Join Us
+                    </button>
+                  </Link>
                 </div>
               ))}
               <button
@@ -88,5 +92,6 @@ const slideData = [
       "See how we view God, Jesus, the Bible, man, and many significant aspects of our faith. Firmly rooted in Scripture, the beliefs of Joint Heirs Assembly any significant aspects of our faith. Firmly rooted in Scripture decisions as a church.See how Assembly guide our decisions as a church.guide ourod, Jwe view G, thebeliefs of Joint Heirs esus, the Bible, man, and m",
     ],
     btn: [],
+    link: ["/", "/reform", "/loverevival", "/lovehome"],
   },
 ];

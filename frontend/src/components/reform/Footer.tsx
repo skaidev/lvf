@@ -4,12 +4,12 @@ import styled from "styled-components";
 
 const FooterComp = (): JSX.Element => {
   return (
-    <Footer className="love-home-footer">
+    <Footer className="reform-footer">
       <div className="f-cover">
         <div className="container py-2 text-white">
-          <div className="top-sec align-items-center d-flex flex-column flex-lg-row">
-            <div className="d-flex one align-items-center">
-              <img src="logo.png" alt="" />
+          <div className="top-sec align-items-md-center d-flex flex-column flex-md-row">
+            <div className="d-flex one justify-content-center align-items-center">
+              <img src="./images/logo.png" alt="" />
               <div className="logo-txt d-flex mt-2 align-items-center flex-column">
                 <span
                   className="fw-400"
@@ -35,14 +35,14 @@ const FooterComp = (): JSX.Element => {
                 </kbd>
               </div>
             </div>
-            <div className="two d-flex flex-column flex-lg-row align-items-lg-center">
+            <div className="two d-flex flex-column justify-content-center flex-lg-row align-items-lg-center">
               <h4 className=" fw-700 me-2 me-lg-4 text-center">
                 Subscribe Newsletter
               </h4>
-              <form className="d-flex me-lg-5">
+              <form className="d-flex justify-content-center me-lg-5">
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control rounded-0"
                   placeholder="Your Email Address"
                 />
                 <button className="btn btn-primary text-white">
@@ -50,7 +50,7 @@ const FooterComp = (): JSX.Element => {
                 </button>
               </form>
             </div>
-            <div className="three d-flex align-items-md-end">
+            <div className="three d-flex justify-content-center align-items-md-end">
               <span>
                 <i
                   className="fas fa-2x text-primary fa-phone-volume me-3"
@@ -63,7 +63,7 @@ const FooterComp = (): JSX.Element => {
           <hr />
           <div className="socials mb-3 py-2 d-flex justify-content-evenly w-75 mx-auto">
             <span>
-              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook"></i>
             </span>
             <span>
               <i className="fab fa-twitter"></i>
@@ -84,7 +84,7 @@ const FooterComp = (): JSX.Element => {
           </div>
         </div>
         <div className="layer fw-300 text-muted py-4 text-center">
-          <span className="fw-500 text-white ">Love Vision Foundation</span>{" "}
+          <span className="fw-500 text-white">Love Vision Foundation</span>{" "}
           2021. All Rights Reserved
         </div>
       </div>
@@ -100,7 +100,7 @@ const Footer = styled.div`
   min-height: 5.6rem;
   .f-cover {
     min-height: inherit;
-    background: rgba(37, 40, 58, 0.89);
+    background: rgba(117, 0, 0, 0.8);
     .top-sec {
       gap: 1rem;
       .one {

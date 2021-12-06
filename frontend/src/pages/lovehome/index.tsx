@@ -16,7 +16,7 @@ const LoveHome = (): JSX.Element => {
   return (
     <LoveHomeLayout>
       <main>
-        <base href="./images" />
+        <base href="/images/home_images" />
         <section className="first">
           <div className="first-cover d-flex p-0 m-0   align-items-center position-relative">
             <div className="container text-light">
@@ -218,7 +218,7 @@ const LoveHome = (): JSX.Element => {
                 <div className="col sixth-card" key={card.id}>
                   <div className="card border-0 sixth-card-main h-100 position-relative">
                     <img
-                      src={`Rectangle ${card.img}.png`}
+                      src={`/images/home_images/Rectangle ${card.img}.png`}
                       alt=""
                       className="position-absolute w-100 h-100"
                     />
@@ -252,12 +252,16 @@ const LoveHome = (): JSX.Element => {
             </p>
             <form className=" py-5 w-75 d-block mx-auto px-md-5">
               <div className="container-md form px-md-4 py-4 rounded bg-white">
-                <img loading="lazy" src="one.png" alt="" />
-                <img loading="lazy" src="two.png" alt="" />
-                <img loading="lazy" src="three.png" alt="" />
-                <img loading="lazy" src="four.png" alt="" />
-                <img loading="lazy" src="five.png" alt="" />
-                <img loading="lazy" src="six.png" alt="" />
+                <img loading="lazy" src="/images/home_images/one.png" alt="" />
+                <img loading="lazy" src="/images/home_images/two.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/images/home_images/three.png"
+                  alt=""
+                />
+                <img loading="lazy" src="/images/home_images/four.png" alt="" />
+                <img loading="lazy" src="/images/home_images/five.png" alt="" />
+                <img loading="lazy" src="/images/home_images/six.png" alt="" />
                 <div className="f-row py-2 d-flex mb-md-3 flex-column flex-md-row">
                   <input
                     type="text"
@@ -316,19 +320,19 @@ const LoveHome = (): JSX.Element => {
             <div className="loader mb-4 row row-cols-1 justify-content-center justify-content-md-around row-cols-sm-1 row-cols-md-3">
               <div className="col mb-2  two">
                 <span>
-                  <img src="Ellipse 8.png" alt="" />
+                  <img src="/images/home_images/Ellipse 8.png" alt="" />
                 </span>
                 <span></span>
               </div>
               <div className="col mb-2  two">
                 <span>
-                  <img src="Ellipse 10.png" alt="" />
+                  <img src="/images/home_images/Ellipse 10.png" alt="" />
                 </span>
                 <span></span>
               </div>
               <div className="col mb-2 two">
                 <span>
-                  <img src="Ellipse 9.png" alt="" />
+                  <img src="/images/home_images/Ellipse 9.png" alt="" />
                 </span>
                 <span></span>
               </div>
@@ -405,7 +409,11 @@ const LoveHome = (): JSX.Element => {
               {galley.map((card) => (
                 <div className="col" key={card.id}>
                   <div className="card border-0 bg-transparent">
-                    <img src={`g${card.id}.png`} alt="" className="card-img" />
+                    <img
+                      src={`/images/home_images/g${card.id}.png`}
+                      alt=""
+                      className="card-img"
+                    />
                     <div className="card-body bg-white p-2">
                       <p className="h5 p-0 mb-4 fw-bold">
                         Cancer support - For less priviledged children

@@ -13,10 +13,10 @@ const Header = (): JSX.Element => {
 
   const router = useRouter();
   return (
-    <header className="love-home-header">
-      <nav className="main-top bg-dark ">
-        <div className="container align-items-center d-flex flex-md-column flex-xl-row justify-content-between text-light py-1">
-          <div className="left d-flex">
+    <header className="reform-header">
+      <nav className="main-top">
+        <div className="container align-items-center d-flex flex-md-column flex-xl-row text-light justify-content-between py-1">
+          <div className="left d-flex ">
             <div>
               <i
                 className="fas fa-phone-volume"
@@ -32,15 +32,15 @@ const Header = (): JSX.Element => {
             |
             <div className="social-top d-flex flex-row">
               &nbsp;
-              <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-dark justify-content-center align-items-center"></i>
+              <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-danger justify-content-center align-items-center"></i>
               &nbsp;
-              <i className="soc fab fa-xs fa-instagram text-dark bg-light d-flex justify-content-center align-items-center"></i>
+              <i className="soc fab fa-xs fa-instagram text-danger bg-light d-flex justify-content-center align-items-center"></i>
               &nbsp;
-              <i className="soc fab fa-xs fa-twitter d-flex text-dark bg-light justify-content-center align-items-center"></i>
+              <i className="soc fab fa-xs fa-twitter d-flex text-danger bg-light justify-content-center align-items-center"></i>
               &nbsp;
             </div>
           </div>
-          <div className="right d-none d-md-flex justify-content-end ">
+          <div className="right d-none d-md-flex justify-content-end">
             <WorkWithUs />
             <p className="p-0 m-0 ">
               <span className="fw-lighter">
@@ -55,7 +55,7 @@ const Header = (): JSX.Element => {
         <div className="container justify-content-between align-items-center d-flex ">
           <Link href="/">
             <a className="logo-sec text-decoration-none d-flex align-items-center">
-              <img src="/images/home_images/logo.png" alt="" />
+              <img src="./images/logo.png" alt="" className="navbar-brand" />
               <div className="logo-txt d-flex flex-column">
                 <span className="fw-bold" style={{ color: "#7ca2b5" }}>
                   <span className="" style={{ color: "#af3d6e" }}>
@@ -74,7 +74,7 @@ const Header = (): JSX.Element => {
           </Link>
           <ul className="nav fw-bold d-none d-lg-flex">
             <li className="nav-item">
-              <Link href="/lovehome">
+              <Link href="/">
                 <a
                   className={`nav-link ${
                     router.pathname == "/" ? "active" : ""
@@ -88,7 +88,7 @@ const Header = (): JSX.Element => {
               <Link href="/#about">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/about" ? "active" : ""
+                    router.pathname == "/#about" ? "active" : ""
                   }`}
                 >
                   About
@@ -96,7 +96,7 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/lovehome/team">
+              <Link href="/team">
                 <a
                   className={`nav-link ${
                     router.pathname == "/team" ? "active" : ""
@@ -107,7 +107,7 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/lovehome/gallery">
+              <Link href="/gallery">
                 <a
                   className={`nav-link ${
                     router.pathname == "/gallery" ? "active" : ""
@@ -118,11 +118,11 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/#contact">
+              <Link href="/">
                 <a className="nav-link">Contact us</a>
               </Link>
             </li>
-            <li className="text-primary fw-600 font-18">
+            <li className="text-primary">
               <Link href="/">
                 <a className="nav-link">Join Us</a>
               </Link>

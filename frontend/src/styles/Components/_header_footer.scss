@@ -84,8 +84,8 @@
       flex-wrap: wrap;
       .social-top {
         .soc {
-          width: 23px;
-          height: 23px;
+          width: 1.3rem;
+          height: 1.3rem;
           border-radius: 50%;
         }
       }
@@ -118,6 +118,96 @@
           padding: 15px 20px;
         }
       }
+      @media screen and (max-width: 1200px) {
+        gap: 0.8rem;
+      }
+    }
+  }
+  .min-menu {
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.308);
+    width: 90%;
+    z-index: 1000;
+    left: 10%;
+    animation: movein 0.1s linear alternate;
+
+    @keyframes movein {
+      from {
+        left: 100%;
+      }
+      to {
+        left: 10%;
+      }
+    }
+    &-cover {
+      width: 80%;
+      background: white;
+      z-index: 1000;
+      min-height: 100vh;
+      animation: moveinafter 0.3s linear;
+      animation-iteration-count: once;
+      position: relative;
+      left: 20%;
+      @keyframes moveinafter {
+        from {
+          left: 100%;
+        }
+        to {
+          left: 20%;
+        }
+      }
+      ul {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.reform-header {
+  .main-top {
+    background: #7ca2b5;
+    .left {
+      flex-wrap: wrap;
+      .social-top {
+        .soc {
+          width: 1.3rem;
+          height: 1.3rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .main-bottom {
+    .nav {
+      gap: 2rem;
+      align-items: center;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #25283a;
+          transition: all ease-in-out 0.5s;
+          font-weight: 600;
+          font-size: 1rem;
+          &.active {
+            color: #50ebb2;
+          }
+        }
+        &:hover {
+          a {
+            color: #50ebb2;
+          }
+        }
+        .active {
+          background: rgba(185, 185, 185, 0.01);
+          box-shadow: inset 0px -3px 0px #25283a;
+          border-radius: 5px;
+          padding: 15px 20px;
+        }
+      }
+
       @media screen and (max-width: 1200px) {
         gap: 0.8rem;
       }
