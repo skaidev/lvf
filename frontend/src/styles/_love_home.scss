@@ -1,4 +1,64 @@
 #love-home {
+  button,
+  .btn {
+    border: none;
+  }
+  button:focus {
+    box-shadow: none;
+    outline: none !important;
+    -webkit-box-shadow: none;
+  }
+  .bg-primary,
+  .btn-primary {
+    background-color: #50ebb2 !important;
+  }
+  .bg-warning,
+  .btn-warning {
+    background-color: #9e4023 !important;
+  }
+  .bg-muted,
+  .btn-muted {
+    background-color: #767676 !important;
+  }
+  .bg-dark,
+  .btn-dark {
+    background-color: #25283a !important;
+  }
+  .bg-gray,
+  .btn-gray {
+    background-color: rgba(255, 255, 255, 0.54) !important;
+  }
+  .bg-light,
+  .btn-light {
+    background-color: #ffffff !important;
+  }
+  .bg-secondary,
+  .btn-secondary {
+    background-color: #595757 !important;
+  }
+
+  .text-primary {
+    color: #50ebb2 !important;
+  }
+  .text-warning {
+    color: #9e4023 !important;
+  }
+  .text-muted {
+    color: #767676 !important;
+  }
+  .text-dark {
+    color: #25283a !important;
+  }
+  .text-gray {
+    color: rgba(255, 255, 255, 0.54) !important;
+  }
+  .text-light {
+    color: #ffffff !important;
+  }
+  .text-secondary {
+    color: #595757 !important;
+  }
+
   main {
     min-height: 100vh;
     .first {

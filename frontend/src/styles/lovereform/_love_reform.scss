@@ -1,4 +1,77 @@
 #love-reform {
+  button,
+  .btn {
+    border: none;
+  }
+  button:focus {
+    box-shadow: none;
+    outline: none !important;
+    -webkit-box-shadow: none;
+  }
+  .bg-primary,
+  .btn-primary {
+    background-color: #50ebb2 !important;
+  }
+  .bg-warning,
+  .btn-warning {
+    background-color: #9e4023 !important;
+  }
+  .bg-muted,
+  .btn-muted {
+    background-color: #767676 !important;
+  }
+  .bg-secondary,
+  .btn-secondary {
+    background-color: #7ca2b5 !important;
+  }
+  .bg-info,
+  .btn-info {
+    background-color: #ffd87a !important;
+  }
+  .bg-light,
+  .btn-light {
+    background-color: #ffffff !important;
+  }
+  .bg-danger,
+  .btn-danger {
+    background-color: #750000 !important;
+  }
+  .bg-dark,
+  .btn-dark {
+    background-color: #25283a !important;
+  }
+  .bg-grey,
+  .btn-grey {
+    background-color: #eff3f6 !important;
+  }
+
+  .text-primary {
+    color: #50ebb2 !important;
+  }
+  .text-warning {
+    color: #9e4023 !important;
+  }
+  .text-muted {
+    color: #767676 !important;
+  }
+  .text-secondary {
+    color: #7ca2b5 !important;
+  }
+  .text-info {
+    color: #ffd87a !important;
+  }
+  .text-light {
+    color: #ffffff !important;
+  }
+  .text-danger {
+    color: #750000 !important;
+  }
+  .text-dark {
+    color: #25283a !important;
+  }
+  .text-grey {
+    color: #eff3f6 !important;
+  }
   main {
     min-height: 100vh;
     .first {

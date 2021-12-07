@@ -29,15 +29,17 @@ const galleryPage = (): JSX.Element => {
               <p className="pt-5 fw-500 font-18 text-center text-md-start">
                 Visitation to Mr & Mrs Okenes Family
               </p>
-              <SimpleReactlightbox>
-                <SRLWrapper>
-                  <div className="image-gallery">
+              <div className="wrapper">
+                <SimpleReactlightbox>
+                  <SRLWrapper>
                     {images.map((image, i) => (
-                      <img src={image} alt="" key={i} className="img-fluid" />
+                      <div className="image-gallery" key={i}>
+                        <img src={image} alt="" className="img-fluid" />
+                      </div>
                     ))}
-                  </div>
-                </SRLWrapper>{" "}
-              </SimpleReactlightbox>
+                  </SRLWrapper>{" "}
+                </SimpleReactlightbox>
+              </div>
             </div>
           </div>
           {/* end of 2020 typography */}
@@ -48,11 +50,13 @@ const galleryPage = (): JSX.Element => {
               visitation to Mr Harolds Family
             </p>
 
-            {/* <div className="wrapper row g-2">
-              {imageTwo.map(() => (
-                <div className="box d-flex flex-column flex-lg-row col" key={i}>
-                  <img className="" style={{ maxHeight: '325px', maxWidth: '550px' }} src={e} alt="" />
-                  <div className="img-overlay">
+            <div className="wrapper row">
+              <SimpleReactlightbox>
+                <SRLWrapper>
+                  {imageTwo.map((image, i) => (
+                    <div className="box" key={i}>
+                      <img className="" src={image} alt="" />
+                      {/* <div className="img-overlay">
                     <div className="img-text">
                       <div>
                         <p>
@@ -66,10 +70,12 @@ const galleryPage = (): JSX.Element => {
                         </p>
                       </div>
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div> */}
+                  </div> */}
+                    </div>
+                  ))}
+                </SRLWrapper>
+              </SimpleReactlightbox>
+            </div>
           </div>
         </section>
         <section className="home-gallery-2b py-5">
@@ -84,11 +90,13 @@ const galleryPage = (): JSX.Element => {
               <p className="pt-5 fw-500 font-18">
                 Visitation to Mr & Mrs Okenes Family
               </p>
-              {/* <div className="wrapper row g-2">
-                {image.map(() => (
-                  <div className="box d-flex flex-column col" key={i}>
-                    <img className="" src={e} alt="" />
-                    <div className="img-overlay">
+              <div className="wrapper row g-2">
+                <SimpleReactlightbox>
+                  <SRLWrapper>
+                    {imageThree.map((image, e) => (
+                      <div className="box d-flex flex-column col" key={e}>
+                        <img className="" src={image} alt="" />
+                        {/* <div className="img-overlay">
                     <div className="img-text">
                       <div>
                         <p>
@@ -102,10 +110,12 @@ const galleryPage = (): JSX.Element => {
                         </p>
                       </div>
                     </div>
-                  </div>
-                  </div>
-                ))}
-              </div> */}
+                  </div> */}
+                      </div>
+                    ))}
+                  </SRLWrapper>
+                </SimpleReactlightbox>
+              </div>
             </div>
           </div>
           {/* end of 2021 typography */}
@@ -140,5 +150,11 @@ const images = [
   "/images/home_images/visitation_4.png",
   "/images/home_images/visitation_5.png",
 ];
-// const imageTwo = ['/images/visitation_1.png', '/images/visitation_1.png']
-// const imageThree = ['/images/visitationb_1.png', '/images/visitationb_2.png']
+const imageTwo = [
+  "/images/home_images/visitation_1.png",
+  "/images/home_images/visitation_1.png",
+];
+const imageThree = [
+  "/images/home_images/visitationb_1.png",
+  "/images/home_images/visitationb_2.png",
+];

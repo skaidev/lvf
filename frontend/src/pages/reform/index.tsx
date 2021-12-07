@@ -116,7 +116,7 @@ const ReformPage = (): JSX.Element => {
         </section>
         <section className="fourth py-5">
           <div className="container d-flex fourth-wrap flex-column flex-md-row">
-            <div className="left d-md-flex flex-md-column flex-lg-row text-center text-md-start align-items-center border-end border-secondary border-0 border-1 px-md-4">
+            <div className="left d-md-flex flex-md-column flex-lg-row text-center text-md-start align-items-center border-end border-white border-0 border-1 px-md-4">
               <div className="icon ">
                 <Empowering />
               </div>

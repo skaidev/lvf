@@ -1,4 +1,77 @@
 #love-revival {
+  button,
+  .btn {
+    border: none;
+  }
+  button:focus {
+    box-shadow: none;
+    outline: none !important;
+    -webkit-box-shadow: none;
+  }
+  .bg-primary,
+  .btn-primary {
+    background-color: #50ebb2 !important;
+  }
+  .bg-info,
+  .btn-info {
+    background-color: #2d40a2 !important;
+  }
+  .bg-dark,
+  .btn-dark {
+    background-color: #25283a !important;
+  }
+  .btn-light {
+    background-color: #ffffff !important;
+  }
+  .bg-warning,
+  .btn-warning {
+    background-color: #9e4023 !important;
+  }
+  .bg-muted,
+  .btn-muted {
+    background-color: #767676 !important;
+  }
+  .bg-secondary,
+  .btn-secondary {
+    background-color: #7ca2b5 !important;
+  }
+  .bg-light,
+  .bg-success,
+  .btn-success {
+    background-color: #2d3fa2 !important;
+  }
+  .bg-danger,
+  .btn-danger {
+    background-color: #000000 !important;
+  }
+
+  .text-primary {
+    color: #50ebb2 !important;
+  }
+  .text-info {
+    color: #2d40a2 !important;
+  }
+  .text-dark {
+    color: #25283a !important;
+  }
+  .text-light {
+    color: #ffffff !important;
+  }
+  .text-warning {
+    color: #9e4023 !important;
+  }
+  .text-muted {
+    color: #767676 !important;
+  }
+  .text-secondary {
+    color: #7ca2b5 !important;
+  }
+  .text-success {
+    color: #2d3fa2 !important;
+  }
+  .text-danger {
+    color: #000000 !important;
+  }
   .revival {
     min-height: 108vh;
     .first {
@@ -13,13 +86,14 @@
           min-height: inherit;
         }
       }
-      .art {
-        height: 6.9rem;
-        background-image: url("../img/Vector 15.png");
-        background-repeat: no-repeat;
-        //background-color: $light;
-        background-size: 100% 100%;
-      }
+      // .art {
+      //   height: 6.9rem;
+      //   background-image: url("../img/Vector 15.png");
+      //   background-repeat: no-repeat;
+      //   //background-color: $light;
+      //   background-size: 100% 100%;
+      //   background-position: -30px 20px;
+      // }
     }
     .second {
       .left {
