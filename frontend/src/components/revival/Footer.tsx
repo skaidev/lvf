@@ -2,15 +2,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const ReformFooter = (): JSX.Element => {
+const RevivalFooter = (): JSX.Element => {
   return (
-    <Footer className="reform-footer">
+    <Footer className="revival-footer">
       <div className="f-cover">
         <div className="container py-2 text-white">
-          <div className="top-sec align-items-md-center d-flex flex-column flex-md-row">
+          <div className="top-sec align-items-center d-flex flex-column flex-lg-row">
             <div className="d-flex one justify-content-center align-items-center">
-              <img src="./images/logo.png" alt="" />
-              <div className="logo-txt d-flex mt-2 align-items-center flex-column">
+              <img src="/images/revival_images/logo.png" alt="" />
+              <div className="logo-txt d-flex mt-2 align-itmes-center flex-column">
                 <span
                   className="fw-400"
                   style={{
@@ -35,14 +35,14 @@ const ReformFooter = (): JSX.Element => {
                 </kbd>
               </div>
             </div>
-            <div className="two d-flex flex-column justify-content-center flex-lg-row align-items-lg-center">
+            <div className="two d-flex flex-column flex-lg-row align-items-lg-center">
               <h4 className=" fw-700 me-2 me-lg-4 text-center">
                 Subscribe Newsletter
               </h4>
               <form className="d-flex justify-content-center me-lg-5">
                 <input
                   type="email"
-                  className="form-control rounded-0"
+                  className="form-control"
                   placeholder="Your Email Address"
                 />
                 <button className="btn btn-primary text-white">
@@ -92,7 +92,7 @@ const ReformFooter = (): JSX.Element => {
   );
 };
 
-export default ReformFooter;
+export default RevivalFooter;
 
 const Footer = styled.div`
   background: url("/images/slide1.png");
@@ -100,7 +100,7 @@ const Footer = styled.div`
   min-height: 5.6rem;
   .f-cover {
     min-height: inherit;
-    background: rgba(117, 0, 0, 0.8);
+    background: rgba(45, 63, 162, 0.8);
     .top-sec {
       gap: 1rem;
       .one {

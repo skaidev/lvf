@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import WorkWithUs from "components/icon/WorkWithUs";
 
-const Header = (): JSX.Element => {
+const RevivalHeader = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
   const [sec, setSec] = useState(false);
   setTimeout(() => {
@@ -13,10 +13,10 @@ const Header = (): JSX.Element => {
 
   const router = useRouter();
   return (
-    <header className="reform-header">
+    <header className="revival-header">
       <nav className="main-top">
         <div className="container align-items-center d-flex flex-md-column flex-xl-row text-light justify-content-between py-1">
-          <div className="left d-flex ">
+          <div className="left d-flex">
             <div>
               <i
                 className="fas fa-phone-volume"
@@ -40,7 +40,7 @@ const Header = (): JSX.Element => {
               &nbsp;
             </div>
           </div>
-          <div className="right d-none d-md-flex justify-content-end">
+          <div className="right d-none d-md-flex justify-content-end ">
             <WorkWithUs />
             <p className="p-0 m-0 ">
               <span className="fw-lighter">
@@ -54,15 +54,11 @@ const Header = (): JSX.Element => {
       <nav className="main-bottom py-2">
         <div className="container justify-content-between align-items-center d-flex ">
           <Link href="/">
-            <a className="logo-sec text-decoration-none d-flex align-items-center">
-              <img
-                src="/images/reform_images/logo.png"
-                alt=""
-                className="navbar-brand"
-              />
+            <a className="logo-sec d-flex align-items-center text-decoration-none">
+              <img src="/images/revival_images/logo.png" alt="" />
               <div className="logo-txt d-flex flex-column">
-                <span className="fw-bold" style={{ color: "#7ca2b5" }}>
-                  <span className="" style={{ color: "#af3d6e" }}>
+                <span className="fw-bold font-16 " style={{ color: "#7ca2b5" }}>
+                  <span className="font-16" style={{ color: "#af3d6e" }}>
                     LOVE&nbsp;
                   </span>
                   VISION
@@ -77,11 +73,11 @@ const Header = (): JSX.Element => {
             </a>
           </Link>
           <ul className="nav fw-bold d-none d-lg-flex">
-            <li className="nav-item">
-              <Link href="/reform">
+            <li className="nav-item active">
+              <Link href="/revival">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/reform" ? "active" : ""
+                    router.pathname == "/" ? "active" : ""
                   }`}
                 >
                   Home
@@ -100,10 +96,10 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/reform/team">
+              <Link href="/revival/team">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/reform/team" ? "active" : ""
+                    router.pathname == "/revival/team" ? "active" : ""
                   }`}
                 >
                   Team
@@ -111,10 +107,10 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/reform/gallery">
+              <Link href="/revival/gallery">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/reform/gallery" ? "active" : ""
+                    router.pathname == "/revival/gallery" ? "active" : ""
                   }`}
                 >
                   Gallery
@@ -122,7 +118,7 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/">
+              <Link href="/#contact">
                 <a className="nav-link">Contact us</a>
               </Link>
             </li>
@@ -155,18 +151,18 @@ const Header = (): JSX.Element => {
               </div>
               <ul className="p-0 fw-bold m-0">
                 <li className="text-center py-4 border-bottom">
-                  <Link href="/reform">
+                  <Link href="/">
                     <a className="text-decoration-none">Home</a>
                   </Link>
                 </li>
                 <li className="text-center py-4 border-bottom">About</li>
                 <li className="text-center py-4 border-bottom">
-                  <Link href="/reform/team">
+                  <Link href="/revival/team">
                     <a className="text-decoration-none">Team</a>
                   </Link>
                 </li>
                 <li className="text-center py-4 border-bottom">
-                  <Link href="/reform/gallery">
+                  <Link href="/revival/gallery">
                     <a className="text-decoration-none">Gallery</a>
                   </Link>
                 </li>
@@ -183,4 +179,4 @@ const Header = (): JSX.Element => {
   );
 };
 
-export default Header;
+export default RevivalHeader;

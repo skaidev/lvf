@@ -8,7 +8,7 @@ import Refdonate from "components/icon/Refdonate";
 import Refjoin from "components/icon/Refjoin";
 import Refmembers from "components/icon/Refmembers";
 import Volunteers from "components/icon/Volunteers";
-import Refslider from "components/slide/refslide";
+import Refslider from "components/slide/Refslide";
 import ReformLayout from "layout/ReformLayout";
 import Link from "next/link";
 import React from "react";

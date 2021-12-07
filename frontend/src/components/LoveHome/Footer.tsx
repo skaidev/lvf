@@ -95,7 +95,7 @@ const FooterComp = (): JSX.Element => {
 export default FooterComp;
 
 const Footer = styled.div`
-  background: url("./img/slide1.png");
+  background: url("/images/slide1.png");
   background-size: cover;
   min-height: 5.6rem;
   .f-cover {
