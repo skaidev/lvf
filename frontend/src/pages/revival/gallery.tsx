@@ -12,39 +12,52 @@ const RevivalGallery = () => {
             <h1 className="fw-600 font-48 text-light mt-3">Our Gallery</h1>
           </div>
         </section>
-        <section className="revival-gallery-2 py-5">
-          <div className="container ">
-            <div className="one mb-5">
+        <section className="revival-gallery-2 py-lg-5">
+          <div className="container gallery-container ">
+            <div className="one mb-lg-5">
               <p className="h1 fw-700 font-48">Love Revival Concert 2019</p>
-              <div className="wrapper">
-                <SimpleReactLightbox>
-                  <SRLWrapper>
+
+              <SimpleReactLightbox>
+                <SRLWrapper>
+                  <div className="wrapper-one">
                     {Image?.map((e, i) => (
-                      <div className="box" key={i}>
-                        <img src={e} alt="" className="" />
+                      <div className="gallery-box" key={i}>
+                        <div className="gallery-item">
+                          <div className="image">
+                            <img src={e} alt="" className="main-img" />
+                          </div>
+                        </div>
                       </div>
                     ))}
-                  </SRLWrapper>
-                </SimpleReactLightbox>
-              </div>
+                  </div>
+                </SRLWrapper>
+              </SimpleReactLightbox>
             </div>
           </div>
         </section>
-        <section className="revival-gallery-2b py-3">
-          <div className="container">
+        <section className="revival-gallery-2b py-5">
+          <div className="container ">
             <div className="two">
               <p className="h1 fw-700 font-48">Love Revival Concert 2020</p>
-              <div className="wrapper row gy-4">
-                <SimpleReactLightbox>
-                  <SRLWrapper>
+
+              <SimpleReactLightbox>
+                <SRLWrapper>
+                  <div className="wrapper-two">
                     {ImageTwo?.map((card, i) => (
-                      <div className="box d-flex flex-column col" key={i}>
-                        <img src={card} alt="" style={{ maxHeight: "325px" }} />
+                      <div
+                        className="gallery-box d-flex flex-column col"
+                        key={i}
+                      >
+                        <div className="gallery-item">
+                          <div className="image">
+                            <img src={card} alt="" />
+                          </div>
+                        </div>
                       </div>
                     ))}
-                  </SRLWrapper>
-                </SimpleReactLightbox>
-              </div>
+                  </div>
+                </SRLWrapper>
+              </SimpleReactLightbox>
             </div>
           </div>
         </section>

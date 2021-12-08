@@ -54,7 +54,7 @@ const Slider = (): JSX.Element => {
                     {single.paragraph[slidestate]}
                   </p>
                   <Link href={single.link[slidestate]}>
-                    <button className="btn border-primary bg-primary mx-auto d-block px-4 py-2 text-white">
+                    <button className="btn bg-primary mx-auto d-block px-4 py-2 text-white">
                       Join Us
                     </button>
                   </Link>

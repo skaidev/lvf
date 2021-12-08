@@ -8,53 +8,77 @@
     }
   }
   &-2 {
-    min-height: 80vh;
-
-    .one {
-      .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 100px 300px;
-        grid-gap: 10px;
-        //grid-auto-rows: 10px;
-        .box {
-          width: inherit;
-          // padding: 10px;
-          // overflow: hidden;
-          // position: relative;
-          img {
-            border-radius: 10px;
-            //display: block !important;
+    //min-height: 81vh;
+    .gallery-container {
+      min-height: inherit;
+      .one {
+        min-height: inherit;
+        .wrapper-one {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-gap: 15px;
+          .gallery-box {
+            // .img-overlay {
+            //   position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   width: inherit;
+            //   height: 100%;
+            //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
+            // }
+            .gallery-item {
+              width: 100%;
+              height: 100%;
+              .image {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                .main-img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                }
+              }
+            }
           }
-          // .img-overlay {
-          //   position: absolute;
-          //   top: 0;
-          //   left: 0;
-          //   width: inherit;
-          //   height: 100%;
-          //   background: linear-gradient(180deg, rgba(37, 40, 58, 0) 0%, #25283a 100%);
-          // }
         }
       }
     }
   }
   &-2b {
-    min-height: 90vw;
+    //min-height: 90vh;
     .two {
-      .wrapper {
-        .box {
+      .wrapper-two {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 15px;
+        .gallery-box {
           // padding: 10px;
           // overflow: hidden;
-          // position: relative;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 35px;
-          grid-auto-rows: 320px;
-
-          img {
-            border-radius: 10px;
-            display: block !important;
+          // // position: relative;
+          // display: grid;
+          // grid-template-columns: 1fr 1fr;
+          // grid-gap: 35px;
+          // grid-auto-rows: 320px;
+          .gallery-item {
+            width: 100%;
+            height: 100%;
+            .image {
+              width: 100%;
+              height: 100%;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                max-height: 325px;
+              }
+            }
           }
+
           // .img-overlay {
           //   position: absolute;
           //   top: 0;

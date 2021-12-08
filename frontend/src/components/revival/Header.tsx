@@ -77,7 +77,7 @@ const RevivalHeader = (): JSX.Element => {
               <Link href="/revival">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/" ? "active" : ""
+                    router.pathname == "/revival" ? "active" : ""
                   }`}
                 >
                   Home

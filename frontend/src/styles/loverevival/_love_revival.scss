@@ -1,8 +1,8 @@
 #love-revival {
   button,
-  .btn {
-    border: none;
-  }
+  // .btn {
+  //   border: none;
+  // }
   button:focus {
     box-shadow: none;
     outline: none !important;
@@ -90,7 +90,7 @@
       //   height: 6.9rem;
       //   background-image: url("../img/Vector 15.png");
       //   background-repeat: no-repeat;
-      //   //background-color: $light;
+      //   //background-color: #ffffff;
       //   background-size: 100% 100%;
       //   background-position: -30px 20px;
       // }
@@ -184,7 +184,7 @@
       //   height: 125px;
       //   background-image: url("./img/Vector 15.png");
       //   background-repeat: no-repeat;
-      //   background-color: $light;
+      //   background-color: #ffffff;
       //   background-size: 100% 100%;
       //   transform: matrix(1, 0, 0, -1, 0, 0);
       // }
@@ -260,17 +260,17 @@
       form {
         input {
           border-radius: 5px;
-          border: 2px solid $info !important;
+          border: 2px solid #2d40a2 !important;
         }
         textarea {
           border-radius: 5px;
-          border: 2px solid $info !important;
+          border: 2px solid #2d40a2 !important;
         }
         .form-control:focus {
           box-shadow: none;
           outline: none !important;
           -webkit-box-shadow: none;
-          border: 3px solid $info !important;
+          border: 3px solid #2d40a2 !important;
         }
         .form-control::placeholder {
           font-size: 0.9rem;

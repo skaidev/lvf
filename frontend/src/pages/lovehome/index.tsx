@@ -84,7 +84,7 @@ const LoveHome = (): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div className="right-box d-flex justify-content-center justify-content-lg-end">
+            <div className="right-box d-none d-lg-flex justify-content-lg-center justify-content-lg-end">
               <div className="img-ring">
                 <img
                   src="/images/home_images/about_us.png"

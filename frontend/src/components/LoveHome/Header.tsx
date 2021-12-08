@@ -77,7 +77,7 @@ const Header = (): JSX.Element => {
               <Link href="/lovehome">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/" ? "active" : ""
+                    router.pathname == "/lovehome" ? "active" : ""
                   }`}
                 >
                   Home

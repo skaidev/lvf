@@ -10,10 +10,12 @@ const FoundationLayout = ({
 }): JSX.Element => {
   return (
     <Fragment>
-      <Header />
-      <div className="children">{children}</div>
-      <Scroll showBelow={280} />
-      <Footer />
+      <div id="foundation-layout">
+        <Header />
+        <div className="children">{children}</div>
+        <Scroll showBelow={280} />
+        <Footer />
+      </div>
     </Fragment>
   );
 };
