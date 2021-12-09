@@ -21,37 +21,37 @@ const reformGallery = (): JSX.Element => {
         <section className="reform-gallery-2 py-5 mb-3">
           <div className="container">
             <p className="h1 pt-5 text-center text-lg-start">Empowerment</p>
-            <div className="wrapper row g-2">
-              <SimpleReactLightbox>
-                <SRLWrapper>
+            <SimpleReactLightbox>
+              <SRLWrapper>
+                <div className="wrapper">
                   {Image?.map((e, i) => (
-                    <div className="box d-flex flex-column col" key={i}>
-                      <img
-                        className=""
-                        style={{ maxHeight: "325px" }}
-                        src={e}
-                        alt=""
-                      />
-                      {/* <div className="img-overlay">
-                    <div className="img-text">
-                      <div>
-                        <p>
-                          <i className="text-light fas fa-map-marker-alt me-3"></i>
-                          No 6 Mission Road
-                        </p>
+                    <div className="gallery-box" key={i}>
+                      <div className="gallery-item">
+                        <div className="image">
+                          <img className="" src={e} alt="" />
+                        </div>
+                        <div className="img-overlay">
+                          <div className="img-text d-flex justify-content-end justify-content-lg-start flex-column flex-lg-row align-items-lg-end">
+                            <div className="me-3">
+                              <p className="text-light">
+                                <i className="text-light fas fa-map-marker-alt me-3"></i>
+                                No 6 Mission Road
+                              </p>
+                            </div>
+                            <div>
+                              <p className="text-light">
+                                <i className="text-light fas fa-calendar-week me-3"></i>
+                                5th june 2020
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div>
-                        <p>
-                          <i className="text-light fas fa-calendar-week me-3"></i>5th june 2020
-                        </p>
-                      </div>
-                    </div>
-                  </div> */}
                     </div>
                   ))}
-                </SRLWrapper>
-              </SimpleReactLightbox>
-            </div>
+                </div>
+              </SRLWrapper>
+            </SimpleReactLightbox>
           </div>
         </section>
         <section className="reform-gallery-3">
@@ -70,6 +70,7 @@ const reformGallery = (): JSX.Element => {
             </div>
           </div>
         </section>
+
         {/* <section className="gallery-4">
           
         </section> */}

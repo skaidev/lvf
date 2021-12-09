@@ -99,7 +99,7 @@ const Header = (): JSX.Element => {
               <Link href="/lovehome/team">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/team" ? "active" : ""
+                    router.pathname == "/lovehome/team" ? "active" : ""
                   }`}
                 >
                   Team
@@ -110,7 +110,7 @@ const Header = (): JSX.Element => {
               <Link href="/lovehome/gallery">
                 <a
                   className={`nav-link ${
-                    router.pathname == "/gallery" ? "active" : ""
+                    router.pathname == "/lovehome/gallery" ? "active" : ""
                   }`}
                 >
                   Gallery

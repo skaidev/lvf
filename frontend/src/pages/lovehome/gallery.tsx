@@ -29,17 +29,37 @@ const galleryPage = (): JSX.Element => {
               <p className="pt-5 fw-500 font-18 text-center text-md-start">
                 Visitation to Mr & Mrs Okenes Family
               </p>
-              <div className="wrapper">
-                <SimpleReactlightbox>
-                  <SRLWrapper>
+              <SimpleReactlightbox>
+                <SRLWrapper>
+                  <div className="wrapper">
                     {images.map((image, i) => (
-                      <div className="image-gallery" key={i}>
-                        <img src={image} alt="" className="img-fluid" />
+                      <div className="gallery-box" key={i}>
+                        <div className="gallery-item">
+                          <div className="image">
+                            <img className="" src={image} alt="" />
+                          </div>
+                          <div className="img-overlay">
+                            <div className="img-text d-flex justify-content-end justify-content-lg-start flex-column flex-lg-row align-items-lg-end">
+                              <div className="me-lg-3">
+                                <p className="text-light">
+                                  <i className="text-light fas fa-map-marker-alt me-3"></i>
+                                  No 6 Mission Road
+                                </p>
+                              </div>
+                              <div>
+                                <p className="text-light">
+                                  <i className="text-light fas fa-calendar-week me-3"></i>
+                                  5th june 2020
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     ))}
-                  </SRLWrapper>{" "}
-                </SimpleReactlightbox>
-              </div>
+                  </div>
+                </SRLWrapper>
+              </SimpleReactlightbox>
             </div>
           </div>
           {/* end of 2020 typography */}
@@ -50,32 +70,37 @@ const galleryPage = (): JSX.Element => {
               visitation to Mr Harolds Family
             </p>
 
-            <div className="wrapper row">
-              <SimpleReactlightbox>
-                <SRLWrapper>
+            <SimpleReactlightbox>
+              <SRLWrapper>
+                <div className="wrapper">
                   {imageTwo.map((image, i) => (
-                    <div className="box" key={i}>
-                      <img className="" src={image} alt="" />
-                      {/* <div className="img-overlay">
-                    <div className="img-text">
-                      <div>
-                        <p>
-                          <i className="text-light fas fa-map-marker-alt me-3"></i>
-                          No 6 Mission Road
-                        </p>
+                    <div className="gallery-box" key={i}>
+                      <div className="gallery-item">
+                        <div className="image">
+                          <img className="" src={image} alt="" />
+                        </div>
+                        <div className="img-overlay">
+                          <div className="img-text d-flex justify-content-end justify-content-lg-start flex-column flex-lg-row align-items-lg-end">
+                            <div className="me-3">
+                              <p className="text-light">
+                                <i className="text-light fas fa-map-marker-alt me-3"></i>
+                                No 6 Mission Road
+                              </p>
+                            </div>
+                            <div>
+                              <p className="text-light">
+                                <i className="text-light fas fa-calendar-week me-3"></i>
+                                5th june 2020
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div>
-                        <p>
-                          <i className="text-light fas fa-calendar-week me-3"></i>5th june 2020
-                        </p>
-                      </div>
-                    </div>
-                  </div> */}
                     </div>
                   ))}
-                </SRLWrapper>
-              </SimpleReactlightbox>
-            </div>
+                </div>
+              </SRLWrapper>
+            </SimpleReactlightbox>
           </div>
         </section>
         <section className="home-gallery-2b py-5">
@@ -90,32 +115,37 @@ const galleryPage = (): JSX.Element => {
               <p className="pt-5 fw-500 font-18">
                 Visitation to Mr & Mrs Okenes Family
               </p>
-              <div className="wrapper row g-2">
-                <SimpleReactlightbox>
-                  <SRLWrapper>
+              <SimpleReactlightbox>
+                <SRLWrapper>
+                  <div className="wrapper">
                     {imageThree.map((image, e) => (
-                      <div className="box d-flex flex-column col" key={e}>
-                        <img className="" src={image} alt="" />
-                        {/* <div className="img-overlay">
-                    <div className="img-text">
-                      <div>
-                        <p>
-                          <i className="text-light fas fa-map-marker-alt me-3"></i>
-                          No 6 Mission Road
-                        </p>
-                      </div>
-                      <div>
-                        <p>
-                          <i className="text-light fas fa-calendar-week me-3"></i>5th june 2020
-                        </p>
-                      </div>
-                    </div>
-                  </div> */}
+                      <div className="gallery-box" key={e}>
+                        <div className="gallery-item">
+                          <div className="image">
+                            <img className="" src={image} alt="" />
+                          </div>
+                          <div className="img-overlay">
+                            <div className="img-text d-flex justify-content-end justify-content-lg-start flex-column flex-lg-row align-items-lg-end">
+                              <div className="me-3">
+                                <p className="text-light">
+                                  <i className="text-light fas fa-map-marker-alt me-3"></i>
+                                  No 6 Mission Road
+                                </p>
+                              </div>
+                              <div>
+                                <p className="text-light">
+                                  <i className="text-light fas fa-calendar-week me-3"></i>
+                                  5th june 2020
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     ))}
-                  </SRLWrapper>
-                </SimpleReactlightbox>
-              </div>
+                  </div>
+                </SRLWrapper>
+              </SimpleReactlightbox>
             </div>
           </div>
           {/* end of 2021 typography */}

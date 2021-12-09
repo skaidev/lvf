@@ -10,10 +10,12 @@ const LoveHomeLayout = ({
 }): JSX.Element => {
   return (
     <Fragment>
-      <Header />
-      <div id="love-home">{children}</div>
-      <Scroll showBelow={280} />
-      <Footer />
+      <div id="love-home">
+        <Header />
+        <div>{children}</div>
+        <Scroll showBelow={280} />
+        <Footer />
+      </div>
     </Fragment>
   );
 };

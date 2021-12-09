@@ -32,11 +32,11 @@ const RevivalHeader = (): JSX.Element => {
             |
             <div className="social-top d-flex flex-row">
               &nbsp;
-              <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-danger justify-content-center align-items-center"></i>
+              <i className="soc fab fa-xs fa-facebook-f d-flex bg-light text-warning justify-content-center align-items-center"></i>
               &nbsp;
-              <i className="soc fab fa-xs fa-instagram text-danger bg-light d-flex justify-content-center align-items-center"></i>
+              <i className="soc fab fa-xs fa-instagram text-warning bg-light d-flex justify-content-center align-items-center"></i>
               &nbsp;
-              <i className="soc fab fa-xs fa-twitter d-flex text-danger bg-light justify-content-center align-items-center"></i>
+              <i className="soc fab fa-xs fa-twitter d-flex text-warning bg-light justify-content-center align-items-center"></i>
               &nbsp;
             </div>
           </div>

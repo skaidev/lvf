@@ -6,10 +6,12 @@ import React, { Fragment, ReactChild } from "react";
 const RevivalLayout = ({ children }: { children: ReactChild }): JSX.Element => {
   return (
     <Fragment>
-      <RevivalHeader />
-      <div id="love-revival">{children}</div>
-      <Scroll showBelow={280} />
-      <RevivalFooter />
+      <div id="love-revival">
+        <RevivalHeader />
+        <div>{children}</div>
+        <Scroll showBelow={280} />
+        <RevivalFooter />
+      </div>
     </Fragment>
   );
 };
