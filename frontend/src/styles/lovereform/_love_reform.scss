@@ -1,8 +1,4 @@
 #love-reform {
-  button,
-  .btn {
-    border: none;
-  }
   button:focus {
     box-shadow: none;
     outline: none !important;
@@ -11,6 +7,7 @@
   .bg-primary,
   .btn-primary {
     background-color: #50ebb2 !important;
+    border-color: none;
   }
   .bg-warning,
   .btn-warning {
