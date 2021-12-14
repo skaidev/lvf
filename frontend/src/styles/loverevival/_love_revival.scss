@@ -4,6 +4,17 @@
     outline: none !important;
     -webkit-box-shadow: none;
   }
+  .join-us:hover {
+    color: #ffffff !important;
+  }
+  .btn-outline-primary {
+    color: #50eeb2 !important;
+    border: 2px solid;
+  }
+  .btn-outline-primary:hover {
+    background-color: #50ebb2 !important;
+    border-color: #50ebb2;
+  }
   .bg-primary,
   .btn-primary {
     background-color: #50ebb2 !important;
@@ -111,7 +122,13 @@
     .fourth {
       .mg {
         margin-bottom: 6.2rem;
+        .welcome-message {
+          span {
+            border-bottom: 12px solid #2d3fa2;
+          }
+        }
       }
+
       &-main {
         .avatar {
           img {
