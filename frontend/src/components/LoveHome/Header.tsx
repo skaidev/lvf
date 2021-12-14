@@ -118,7 +118,7 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/#contact">
+              <Link href="/home/#Contactus">
                 <a className="nav-link">Contact us</a>
               </Link>
             </li>
