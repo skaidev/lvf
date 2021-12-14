@@ -307,7 +307,7 @@ const LoveHome = (): JSX.Element => {
                   placeholder="Briefly Explain what you want to do for this organization and how..."
                 ></textarea>
 
-                <button className="btn border-2 px-5 py-2 fw-bold border-primary text-primary">
+                <button className="btn border-2 px-5 py-2 fw-bold border-primary btn-primary text-light">
                   Send
                 </button>
               </div>
