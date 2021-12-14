@@ -151,24 +151,34 @@ const Header = (): JSX.Element => {
               </div>
               <ul className="p-0 fw-bold m-0">
                 <li className="text-center py-4 border-bottom">
-                  <Link href="/">
+                  <Link href="/home">
                     <a className="text-decoration-none">Home</a>
                   </Link>
                 </li>
-                <li className="text-center py-4 border-bottom">About</li>
                 <li className="text-center py-4 border-bottom">
-                  <Link href="/team">
+                  <Link href="/#about">
+                    <a className="text-decoration-none">About</a>
+                  </Link>
+                </li>
+                <li className="text-center py-4 border-bottom">
+                  <Link href="/home/team">
                     <a className="text-decoration-none">Team</a>
                   </Link>
                 </li>
                 <li className="text-center py-4 border-bottom">
-                  <Link href="/gallery">
+                  <Link href="/home/gallery">
                     <a className="text-decoration-none">Gallery</a>
                   </Link>
                 </li>
-                <li className="text-center py-4 border-bottom">Contact us</li>
+                <li className="text-center py-4 border-bottom">
+                  <Link href="/home/#Contactus">
+                    <a className="text-decoration-none">Contact us</a>
+                  </Link>
+                </li>
                 <li className="text-center text-primary py-4 border-bottom">
-                  Join Us
+                  <Link href="/partner">
+                    <a className="nav-link">Join Us</a>
+                  </Link>
                 </li>
               </ul>
             </div>

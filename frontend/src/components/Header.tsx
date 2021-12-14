@@ -91,10 +91,26 @@ const HeaderComp = (): JSX.Element => {
       </div>
       {menu && (
         <div className="min d-lg-none mt-2 animate__animated animate__bounceInDown text-center">
-          <div>Home</div>
-          <div>About</div>
-          <div>Contact us</div>
-          <div>Join us</div>
+          <div>
+            <Link href="/">
+              <a className="nav-link">Home</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="/#about">
+              <a className="nav-link">About</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="/#contact">
+              <a className="nav-link">Contact Us</a>
+            </Link>
+          </div>
+          <div>
+            <Link href="/partner">
+              <a className="nav-link text-primary">Join Us</a>
+            </Link>
+          </div>
         </div>
       )}
     </header>

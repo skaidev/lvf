@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -76,11 +77,29 @@ const FooterComp = (): JSX.Element => {
             </span>
           </div>
           <div className="list w-75 mx-auto align-items-center d-flex flex-column flex-md-row py-3 justify-content-md-between">
-            <span>Home</span>
+            <span>
+              <Link href="/home">
+                <a className="text-decoration-none text-light">Home</a>
+              </Link>
+            </span>
             <span>About</span>
-            <span>Team</span>
-            <span>Contact us</span>
-            <span className="text-primary">Join us</span>
+            <span>
+              <Link href="/home/team">
+                <a className="text-decoration-none text-light">Team</a>
+              </Link>
+            </span>
+            <span>
+              <Link href="/home/#Contactus">
+                <a className="text-decoration-none text-light">Contact us</a>
+              </Link>
+            </span>
+            <span>
+              <Link href="/partner">
+                <a className="text-primary text-decoration-none text-light">
+                  Join us
+                </a>
+              </Link>
+            </span>
           </div>
         </div>
         <div className="layer fw-300 text-muted py-4 text-center">
@@ -159,6 +178,10 @@ const Footer = styled.div`
       span {
         font-weight: 600;
         font-size: 1rem;
+        a {
+          font-weight: 600;
+          font-size: 1rem;
+        }
       }
     }
     .layer {
