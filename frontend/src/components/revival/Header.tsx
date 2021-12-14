@@ -123,7 +123,7 @@ const RevivalHeader = (): JSX.Element => {
               </Link>
             </li>
             <li className="text-primary">
-              <Link href="/">
+              <Link href="/partner">
                 <a className="nav-link">Join Us</a>
               </Link>
             </li>
