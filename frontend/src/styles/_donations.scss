@@ -1,0 +1,98 @@
+.donations {
+  .border-primary {
+    border: #50ebb2 !important;
+    color: #50ebb2 !important;
+  }
+  .bg-primary,
+  .btn-primary {
+    background-color: #50ebb2 !important;
+    border-color: #50ebb2;
+  }
+  .bg-secondary,
+  .btn-secondary {
+    background-color: #2100a6;
+  }
+  .bg-danger,
+  .btn-danger {
+    background-color: #9e4023 !important;
+  }
+  .bg-light,
+  .btn-light {
+    background-color: #ffffff;
+  }
+  .bg-info,
+  .btn-info {
+    background-color: #0f0bb6;
+  }
+  .bg-dark,
+  .btn-dark {
+    background-color: #24292f;
+  }
+
+  //normal colors
+  .text-primary {
+    color: #50ebb2 !important;
+  }
+  .text-secondary {
+    color: #2100a6;
+  }
+  .text-danger {
+    color: #9e4023;
+  }
+  .text-light {
+    color: #ffffff;
+  }
+  .text-info {
+    color: #0f0bb6;
+  }
+  .text-dark {
+    color: #24292f;
+  }
+  &-1 {
+    min-height: 50vh;
+    background: linear-gradient(
+        rgba(158, 64, 35, 0.73),
+        rgba(158, 64, 35, 0.73)
+      ),
+      url("./img/partner.png") no-repeat;
+    background-size: cover;
+    .donate-text {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    min-height: 110vh;
+    form {
+      .form-control {
+        border: 2px solid #c4c4c4;
+        border-radius: 5px;
+        background: rgba(196, 196, 196, 0.25);
+      }
+      .form-control:focus {
+        border: 2px solid #50ebb2;
+        box-shadow: none;
+        outline: none !important;
+        -webkit-box-shadow: none;
+      }
+      input[type="text"]:focus {
+        background-color: #ffffff;
+      }
+      input[type="email"]:focus {
+        background-color: #ffffff;
+      }
+      .form-control::placeholder {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+    }
+    .pay-don {
+      .radio {
+        .form-check {
+          input {
+            color: #0f0bb6 !important;
+          }
+        }
+      }
+    }
+  }
+}

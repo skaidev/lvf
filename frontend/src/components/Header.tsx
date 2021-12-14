@@ -38,10 +38,37 @@ const HeaderComp = (): JSX.Element => {
                 <a className="nav-link">About</a>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/#team">
-                <a className="nav-link">Team</a>
-              </Link>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Arms
+              </a>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <Link href="/home">
+                    <a className="dropdown-item">Love Home</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/reform">
+                    <a className="dropdown-item">Love Revival</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/revival">
+                    <a className="dropdown-item">Love Reform</a>
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-item">
               <Link href="/#contact">
