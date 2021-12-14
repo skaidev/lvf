@@ -92,6 +92,6 @@ const slideData = [
       "See how we view God, Jesus, the Bible, man, and many significant aspects of our faith. Firmly rooted in Scripture, the beliefs of Joint Heirs Assembly any significant aspects of our faith. Firmly rooted in Scripture decisions as a church.See how Assembly guide our decisions as a church.guide ourod, Jwe view G, thebeliefs of Joint Heirs esus, the Bible, man, and m",
     ],
     btn: [],
-    link: ["/", "/reform", "/revival", "/lovehome"],
+    link: ["/partner", "/partner", "/partner", "/partner"],
   },
 ];
