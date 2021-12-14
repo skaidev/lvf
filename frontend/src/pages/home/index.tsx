@@ -244,7 +244,7 @@ const LoveHome = (): JSX.Element => {
             </div>
             <Link href="/donate">
               <a className="btn ps-4 py-2 pe-4 fw-600 font-20 text-light btn-primary">
-                Become a Volunteer
+                Become a Partner
               </a>
             </Link>
           </div>
