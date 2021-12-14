@@ -9,9 +9,9 @@ const RevivalPage = (): JSX.Element => {
       <main className="revival">
         <section className="first">
           <div className="first-cover">
-            <b className="text-uppercase font-64 fw-700 spacing-1 text-warning pb-2">
+            <div className="container  text-uppercase fw-700 welcome-text pb-2">
               Welcome to love revival
-            </b>
+            </div>
             <div className="first-content d-flex flex-column justify-content-center align-items-center">
               <div className="container">
                 <p className="text-light fw-700 h2">
@@ -81,9 +81,7 @@ const RevivalPage = (): JSX.Element => {
         </section>
         <section className="fourth">
           <div className="container mg">
-            <p className="h1 welcome-message mb-4 fw-700 font-48 ">
-              <span className="h1 fw-700 font-48">Welcome</span> Message
-            </p>
+            <p className="h1 fw-700 font-48 ">Welcome Message</p>
             <p>
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. <br /> Excepteur sint
@@ -413,14 +411,14 @@ const third = [
     id: 1,
     body: (
       <div className="card-body  d-flex flex-column justify-content-center three--item">
-        <p className="fs-5 fw-700 text-light">Join Community</p>
+        <p className="h1 text-light">Join Community</p>
         <p className="text-light">
           Lorem ipsum dolor sit amet, consectetur <br /> adipisicing elit, sed
           do eiusmod tempor <br /> incididunt ut labore et dolore magna <br />
           aliqua. Ut enim ad minim veniam, quis <br /> nostrud exercitation
         </p>
         <div>
-          <button className="btn  btn-outline-primary text-primary join-us">
+          <button className="btn  btn-outline-primary text-light">
             Join us now
           </button>
         </div>
@@ -431,7 +429,7 @@ const third = [
     id: 2,
     body: (
       <div className="card-body  d-flex flex-column justify-content-center three--item">
-        <p className="fs-5 fw-700 text-light">Partner With Us</p>
+        <p className="h1 text-light">Partner With Us</p>
       </div>
     ),
   },
@@ -439,7 +437,7 @@ const third = [
     id: 3,
     body: (
       <div className="card-body d-flex flex-column justify-content-center three--item">
-        <p className="fs-5 fw-700 text-light">Support The Mission</p>
+        <p className="h1 text-light">Support The Mission</p>
       </div>
     ),
   },
