@@ -44,9 +44,11 @@ const ReformPage = (): JSX.Element => {
                   className="btn-holder d-flex flex-wrap"
                   style={{ gap: "1rem" }}
                 >
-                  <button className="btn  mb-md-0 fw-bold btn-primary text-white px-4 py-2">
-                    Join Us
-                  </button>
+                  <Link href="/partner">
+                    <a className="btn border-0 mb-md-0 fw-bold btn-primary text-white px-4 py-2">
+                      Join Us
+                    </a>
+                  </Link>
                   <button className="btn  bg-transparent border-3 fw-bold border-white text-white px-4 py-2">
                     Contact Us
                   </button>
