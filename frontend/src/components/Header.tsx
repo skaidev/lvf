@@ -57,12 +57,12 @@ const HeaderComp = (): JSX.Element => {
                 </li>
                 <li>
                   <Link href="/reform">
-                    <a className="dropdown-item text-dark">Love Revival</a>
+                    <a className="dropdown-item text-dark">Love Reform</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/revival">
-                    <a className="dropdown-item text-dark">Love Reform</a>
+                    <a className="dropdown-item text-dark">Love Revival</a>
                   </Link>
                 </li>
               </ul>
