@@ -1,0 +1,274 @@
+#love-revival {
+  button:focus {
+    box-shadow: none;
+    outline: none !important;
+    -webkit-box-shadow: none;
+  }
+  .bg-primary,
+  .btn-primary {
+    background-color: #50ebb2 !important;
+  }
+  .bg-info,
+  .btn-info {
+    background-color: #2d40a2 !important;
+  }
+  .bg-dark,
+  .btn-dark {
+    background-color: #25283a !important;
+  }
+  .btn-light {
+    background-color: #ffffff !important;
+  }
+  .bg-warning,
+  .btn-warning {
+    background-color: #9e4023 !important;
+  }
+  .bg-muted,
+  .btn-muted {
+    background-color: #767676 !important;
+  }
+  .bg-secondary,
+  .btn-secondary {
+    background-color: #efe0de !important;
+  }
+  .bg-success,
+  .btn-success {
+    background-color: #2d3fa2 !important;
+  }
+  .bg-danger,
+  .btn-danger {
+    background-color: #000000 !important;
+  }
+
+  .text-primary {
+    color: #50ebb2 !important;
+  }
+  .text-info {
+    color: #2d40a2 !important;
+  }
+  .text-dark {
+    color: #25283a !important;
+  }
+  .text-light {
+    color: #ffffff !important;
+  }
+  .text-warning {
+    color: #9e4023 !important;
+  }
+  .text-muted {
+    color: #767676 !important;
+  }
+  .text-secondary {
+    color: #7ca2b5 !important;
+  }
+  .text-success {
+    color: #2d3fa2 !important;
+  }
+  .text-danger {
+    color: #000000 !important;
+  }
+  .revival {
+    .first {
+      min-height: 80vh;
+      background: url("../img/Mask\ Group.png") no-repeat;
+      background-size: cover;
+      background-position: right;
+      overflow: hidden;
+      .welcome-text {
+        color: whitesmoke;
+        opacity: 0.3;
+        letter-spacing: 0.5rem;
+        font-size: 64px;
+      }
+      &-cover {
+        min-height: inherit;
+        .first-content {
+          min-height: inherit;
+        }
+      }
+    }
+    .second {
+      .left {
+        flex: 1;
+      }
+      .right {
+        position: relative;
+        overflow: hidden;
+        flex: 1;
+        height: 35rem;
+        border-top-left-radius: 100px;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .fourth {
+      .mg {
+        margin-bottom: 6.2rem;
+      }
+      &-main {
+        .avatar {
+          img {
+            border-radius: 100%;
+          }
+        }
+      }
+      .art-two {
+        height: 6.9rem;
+        background-image: url("../img/Vector 15.png");
+        background-repeat: no-repeat;
+        background-color: #ffffff;
+        background-size: 100% 100%;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+    }
+    .fifth {
+      p {
+        .concert {
+          border-bottom: 12px solid #2d3fa2;
+        }
+      }
+      .fifth-image {
+        min-height: 470px;
+        max-width: 100%;
+        background: url("../img/fifth.png") no-repeat;
+        background-size: cover;
+
+        .fifth-cover {
+          min-height: inherit;
+          background: rgba(45, 63, 162, 0.48);
+          .outer-circle {
+            width: 112.64px;
+            height: 112.64px;
+            border-radius: 50%;
+            border: 2px solid rgba(235, 170, 73, 0.4);
+            position: relative;
+            .inner-circle {
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.39);
+              width: 80px;
+              height: 80px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin: -40px 0px 0px -40px;
+              i {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sixth {
+      p {
+        .gallery {
+          border-bottom: 12px solid #2d3fa2;
+        }
+      }
+      .container {
+        margin-bottom: 50px;
+      }
+      // .art-six {
+      //   height: 125px;
+      //   background-image: url("./img/Vector 15.png");
+      //   background-repeat: no-repeat;
+      //   background-color: #ffffff;
+      //   background-size: 100% 100%;
+      //   transform: matrix(1, 0, 0, -1, 0, 0);
+      // }
+    }
+    .seventh {
+      min-height: 32.3rem;
+      background: url("../img/seventh.png") no-repeat;
+      background-size: 100% 100%;
+      .left {
+        .left-image {
+          img {
+            max-width: 13.2rem;
+            height: 9.7rem;
+          }
+        }
+      }
+      .right {
+        .right-image {
+          img {
+            max-width: 5.23rem;
+            height: 8.7rem;
+          }
+        }
+      }
+    }
+    .eight {
+      .revived-card {
+        max-width: 950px;
+        min-height: 248px;
+        background: #efe0de;
+        border: 3px solid #ffffff;
+        box-sizing: border-box;
+        box-shadow: 0px 8px 8px rgba(196, 196, 196, 0.35);
+        border-radius: 10px;
+        .card-img-top {
+          position: relative;
+          width: 4.75rem !important;
+          height: 5.21rem;
+
+          .revived-card-image {
+            position: absolute;
+            top: -2.6rem;
+            left: -2.78rem;
+            @media screen and (max-width: 768px) {
+              top: -10%;
+              left: 0%;
+            }
+            img {
+              box-shadow: 0 8px 8px rgba(196, 196, 196, 0.35);
+            }
+          }
+        }
+      }
+    }
+    .nine {
+      background: #c4c4c4;
+      .overlay {
+        display: none;
+      }
+      img {
+        display: block;
+        padding: 0 3rem;
+      }
+      .abs {
+        letter-spacing: 0.3rem;
+        color: rgba(255, 255, 255, 0.22);
+        font-size: 3rem;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .ten {
+      form {
+        input {
+          border-radius: 5px;
+          border: 2px solid #2d40a2 !important;
+        }
+        textarea {
+          border-radius: 5px;
+          border: 2px solid #2d40a2 !important;
+        }
+        .form-control:focus {
+          box-shadow: none;
+          outline: none !important;
+          -webkit-box-shadow: none;
+          border: 3px solid #2d40a2 !important;
+        }
+        .form-control::placeholder {
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

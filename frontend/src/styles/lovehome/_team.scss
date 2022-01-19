@@ -1,0 +1,84 @@
+.home-team {
+  &-1 {
+    min-height: 50vh;
+    background: linear-gradient(
+        rgba(158, 64, 35, 0.73),
+        rgba(158, 64, 35, 0.73)
+      ),
+      url("../img/medical-missions-africa-stanford-childrens-1200x675-1\ 1.png")
+        no-repeat;
+    background-size: cover;
+    .team-text {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    .team {
+      &- {
+        height: 621px;
+
+        &- {
+          background-position: center !important;
+          width: 100%;
+          height: inherit;
+          position: relative;
+          background-size: cover !important;
+          position: relative;
+          overflow: hidden !important;
+          border-radius: 20px;
+          &:hover {
+            .team--layer {
+              left: 0;
+              animation: left 0.5s linear alternate;
+              animation-play-state: running;
+              @keyframes left {
+                from {
+                  left: 100%;
+                }
+                to {
+                  left: 0%;
+                }
+              }
+            }
+            .team--bottom {
+              bottom: -100%;
+            }
+          }
+          &bottom {
+            position: absolute;
+            bottom: 0;
+            transition: all 0.5s linear;
+            left: 0;
+            width: 100%;
+          }
+          &layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #9e4023;
+            opacity: 0.7;
+            gap: 1rem;
+            left: -100%;
+            transition: all 0.5s linear;
+            i {
+              transition: all 0.5s ease-in-out;
+              &:hover {
+                transform: translateY(-30px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background-color: #9e4023;
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}

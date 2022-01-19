@@ -1,0 +1,173 @@
+.home-gallery {
+  &-1 {
+    min-height: 50vh;
+    background: linear-gradient(
+        rgba(158, 64, 35, 0.73),
+        rgba(158, 64, 35, 0.73)
+      ),
+      url("../img/medical-missions-africa-stanford-childrens-1200x675-1\ 1.png")
+        no-repeat;
+    background-size: cover;
+    .gallery-text-1 {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    .visitation-heading-1 {
+      min-height: 16vh;
+      background-color: #cccccc;
+    }
+    .visitation-box-1 {
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 15px;
+        .gallery-box {
+          .gallery-item {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .image {
+              width: 100%;
+              height: 100%;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                max-height: 325px;
+
+                display: block !important;
+              }
+            }
+            .img-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: inherit;
+              height: 100%;
+              background: linear-gradient(
+                180deg,
+                rgba(37, 40, 58, 0) 0%,
+                #25283a 100%
+              );
+              .img-text {
+                height: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-2a {
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      //grid-template-rows: repeat(3, 1fr);
+      grid-gap: 15px;
+      .gallery-box {
+        .gallery-item {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .image {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: 50% 50%;
+              max-height: 325px;
+
+              display: block !important;
+            }
+          }
+          .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: 100%;
+            background: linear-gradient(
+              180deg,
+              rgba(37, 40, 58, 0) 0%,
+              #25283a 100%
+            );
+            .img-text {
+              height: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-2b {
+    .visitation-heading-2 {
+      min-height: 16vh;
+      background-color: #cccccc;
+    }
+    .visitation-box-2 {
+      //min-height: 30rem;
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        //grid-template-rows: repeat(1, 1fr);
+        grid-gap: 15px;
+        .gallery-box {
+          .gallery-item {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .image {
+              width: 100%;
+              height: 100%;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                max-height: 325px;
+
+                display: block !important;
+              }
+            }
+            .img-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: inherit;
+              height: 100%;
+              background: linear-gradient(
+                180deg,
+                rgba(37, 40, 58, 0) 0%,
+                #25283a 100%
+              );
+              .img-text {
+                height: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background-color: #9e4023;
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}

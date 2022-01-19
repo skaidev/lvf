@@ -1,0 +1,66 @@
+.reform-team {
+  &-1 {
+    min-height: 50vh;
+    background: url("../img/partner_1_reform.png") no-repeat;
+    background-size: cover;
+    .gallery-text {
+      min-height: inherit;
+    }
+  }
+  &-2 {
+    .team-2-wrap {
+      .team-card {
+        .card {
+          min-height: 31.4rem !important;
+          max-width: 21.56rem !important;
+          box-shadow: 0px 6px 14px 2px rgba(196, 196, 196, 0.47) !important;
+        }
+        &-wrap {
+          border-radius: 10px;
+          overflow: hidden;
+          &:hover {
+            .team-card-body {
+              bottom: 0;
+              .team-socials {
+                transform: translateY(0);
+              }
+            }
+          }
+          img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .team-card-body {
+          bottom: -10%;
+          position: absolute;
+          width: 100%;
+          transition-duration: 0.5s;
+          .team-socials {
+            transform: translateY(200px);
+            transition-duration: 1s;
+            border-top: 0.5px solid #c4c4c4;
+
+            .line {
+              height: 2px !important;
+              width: 20px;
+              color: #000000 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-3 {
+    min-height: 20vh;
+    .content {
+      min-height: inherit;
+      background: linear-gradient(180deg, #25283a -40.78%, #7ca2b5 100%);
+      .container {
+        min-height: inherit;
+      }
+    }
+  }
+}
